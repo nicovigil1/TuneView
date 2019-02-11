@@ -3,5 +3,7 @@ rvm:
 - 2.5.3
 deploy:
   provider: heroku
+  app: tuneview
+  run: "rake db:migrate"
   api_key:
     secure: jOrv9bO+/1Bb2dWfthrO+eOKKKdLBnil1ZnweAoViEriXxaxyWtSJB+j9j9Bc/+0VAuTa48UqejcuI4iCCK/1tWU/AOW/N23Po6N12TLJlpgA7MqDnGyDay7ffGXeDMLjXOjD8Jl+INAWwY+XMWWX+f0MjYmTaX70MQM+3/nauLR17SK6f8yum1dIjRCqo/679got8hljHh5RjOG6yEmCYRmLYFxQXiIQYjn1sg+yhlt4Gr25XSZdx4udCT3LINadEVGa59rBZb9AV2L324guq40+i1IuKPeniFvn+QnQqJBUZ4fEHxtv58XYX/PzVYdjuTCxsbgrx8IBHCbyUJanEh89KSxXl26qjA3rGP7Iz080aURMp+ulq5mito8xIh4YLzi4+D/TymYrWjnvE+GBCH1UUY35868B+BlcJeSIkV1OgjmOW4YfRntvF5B9zSmtcV246iylyT1CyikM28s9xxqJbuMLf2V0CTYzeXAZkQHcizF/0I57bsx23vB5NDr4UNg24gsz0h3ez2UIgW4DQP/mEP2bPv5LwYnqRGtukUeRjtLCDWgjgvs4lL3JJkj/JkYZP+rdxOxceVKXVlQTxZAXS/AFpfPwwUkVVfhRnAwqNy78sZi0wYq1W7VoFdavEWtzH4051bcyaNDsac/nnUc+CTHaoE7o679zKRSylU=
