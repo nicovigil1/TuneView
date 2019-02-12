@@ -1,5 +1,4 @@
 # TuneView
-
 ### Pitch
 
 TuneView is a unique way to learn more about yourself and the way you listen to music.
@@ -16,8 +15,6 @@ Tuneview simplifies the process of viewing interesting stats about your music pr
 ### Target Audience
 
 Any users of Spotify who want to explore music in a simple view and be able to view the lyrics.
-
-1-3 sentences describing what type of user your app would be applicable to.
 
 ### Integrations
 
