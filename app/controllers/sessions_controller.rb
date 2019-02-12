@@ -1,8 +1,20 @@
 class SessionsController < ApplicationController
   def create
-    spotify_credentials = request.env['omniauth.auth'].credentials
-    spotify_profile = request.env['omniauth.auth'].info
-    info = {username: spotify_profile["nickname"], image_url: spotify_profile["image"], spotify_token: spotify_credentials["token"], profile_url: spotify_profile["urls"]["spotify"] }
-    User.create(info)
+    user_info = spotify_params(request.env['omniauth.auth'].credentials, 
+                        request.env['omniauth.auth'].info)
+    user = User.create(user_info)
+    session[:user_id] = user.id
+    redirect_to home_path
   end
+
+  private 
+
+  def spotify_params(credentials, profile)
+    profile["image"] ||= "https://bit.ly/2tlLmZc"
+    {username: profile["nickname"],
+     image_url: profile["image"], 
+     spotify_token: credentials["token"],
+     profile_url: profile["urls"]["spotify"]}
+  end
+
 end 
