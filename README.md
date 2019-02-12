@@ -1,24 +1,26 @@
-# README
+# TuneView
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Pitch
 
-Things you may want to cover:
+TuneView is a unique way to learn more about yourself and the way you listen to music.
 
-* Ruby version
+### Problem
 
-* System dependencies
+Users often sacrifice personalization for prebuilt playlists or complicated features that may never be used. 
+Availability of lyrics is limited to select tracks.
 
-* Configuration
+### Solution
 
-* Database creation
+Tuneview simplifies the process of viewing interesting stats about your music preferences and provides lyrics for an enhanced listening experience.
 
-* Database initialization
+### Target Audience
 
-* How to run the test suite
+Any users of Spotify who want to explore music in a simple view and be able to view the lyrics.
 
-* Services (job queues, cache servers, search engines, etc.)
+1-3 sentences describing what type of user your app would be applicable to.
 
-* Deployment instructions
+### Integrations
 
-* ...
+- Spotify: OAuth, several endpoints
+- LastFM: artist bios and similar artists
+- MusicXMatch: song lyrics
