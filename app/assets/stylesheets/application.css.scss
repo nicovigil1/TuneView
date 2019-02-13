@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+@import "semantic-ui";
+
+div.ui.container {
+    height: 100%;
+    background-size: 100%;
+    background-image: url("test_run.jpg");
+    background-repeat: repeat-y;
+  }
+
+.login.content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 50%;
+}
+
+.large.submit.button {
+  margin-top: 10px;
+}
