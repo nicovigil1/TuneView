@@ -6,9 +6,13 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
-
+OmniAuth.config.test_mode = true
 SimpleCov.start 'rails' do
-  
+  add_filter "app/channels/application_cable/channel.rb"
+  add_filter "app/channels/application_cable/connection.rb"
+  add_filter "app/jobs/application_job.rb"
+  add_filter "app/mailers/application_mailer.rb"
+  add_filter "app/helpers/application_helper.rb"
 end
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -71,5 +75,3 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
-
-
