@@ -2,15 +2,18 @@
 %html
   %head
     %title TuneView
-    = csrf_meta_tags 
+    = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     %body
-      .ui.fluid.container
-        - if current_user
-          .ui.inverted.black.top.menu
-            = link_to("Home", home_path, html_options = {class: "item"})
-            .right.menu
-              = link_to("Sign in/Register", "/auth/spotify", html_options = {class: "item"})
-        = yield
+    #flashes
+      - flash.each do |type, message|
+        = content_tag :div, message, class: type
+    .ui.fluid.container
+      - if current_user
+        .ui.inverted.black.top.menu
+          = link_to("Home", home_path, html_options = {class: "item"})
+          .right.menu
+            = link_to("Sign in/Register", "/auth/spotify", html_options = {class: "item"})
+      = yield
