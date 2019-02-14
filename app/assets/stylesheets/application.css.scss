@@ -13,15 +13,14 @@
  *= require_tree .
  *= require_self
  */
-
 @import "semantic-ui";
 
 div.ui.container {
-    height: 100%;
-    background-size: 100%;
-    background-image: url("test_run.jpg");
-    background-repeat: repeat-y;
-  }
+  height: 100%;
+  background-size: 100%;
+  background-image: image-url("test_run.jpg");
+  background-repeat: repeat-y;
+}
 
 .login.content {
   background-color: rgba(0, 0, 0, 0.7);
@@ -43,11 +42,11 @@ h3 {
   height: 100%;
 }
 
-#most-recent{
+#most-recent {
   left: 5%;
 }
 
-.ui.items > .item > .content > .header{
+.ui.items > .item > .content > .header {
   color: white;
 }
 
@@ -56,5 +55,5 @@ h3 {
 }
 
 .ui.items > .item .extra {
-  color: white
+  color: white;
 }
