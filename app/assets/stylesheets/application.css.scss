@@ -33,3 +33,28 @@ div.ui.container {
 .large.submit.button {
   margin-top: 10px;
 }
+
+h3 {
+  color: black;
+}
+
+#top-5-artists {
+  right: 5%;
+  height: 100%;
+}
+
+#most-recent{
+  left: 5%;
+}
+
+.ui.items > .item > .content > .header{
+  color: white;
+}
+
+.ui.items > .item .meta {
+  color: white;
+}
+
+.ui.items > .item .extra {
+  color: white
+}

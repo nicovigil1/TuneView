@@ -1,1 +1,55 @@
-%h1 Welcome, #{current_user.username}
+
+.ui.grid
+  .row
+    .five.wide.left.aligned.column
+      .ui.teal.inverted.segment
+        %h1 Welcome, #{current_user.username}
+  .row  
+    .four.wide.column
+      .ui.teal.inverted.raised.segment#most-recent
+        .ui.items
+          %h3 Your most recently played song:
+          .item
+            .image
+              =image_tag "#{@most_recent.cover_url}"
+            .content.card-text
+              .header.card-text= @most_recent.title
+              .meta.card-text
+                %span by: #{@most_recent.artist}
+              .extra.card-text= @most_recent.album
+          
+    .four.wide.column
+    .four.wide.column
+    .four.wide.column
+      .ui.teal.inverted.raised.segment#top-5-artists
+        %h3 Top 5 Artists of the past month:
+        %ol
+          - @top_5_artists.each do |artist|
+            %li
+              = artist.name
+
+
+    -# .sixteen.wide.column
+    -#   .ui.centered.link.cards
+    -#     - @top_5_artists.each do |artist|
+    -#       .card
+    -#         .image
+    -#           = image_tag artist.images[1][:url]
+    -#         .content
+    -#           .header
+    -#             =artist.name
+    -#           .description
+    -#             =artist.genres.join(", ")
+      
+-# %h1 Welcome, #{current_user.username}
+-# .ui.segment.raised.left.floated
+-#   .ui.items
+-#     %h3 Your most recently played song:
+-#     .item
+-#       .image
+-#         =image_tag "#{@cover_url}"
+-#       .content
+-#         .header "#{@title}"
+-#         .meta
+-#           %span by: #{@artist}
+-#         .extra #{@album}
