@@ -8,6 +8,20 @@ class SpotifyService
     end
   end 
 
+  def self.refresh_token(user)
+    response = Faraday.post("https://accounts.spotify.com/api/token") do |req|
+      req.headers["Content-Type"] = "application/x-www-form-urlencoded"
+      req.headers["Authorization"] = "Basic #{encoded_key_id}"
+      req.body = {"grant_type":"refresh_token", "refresh_token":"#{user.refresh_token}"}
+    end
+    user.update(spotify_token: JSON.parse(response.body)["access_token"])
+    JSON.parse(response.body)["access_token"]
+  end
+  
+  def self.encoded_key_id
+    Base64.strict_encode64("#{ENV["SPOTIFY_CLIENT_ID"]}:#{ENV["SPOTIFY_CLIENT_SECRET"]}")
+  end
+
   def self.user_data(user)
     conn(user).get("/v1/me/").body
   end 

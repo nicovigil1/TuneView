@@ -17,5 +17,4 @@ class Artist
       Artist.new(data)
     end
   end 
-
 end 

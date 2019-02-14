@@ -1,1 +1,31 @@
-%h1 Welcome, #{current_user.username}
+
+.ui.grid
+  .row
+    .five.wide.left.aligned.column
+      .ui.teal.inverted.segment
+        %h1 Welcome, #{current_user.username}
+  .row  
+    .four.wide.column
+    .four.wide.column
+    .four.wide.column
+    .four.wide.column
+      .ui.teal.inverted.segment#top-5-artists
+        %h3 Top 5 Artists of the past month:
+        %ol
+          - @top_5_artists.each do |artist|
+            %li
+              = artist.name
+
+
+    -# .sixteen.wide.column
+    -#   .ui.centered.link.cards
+    -#     - @top_5_artists.each do |artist|
+    -#       .card
+    -#         .image
+    -#           = image_tag artist.images[1][:url]
+    -#         .content
+    -#           .header
+    -#             =artist.name
+    -#           .description
+    -#             =artist.genres.join(", ")
+      
