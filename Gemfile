@@ -53,6 +53,7 @@ group :development, :test do
   gem 'simplecov'
   gem 'figaro'
   gem 'factory_bot_rails'
+  gem 'faker'
   gem 'vcr'
   gem 'launchy'
   gem 'webmock'
