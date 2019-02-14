@@ -1,11 +1,11 @@
-# TuneView
+# TuneView [![Build Status](https://travis-ci.org/cebarks/TuneView.svg?branch=master)](https://travis-ci.org/cebarks/TuneView)
 ### Pitch
 
 TuneView is a unique way to learn more about yourself and the way you listen to music.
 
 ### Problem
 
-Users often sacrifice personalization for prebuilt playlists or complicated features that may never be used. 
+Users often sacrifice personalization for prebuilt playlists or complicated features that may never be used.
 Availability of lyrics is limited to select tracks.
 
 ### Solution
