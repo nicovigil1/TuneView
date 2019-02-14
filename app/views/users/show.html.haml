@@ -1,1 +1,12 @@
 %h1 Welcome, #{current_user.username}
+.ui.segment.raised.left.floated
+  .ui.items
+    %h3 Your most recently played song:
+    .item
+      .image
+        =image_tag "#{@cover_url}"
+      .content
+        .header "#{@title}"
+        .meta
+          %span by: #{@artist}
+        .extra #{@album}
