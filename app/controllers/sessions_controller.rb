@@ -2,8 +2,11 @@ class SessionsController < ApplicationController
   def create
     user_info = spotify_params(request.env['omniauth.auth'].credentials,
       request.env['omniauth.auth'].info
-      )
-    user = User.create(user_info)
+    )
+    
+    user = User.find_or_create_by!(user_info)
+    user.update(user_info)
+
     session[:user_id] = user.id
     flash[:success] = "Successfully signed in." if user.save
     redirect_to dashboard_path
@@ -19,5 +22,4 @@ class SessionsController < ApplicationController
      refresh_token: credentials["refresh_token"],
      profile_url: profile["urls"]["spotify"]}
   end
-
 end
