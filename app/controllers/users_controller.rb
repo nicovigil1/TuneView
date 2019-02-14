@@ -10,7 +10,6 @@ class UsersController < ApplicationController
 
 
   private
-
   # def token_expired?
   #   # current_user.token_expiration > Time.now
   #   !nil 
