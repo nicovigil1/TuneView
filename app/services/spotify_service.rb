@@ -13,6 +13,8 @@ class SpotifyService
   end 
 
   def self.top_5_artists(user)
-    conn(user).get("/v1/me/top/artists?limit=5")
+    params = "time_range=short_term&limit=5"
+    response = conn(user).get("/v1/me/top/artists?#{params}").body
+    response[:items]
   end 
 end
