@@ -3,8 +3,9 @@ class SessionsController < ApplicationController
     user_info = spotify_params(request.env['omniauth.auth'].credentials,
       request.env['omniauth.auth'].info
     )
+
+    user = User.find_by(username: user_info[:username]) || User.create(user_info)
     
-    user = User.find_or_create_by!(user_info)
     user.update(user_info)
 
     session[:user_id] = user.id
