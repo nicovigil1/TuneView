@@ -32,6 +32,18 @@ describe SpotifyService do
 
       end
 
+      it 'can find the top 5 tracks per user', :vcr do
+        user = User.create(@info)
+
+        allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
+        VCR.use_cassette('spotify-service-top-5-tracks') do
+          response = SpotifyService.top_5_tracks(user)
+
+          expect(response.length).to eq(5)
+        end
+      end
+
       # after this is run you have to change your development variables
       it 'can refresh a users token' do
         info = {username: "12184696969",
@@ -58,17 +70,6 @@ describe SpotifyService do
           end
           # token has expired error message by the time our test suite gets to here
           # expect(response)
-        end
-        it 'can find the top 5 tracks per user', :vcr do
-          user = User.create(@info)
-
-          allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
-
-          VCR.use_cassette('spotify-service-top-5-tracks') do
-            response = SpotifyService.top_5_tracks(user)
-
-            expect(response.length).to eq(5)
-          end
         end
       end
     end
