@@ -1,4 +1,6 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
-  validates_presence_of :username, :spotify_token, :profile_url
-  validates_uniqueness_of :username
-end   
+  validates :username, :spotify_token, :profile_url, presence: true
+  validates :username, uniqueness: true
+end

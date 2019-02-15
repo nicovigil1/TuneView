@@ -1,5 +1,6 @@
-class UsersController < ApplicationController
+# frozen_string_literal: true
 
+class UsersController < ApplicationController
   def show
     # SpotifyService.refresh_token(current_user) #if token_expired?
     spotify_user_info = SpotifyUserInfo.new(current_user)
@@ -8,8 +9,8 @@ class UsersController < ApplicationController
     @most_recent = spotify_user_info.most_recent_song
   end
 
+  # private
 
-  private
   # def token_expired?
   #   # current_user.token_expiration > Time.now
   #   !nil
