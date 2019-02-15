@@ -30,6 +30,7 @@ gem 'haml'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
 gem 'omniauth'
 gem 'omniauth-spotify'
 gem 'semantic-ui-sass'
@@ -47,6 +48,7 @@ group :development, :test do
   gem 'figaro'
   gem 'factory_bot_rails'
   gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do

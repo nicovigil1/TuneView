@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://accounts.spotify.com/api/token
+    body:
+      encoding: UTF-8
+      string: grant_type=refresh_token&refresh_token=<SPOTIFY_REQUEST_TOKEN>
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Basic MTUwOWVlM2E2NmU4NDFlNGEwNDg1MzAxZThkNWEyODc6NmZlZmJiYjI3NzBjNDY2Y2EyYmM1YzhlNzY0ODM1OGI=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 15 Feb 2019 16:44:00 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '63'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_client","error_description":"Invalid client"}'
+    http_version: 
+  recorded_at: Fri, 15 Feb 2019 16:44:00 GMT
+recorded_with: VCR 4.0.0

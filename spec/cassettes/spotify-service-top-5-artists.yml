@@ -1,0 +1,199 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Fri, 15 Feb 2019 16:27:56 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "items" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/51Pn4gGnZuyOMDfIT1Zy3N"
+            },
+            "followers" : {
+              "href" : null,
+              "total" : 239994
+            },
+            "genres" : [ "deep underground hip hop", "hip hop", "rap", "underground hip hop" ],
+            "href" : "https://api.spotify.com/v1/artists/51Pn4gGnZuyOMDfIT1Zy3N",
+            "id" : "51Pn4gGnZuyOMDfIT1Zy3N",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/93f1723647435b9b14f956233a27fc7b0876c3a3",
+              "width" : 640
+            }, {
+              "height" : 320,
+              "url" : "https://i.scdn.co/image/e68aa738a1d2b364f3fe9db993b695ba18759913",
+              "width" : 320
+            }, {
+              "height" : 160,
+              "url" : "https://i.scdn.co/image/54ef48881c5eeb2abe7406c54621a5b8d0ad632f",
+              "width" : 160
+            } ],
+            "name" : "The Underachievers",
+            "popularity" : 57,
+            "type" : "artist",
+            "uri" : "spotify:artist:51Pn4gGnZuyOMDfIT1Zy3N"
+          }, {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/0GzsRlVbRZ1j4rkTlRNRXW"
+            },
+            "followers" : {
+              "href" : null,
+              "total" : 6164
+            },
+            "genres" : [ ],
+            "href" : "https://api.spotify.com/v1/artists/0GzsRlVbRZ1j4rkTlRNRXW",
+            "id" : "0GzsRlVbRZ1j4rkTlRNRXW",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/ab0abf5abc1b030b0349fb5b244422a2284f915a",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/45a0dad0f882ec9de0674166106133dfd3056a4f",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/80dcb53ab25696b8b22ee23ede86213aee2cd187",
+              "width" : 64
+            } ],
+            "name" : "Jarv",
+            "popularity" : 37,
+            "type" : "artist",
+            "uri" : "spotify:artist:0GzsRlVbRZ1j4rkTlRNRXW"
+          }, {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/1dqGS5sT6PE2wEvP1gROZC"
+            },
+            "followers" : {
+              "href" : null,
+              "total" : 623327
+            },
+            "genres" : [ "hip hop", "pop rap", "rap", "trap music", "underground hip hop" ],
+            "href" : "https://api.spotify.com/v1/artists/1dqGS5sT6PE2wEvP1gROZC",
+            "id" : "1dqGS5sT6PE2wEvP1gROZC",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/7589d3af38aea0b36336e1e7049cb2e7ca248da3",
+              "width" : 640
+            }, {
+              "height" : 320,
+              "url" : "https://i.scdn.co/image/47a05d2a352a98c054a836ae400159619c60de40",
+              "width" : 320
+            }, {
+              "height" : 160,
+              "url" : "https://i.scdn.co/image/d0fc15b24637c5031938ed7ebfcfa06eb4b4b54a",
+              "width" : 160
+            } ],
+            "name" : "Flatbush Zombies",
+            "popularity" : 67,
+            "type" : "artist",
+            "uri" : "spotify:artist:1dqGS5sT6PE2wEvP1gROZC"
+          }, {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/6U3ybJ9UHNKEdsH7ktGBZ7"
+            },
+            "followers" : {
+              "href" : null,
+              "total" : 253090
+            },
+            "genres" : [ "hip hop", "pop rap", "rap", "trap music", "underground hip hop" ],
+            "href" : "https://api.spotify.com/v1/artists/6U3ybJ9UHNKEdsH7ktGBZ7",
+            "id" : "6U3ybJ9UHNKEdsH7ktGBZ7",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/462cd021c5357436b923c28759e4424b659f403a",
+              "width" : 640
+            }, {
+              "height" : 320,
+              "url" : "https://i.scdn.co/image/90c88feaab7e615252c4a35a69f12146c1ecb242",
+              "width" : 320
+            }, {
+              "height" : 160,
+              "url" : "https://i.scdn.co/image/850355b6dd218765cff30856442660d15d04c22e",
+              "width" : 160
+            } ],
+            "name" : "JID",
+            "popularity" : 75,
+            "type" : "artist",
+            "uri" : "spotify:artist:6U3ybJ9UHNKEdsH7ktGBZ7"
+          }, {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/42crL07E4WPfVovyUtMpvC"
+            },
+            "followers" : {
+              "href" : null,
+              "total" : 86695
+            },
+            "genres" : [ "indie pop", "indie poptimism", "modern alternative rock", "modern rock" ],
+            "href" : "https://api.spotify.com/v1/artists/42crL07E4WPfVovyUtMpvC",
+            "id" : "42crL07E4WPfVovyUtMpvC",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/d6226ae2c8a6dba18f70d76f79344773a85ea01b",
+              "width" : 640
+            }, {
+              "height" : 320,
+              "url" : "https://i.scdn.co/image/10c15e32fd693fcf947138fabfa540e612650743",
+              "width" : 320
+            }, {
+              "height" : 160,
+              "url" : "https://i.scdn.co/image/690929cf769992fc60998abddcd58415d0f19593",
+              "width" : 160
+            } ],
+            "name" : "Robert DeLong",
+            "popularity" : 54,
+            "type" : "artist",
+            "uri" : "spotify:artist:42crL07E4WPfVovyUtMpvC"
+          } ],
+          "total" : 30,
+          "limit" : 5,
+          "offset" : 0,
+          "previous" : null,
+          "href" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=0&time_range=short_term",
+          "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
+        }
+    http_version: 
+  recorded_at: Fri, 15 Feb 2019 16:27:56 GMT
+recorded_with: VCR 4.0.0
