@@ -32,8 +32,12 @@ gem 'haml'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'omniauth'
 gem 'omniauth-spotify'
+
 gem 'semantic-ui-sass'
+
 gem 'faraday_middleware'
+
+gem 'newrelic_rpm'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
