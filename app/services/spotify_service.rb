@@ -1,13 +1,4 @@
 class SpotifyService
-  def self.conn(current_user)
-    Faraday.new(url: "https://api.spotify.com") do |faraday|
-      faraday.request :url_encoded
-      faraday.adapter Faraday.default_adapter
-      faraday.headers["Authorization"] = "Bearer #{current_user.spotify_token}"
-      faraday.response :json, :parser_options => { :symbolize_names => true }
-    end
-  end
-
   def self.refresh_token(user)
     response = Faraday.post("https://accounts.spotify.com/api/token") do |req|
       req.headers["Content-Type"] = "application/x-www-form-urlencoded"
@@ -16,10 +7,6 @@ class SpotifyService
     end
     user.update(spotify_token: JSON.parse(response.body)["access_token"])
     JSON.parse(response.body)["access_token"]
-  end
-  
-  def self.encoded_key_id
-    Base64.strict_encode64("#{ENV["SPOTIFY_CLIENT_ID"]}:#{ENV["SPOTIFY_CLIENT_SECRET"]}")
   end
 
   def self.user_data(user)
@@ -30,10 +17,25 @@ class SpotifyService
     params = "time_range=short_term&limit=5"
     response = conn(user).get("/v1/me/top/artists?#{params}").body
     response[:items]
-  end 
+  end
 
   def self.most_recent_track(user)
     data = conn(user).get("/v1/me/player/recently-played?type=track&limit=1").body
     Track.new(data)
+  end
+
+  private
+
+  def self.encoded_key_id
+    Base64.strict_encode64("#{ENV["SPOTIFY_CLIENT_ID"]}:#{ENV["SPOTIFY_CLIENT_SECRET"]}")
+  end
+
+  def self.conn(current_user)
+    Faraday.new(url: "https://api.spotify.com") do |faraday|
+      faraday.request :url_encoded
+      faraday.headers["Authorization"] = "Bearer #{current_user.spotify_token}"
+      faraday.response :json, parser_options: { symbolize_names: true }
+      faraday.adapter Faraday.default_adapter
+    end
   end
 end
