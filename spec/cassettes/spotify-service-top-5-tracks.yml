@@ -1,0 +1,2163 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/top/tracks?limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Fri, 15 Feb 2019 19:15:47 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "items" : [ {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3Aum3IcJEKuGsWVPBZnvyU"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3Aum3IcJEKuGsWVPBZnvyU",
+                "id" : "3Aum3IcJEKuGsWVPBZnvyU",
+                "name" : "ROMderful",
+                "type" : "artist",
+                "uri" : "spotify:artist:3Aum3IcJEKuGsWVPBZnvyU"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/4G0GdZ07wqJzQFqckOtaMG"
+              },
+              "href" : "https://api.spotify.com/v1/albums/4G0GdZ07wqJzQFqckOtaMG",
+              "id" : "4G0GdZ07wqJzQFqckOtaMG",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/6acddaabdf354f8d5582f5f6dfd52b5dd754d18e",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/771921c7b9b200176fc1c16c73542845ff2bf932",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/22c5147fe612deb75529413b0c37610aca0e391b",
+                "width" : 64
+              } ],
+              "name" : "SummerTimeTing",
+              "release_date" : "2017-09-09",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:4G0GdZ07wqJzQFqckOtaMG"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3Aum3IcJEKuGsWVPBZnvyU"
+              },
+              "href" : "https://api.spotify.com/v1/artists/3Aum3IcJEKuGsWVPBZnvyU",
+              "id" : "3Aum3IcJEKuGsWVPBZnvyU",
+              "name" : "ROMderful",
+              "type" : "artist",
+              "uri" : "spotify:artist:3Aum3IcJEKuGsWVPBZnvyU"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/52bD0lfgcUwxbQMrCrYMRd"
+              },
+              "href" : "https://api.spotify.com/v1/artists/52bD0lfgcUwxbQMrCrYMRd",
+              "id" : "52bD0lfgcUwxbQMrCrYMRd",
+              "name" : "Mayzin",
+              "type" : "artist",
+              "uri" : "spotify:artist:52bD0lfgcUwxbQMrCrYMRd"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/30SZetOBMEael27tboxz7f"
+              },
+              "href" : "https://api.spotify.com/v1/artists/30SZetOBMEael27tboxz7f",
+              "id" : "30SZetOBMEael27tboxz7f",
+              "name" : "Emmavie",
+              "type" : "artist",
+              "uri" : "spotify:artist:30SZetOBMEael27tboxz7f"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/0PJuk7yyhWqoTAQv0Dcw4w"
+              },
+              "href" : "https://api.spotify.com/v1/artists/0PJuk7yyhWqoTAQv0Dcw4w",
+              "id" : "0PJuk7yyhWqoTAQv0Dcw4w",
+              "name" : "KayFaraway",
+              "type" : "artist",
+              "uri" : "spotify:artist:0PJuk7yyhWqoTAQv0Dcw4w"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 214176,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QM24S1703133"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/6uDUc7CmBRd1rLv78MnUND"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/6uDUc7CmBRd1rLv78MnUND",
+            "id" : "6uDUc7CmBRd1rLv78MnUND",
+            "is_local" : false,
+            "name" : "SummerTimeTing",
+            "popularity" : 34,
+            "preview_url" : "https://p.scdn.co/mp3-preview/5357d42cfd04a3940c7ad25866dc92eaef9c1864?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:6uDUc7CmBRd1rLv78MnUND"
+          }, {
+            "album" : {
+              "album_type" : "ALBUM",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3ycxRkcZ67ALN3GQJ57Vig",
+                "id" : "3ycxRkcZ67ALN3GQJ57Vig",
+                "name" : "Masego",
+                "type" : "artist",
+                "uri" : "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/2wqG59dVVQlJaxoO7N0LJt"
+              },
+              "href" : "https://api.spotify.com/v1/albums/2wqG59dVVQlJaxoO7N0LJt",
+              "id" : "2wqG59dVVQlJaxoO7N0LJt",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/bf4fe31668460b683cde775c3ae9a23156a34f3a",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/ac2c41af286a0674b61bfcfbbc2733fcd69921d1",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/670977fbbdb6a40bec1cb99e1e2c688e62f6d251",
+                "width" : 64
+              } ],
+              "name" : "Lady Lady",
+              "release_date" : "2018-09-07",
+              "release_date_precision" : "day",
+              "total_tracks" : 14,
+              "type" : "album",
+              "uri" : "spotify:album:2wqG59dVVQlJaxoO7N0LJt"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+              },
+              "href" : "https://api.spotify.com/v1/artists/3ycxRkcZ67ALN3GQJ57Vig",
+              "id" : "3ycxRkcZ67ALN3GQJ57Vig",
+              "name" : "Masego",
+              "type" : "artist",
+              "uri" : "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 154666,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QZD5H1800004"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/4q4kOEBru4PwKNUI8T8t1P"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/4q4kOEBru4PwKNUI8T8t1P",
+            "id" : "4q4kOEBru4PwKNUI8T8t1P",
+            "is_local" : false,
+            "name" : "Lady Lady",
+            "popularity" : 53,
+            "preview_url" : "https://p.scdn.co/mp3-preview/1600cc9072a93dcf289179629281464fad3839eb?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 10,
+            "type" : "track",
+            "uri" : "spotify:track:4q4kOEBru4PwKNUI8T8t1P"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+                "id" : "746nA9NSKsqBDRk343UtkE",
+                "name" : "chromonicci",
+                "type" : "artist",
+                "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/59symzPu8CwJftLyzZKxRy"
+              },
+              "href" : "https://api.spotify.com/v1/albums/59symzPu8CwJftLyzZKxRy",
+              "id" : "59symzPu8CwJftLyzZKxRy",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/432becee534dabac3a77847114e15cd243597eb7",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/92aa669936583aecfc7feed0b1815b331ff988f3",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/fb5e3ef305448a87361e2151462f51327c29c094",
+                "width" : 64
+              } ],
+              "name" : "Bounce Back.",
+              "release_date" : "2018-09-14",
+              "release_date_precision" : "day",
+              "total_tracks" : 5,
+              "type" : "album",
+              "uri" : "spotify:album:59symzPu8CwJftLyzZKxRy"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+              "id" : "746nA9NSKsqBDRk343UtkE",
+              "name" : "chromonicci",
+              "type" : "artist",
+              "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 245333,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QMPKX1887165"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/2iB8qT2jLfgEnMsS54XOXu"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/2iB8qT2jLfgEnMsS54XOXu",
+            "id" : "2iB8qT2jLfgEnMsS54XOXu",
+            "is_local" : false,
+            "name" : "No More.",
+            "popularity" : 13,
+            "preview_url" : "https://p.scdn.co/mp3-preview/99037389acc3324d1784d882fa164e60963e6c9e?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 4,
+            "type" : "track",
+            "uri" : "spotify:track:2iB8qT2jLfgEnMsS54XOXu"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+                "id" : "746nA9NSKsqBDRk343UtkE",
+                "name" : "chromonicci",
+                "type" : "artist",
+                "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/1EOwArI1blRMFSRLbxARfl"
+              },
+              "href" : "https://api.spotify.com/v1/albums/1EOwArI1blRMFSRLbxARfl",
+              "id" : "1EOwArI1blRMFSRLbxARfl",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/432becee534dabac3a77847114e15cd243597eb7",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/92aa669936583aecfc7feed0b1815b331ff988f3",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/fb5e3ef305448a87361e2151462f51327c29c094",
+                "width" : 64
+              } ],
+              "name" : "Let Go.",
+              "release_date" : "2018-08-31",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:1EOwArI1blRMFSRLbxARfl"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+              "id" : "746nA9NSKsqBDRk343UtkE",
+              "name" : "chromonicci",
+              "type" : "artist",
+              "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 186902,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QMPKX1802658"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/4bfi8IaJxPhfAncffLZLfb"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/4bfi8IaJxPhfAncffLZLfb",
+            "id" : "4bfi8IaJxPhfAncffLZLfb",
+            "is_local" : false,
+            "name" : "Let Go.",
+            "popularity" : 26,
+            "preview_url" : "https://p.scdn.co/mp3-preview/adb43863166baf54ecac768cfba82cd39b0adc79?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:4bfi8IaJxPhfAncffLZLfb"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/4VA3EAvncrTucjTmrvd4GE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/4VA3EAvncrTucjTmrvd4GE",
+                "id" : "4VA3EAvncrTucjTmrvd4GE",
+                "name" : "LION BABE",
+                "type" : "artist",
+                "uri" : "spotify:artist:4VA3EAvncrTucjTmrvd4GE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/7ixoMIHFujDeqLmaGLEKqL"
+              },
+              "href" : "https://api.spotify.com/v1/albums/7ixoMIHFujDeqLmaGLEKqL",
+              "id" : "7ixoMIHFujDeqLmaGLEKqL",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/68cfde96e798a9568d7a3dee1289624875b4fec0",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/be33ca910ddd228c0c5d6ea8786f1dca770d3b99",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/67d2ffa9b6f92ae4b0f755bf3f9d64cc8249add0",
+                "width" : 64
+              } ],
+              "name" : "Rockets (feat. Moe Moks)",
+              "release_date" : "2017-02-07",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:7ixoMIHFujDeqLmaGLEKqL"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/4VA3EAvncrTucjTmrvd4GE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/4VA3EAvncrTucjTmrvd4GE",
+              "id" : "4VA3EAvncrTucjTmrvd4GE",
+              "name" : "LION BABE",
+              "type" : "artist",
+              "uri" : "spotify:artist:4VA3EAvncrTucjTmrvd4GE"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/7DkftpjbqLhwjlCUe567y9"
+              },
+              "href" : "https://api.spotify.com/v1/artists/7DkftpjbqLhwjlCUe567y9",
+              "id" : "7DkftpjbqLhwjlCUe567y9",
+              "name" : "Moe Moks",
+              "type" : "artist",
+              "uri" : "spotify:artist:7DkftpjbqLhwjlCUe567y9"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 217386,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "TCACX1730996"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/5LWKsMeXaYBoKzCHk8syQy"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/5LWKsMeXaYBoKzCHk8syQy",
+            "id" : "5LWKsMeXaYBoKzCHk8syQy",
+            "is_local" : false,
+            "name" : "Rockets (feat. Moe Moks)",
+            "popularity" : 59,
+            "preview_url" : "https://p.scdn.co/mp3-preview/455ab300ceae179f0147bb1c86ee482f4b859b91?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:5LWKsMeXaYBoKzCHk8syQy"
+          } ],
+          "total" : 50,
+          "limit" : 5,
+          "offset" : 0,
+          "previous" : null,
+          "href" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=0",
+          "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5"
+        }
+    http_version: 
+  recorded_at: Fri, 15 Feb 2019 19:15:46 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/top/tracks?limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Fri, 15 Feb 2019 19:17:17 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "items" : [ {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3Aum3IcJEKuGsWVPBZnvyU"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3Aum3IcJEKuGsWVPBZnvyU",
+                "id" : "3Aum3IcJEKuGsWVPBZnvyU",
+                "name" : "ROMderful",
+                "type" : "artist",
+                "uri" : "spotify:artist:3Aum3IcJEKuGsWVPBZnvyU"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/4G0GdZ07wqJzQFqckOtaMG"
+              },
+              "href" : "https://api.spotify.com/v1/albums/4G0GdZ07wqJzQFqckOtaMG",
+              "id" : "4G0GdZ07wqJzQFqckOtaMG",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/6acddaabdf354f8d5582f5f6dfd52b5dd754d18e",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/771921c7b9b200176fc1c16c73542845ff2bf932",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/22c5147fe612deb75529413b0c37610aca0e391b",
+                "width" : 64
+              } ],
+              "name" : "SummerTimeTing",
+              "release_date" : "2017-09-09",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:4G0GdZ07wqJzQFqckOtaMG"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3Aum3IcJEKuGsWVPBZnvyU"
+              },
+              "href" : "https://api.spotify.com/v1/artists/3Aum3IcJEKuGsWVPBZnvyU",
+              "id" : "3Aum3IcJEKuGsWVPBZnvyU",
+              "name" : "ROMderful",
+              "type" : "artist",
+              "uri" : "spotify:artist:3Aum3IcJEKuGsWVPBZnvyU"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/52bD0lfgcUwxbQMrCrYMRd"
+              },
+              "href" : "https://api.spotify.com/v1/artists/52bD0lfgcUwxbQMrCrYMRd",
+              "id" : "52bD0lfgcUwxbQMrCrYMRd",
+              "name" : "Mayzin",
+              "type" : "artist",
+              "uri" : "spotify:artist:52bD0lfgcUwxbQMrCrYMRd"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/30SZetOBMEael27tboxz7f"
+              },
+              "href" : "https://api.spotify.com/v1/artists/30SZetOBMEael27tboxz7f",
+              "id" : "30SZetOBMEael27tboxz7f",
+              "name" : "Emmavie",
+              "type" : "artist",
+              "uri" : "spotify:artist:30SZetOBMEael27tboxz7f"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/0PJuk7yyhWqoTAQv0Dcw4w"
+              },
+              "href" : "https://api.spotify.com/v1/artists/0PJuk7yyhWqoTAQv0Dcw4w",
+              "id" : "0PJuk7yyhWqoTAQv0Dcw4w",
+              "name" : "KayFaraway",
+              "type" : "artist",
+              "uri" : "spotify:artist:0PJuk7yyhWqoTAQv0Dcw4w"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 214176,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QM24S1703133"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/6uDUc7CmBRd1rLv78MnUND"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/6uDUc7CmBRd1rLv78MnUND",
+            "id" : "6uDUc7CmBRd1rLv78MnUND",
+            "is_local" : false,
+            "name" : "SummerTimeTing",
+            "popularity" : 34,
+            "preview_url" : "https://p.scdn.co/mp3-preview/5357d42cfd04a3940c7ad25866dc92eaef9c1864?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:6uDUc7CmBRd1rLv78MnUND"
+          }, {
+            "album" : {
+              "album_type" : "ALBUM",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3ycxRkcZ67ALN3GQJ57Vig",
+                "id" : "3ycxRkcZ67ALN3GQJ57Vig",
+                "name" : "Masego",
+                "type" : "artist",
+                "uri" : "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/2wqG59dVVQlJaxoO7N0LJt"
+              },
+              "href" : "https://api.spotify.com/v1/albums/2wqG59dVVQlJaxoO7N0LJt",
+              "id" : "2wqG59dVVQlJaxoO7N0LJt",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/bf4fe31668460b683cde775c3ae9a23156a34f3a",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/ac2c41af286a0674b61bfcfbbc2733fcd69921d1",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/670977fbbdb6a40bec1cb99e1e2c688e62f6d251",
+                "width" : 64
+              } ],
+              "name" : "Lady Lady",
+              "release_date" : "2018-09-07",
+              "release_date_precision" : "day",
+              "total_tracks" : 14,
+              "type" : "album",
+              "uri" : "spotify:album:2wqG59dVVQlJaxoO7N0LJt"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+              },
+              "href" : "https://api.spotify.com/v1/artists/3ycxRkcZ67ALN3GQJ57Vig",
+              "id" : "3ycxRkcZ67ALN3GQJ57Vig",
+              "name" : "Masego",
+              "type" : "artist",
+              "uri" : "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 154666,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QZD5H1800004"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/4q4kOEBru4PwKNUI8T8t1P"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/4q4kOEBru4PwKNUI8T8t1P",
+            "id" : "4q4kOEBru4PwKNUI8T8t1P",
+            "is_local" : false,
+            "name" : "Lady Lady",
+            "popularity" : 53,
+            "preview_url" : "https://p.scdn.co/mp3-preview/1600cc9072a93dcf289179629281464fad3839eb?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 10,
+            "type" : "track",
+            "uri" : "spotify:track:4q4kOEBru4PwKNUI8T8t1P"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+                "id" : "746nA9NSKsqBDRk343UtkE",
+                "name" : "chromonicci",
+                "type" : "artist",
+                "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/59symzPu8CwJftLyzZKxRy"
+              },
+              "href" : "https://api.spotify.com/v1/albums/59symzPu8CwJftLyzZKxRy",
+              "id" : "59symzPu8CwJftLyzZKxRy",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/432becee534dabac3a77847114e15cd243597eb7",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/92aa669936583aecfc7feed0b1815b331ff988f3",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/fb5e3ef305448a87361e2151462f51327c29c094",
+                "width" : 64
+              } ],
+              "name" : "Bounce Back.",
+              "release_date" : "2018-09-14",
+              "release_date_precision" : "day",
+              "total_tracks" : 5,
+              "type" : "album",
+              "uri" : "spotify:album:59symzPu8CwJftLyzZKxRy"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+              "id" : "746nA9NSKsqBDRk343UtkE",
+              "name" : "chromonicci",
+              "type" : "artist",
+              "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 245333,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QMPKX1887165"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/2iB8qT2jLfgEnMsS54XOXu"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/2iB8qT2jLfgEnMsS54XOXu",
+            "id" : "2iB8qT2jLfgEnMsS54XOXu",
+            "is_local" : false,
+            "name" : "No More.",
+            "popularity" : 13,
+            "preview_url" : "https://p.scdn.co/mp3-preview/99037389acc3324d1784d882fa164e60963e6c9e?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 4,
+            "type" : "track",
+            "uri" : "spotify:track:2iB8qT2jLfgEnMsS54XOXu"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+                "id" : "746nA9NSKsqBDRk343UtkE",
+                "name" : "chromonicci",
+                "type" : "artist",
+                "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/1EOwArI1blRMFSRLbxARfl"
+              },
+              "href" : "https://api.spotify.com/v1/albums/1EOwArI1blRMFSRLbxARfl",
+              "id" : "1EOwArI1blRMFSRLbxARfl",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/432becee534dabac3a77847114e15cd243597eb7",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/92aa669936583aecfc7feed0b1815b331ff988f3",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/fb5e3ef305448a87361e2151462f51327c29c094",
+                "width" : 64
+              } ],
+              "name" : "Let Go.",
+              "release_date" : "2018-08-31",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:1EOwArI1blRMFSRLbxARfl"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+              "id" : "746nA9NSKsqBDRk343UtkE",
+              "name" : "chromonicci",
+              "type" : "artist",
+              "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 186902,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QMPKX1802658"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/4bfi8IaJxPhfAncffLZLfb"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/4bfi8IaJxPhfAncffLZLfb",
+            "id" : "4bfi8IaJxPhfAncffLZLfb",
+            "is_local" : false,
+            "name" : "Let Go.",
+            "popularity" : 26,
+            "preview_url" : "https://p.scdn.co/mp3-preview/adb43863166baf54ecac768cfba82cd39b0adc79?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:4bfi8IaJxPhfAncffLZLfb"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/4VA3EAvncrTucjTmrvd4GE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/4VA3EAvncrTucjTmrvd4GE",
+                "id" : "4VA3EAvncrTucjTmrvd4GE",
+                "name" : "LION BABE",
+                "type" : "artist",
+                "uri" : "spotify:artist:4VA3EAvncrTucjTmrvd4GE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/7ixoMIHFujDeqLmaGLEKqL"
+              },
+              "href" : "https://api.spotify.com/v1/albums/7ixoMIHFujDeqLmaGLEKqL",
+              "id" : "7ixoMIHFujDeqLmaGLEKqL",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/68cfde96e798a9568d7a3dee1289624875b4fec0",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/be33ca910ddd228c0c5d6ea8786f1dca770d3b99",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/67d2ffa9b6f92ae4b0f755bf3f9d64cc8249add0",
+                "width" : 64
+              } ],
+              "name" : "Rockets (feat. Moe Moks)",
+              "release_date" : "2017-02-07",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:7ixoMIHFujDeqLmaGLEKqL"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/4VA3EAvncrTucjTmrvd4GE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/4VA3EAvncrTucjTmrvd4GE",
+              "id" : "4VA3EAvncrTucjTmrvd4GE",
+              "name" : "LION BABE",
+              "type" : "artist",
+              "uri" : "spotify:artist:4VA3EAvncrTucjTmrvd4GE"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/7DkftpjbqLhwjlCUe567y9"
+              },
+              "href" : "https://api.spotify.com/v1/artists/7DkftpjbqLhwjlCUe567y9",
+              "id" : "7DkftpjbqLhwjlCUe567y9",
+              "name" : "Moe Moks",
+              "type" : "artist",
+              "uri" : "spotify:artist:7DkftpjbqLhwjlCUe567y9"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 217386,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "TCACX1730996"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/5LWKsMeXaYBoKzCHk8syQy"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/5LWKsMeXaYBoKzCHk8syQy",
+            "id" : "5LWKsMeXaYBoKzCHk8syQy",
+            "is_local" : false,
+            "name" : "Rockets (feat. Moe Moks)",
+            "popularity" : 59,
+            "preview_url" : "https://p.scdn.co/mp3-preview/455ab300ceae179f0147bb1c86ee482f4b859b91?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:5LWKsMeXaYBoKzCHk8syQy"
+          } ],
+          "total" : 50,
+          "limit" : 5,
+          "offset" : 0,
+          "previous" : null,
+          "href" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=0",
+          "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5"
+        }
+    http_version: 
+  recorded_at: Fri, 15 Feb 2019 19:17:15 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/top/tracks?limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Fri, 15 Feb 2019 19:17:31 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "items" : [ {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3Aum3IcJEKuGsWVPBZnvyU"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3Aum3IcJEKuGsWVPBZnvyU",
+                "id" : "3Aum3IcJEKuGsWVPBZnvyU",
+                "name" : "ROMderful",
+                "type" : "artist",
+                "uri" : "spotify:artist:3Aum3IcJEKuGsWVPBZnvyU"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/4G0GdZ07wqJzQFqckOtaMG"
+              },
+              "href" : "https://api.spotify.com/v1/albums/4G0GdZ07wqJzQFqckOtaMG",
+              "id" : "4G0GdZ07wqJzQFqckOtaMG",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/6acddaabdf354f8d5582f5f6dfd52b5dd754d18e",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/771921c7b9b200176fc1c16c73542845ff2bf932",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/22c5147fe612deb75529413b0c37610aca0e391b",
+                "width" : 64
+              } ],
+              "name" : "SummerTimeTing",
+              "release_date" : "2017-09-09",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:4G0GdZ07wqJzQFqckOtaMG"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3Aum3IcJEKuGsWVPBZnvyU"
+              },
+              "href" : "https://api.spotify.com/v1/artists/3Aum3IcJEKuGsWVPBZnvyU",
+              "id" : "3Aum3IcJEKuGsWVPBZnvyU",
+              "name" : "ROMderful",
+              "type" : "artist",
+              "uri" : "spotify:artist:3Aum3IcJEKuGsWVPBZnvyU"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/52bD0lfgcUwxbQMrCrYMRd"
+              },
+              "href" : "https://api.spotify.com/v1/artists/52bD0lfgcUwxbQMrCrYMRd",
+              "id" : "52bD0lfgcUwxbQMrCrYMRd",
+              "name" : "Mayzin",
+              "type" : "artist",
+              "uri" : "spotify:artist:52bD0lfgcUwxbQMrCrYMRd"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/30SZetOBMEael27tboxz7f"
+              },
+              "href" : "https://api.spotify.com/v1/artists/30SZetOBMEael27tboxz7f",
+              "id" : "30SZetOBMEael27tboxz7f",
+              "name" : "Emmavie",
+              "type" : "artist",
+              "uri" : "spotify:artist:30SZetOBMEael27tboxz7f"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/0PJuk7yyhWqoTAQv0Dcw4w"
+              },
+              "href" : "https://api.spotify.com/v1/artists/0PJuk7yyhWqoTAQv0Dcw4w",
+              "id" : "0PJuk7yyhWqoTAQv0Dcw4w",
+              "name" : "KayFaraway",
+              "type" : "artist",
+              "uri" : "spotify:artist:0PJuk7yyhWqoTAQv0Dcw4w"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 214176,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QM24S1703133"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/6uDUc7CmBRd1rLv78MnUND"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/6uDUc7CmBRd1rLv78MnUND",
+            "id" : "6uDUc7CmBRd1rLv78MnUND",
+            "is_local" : false,
+            "name" : "SummerTimeTing",
+            "popularity" : 34,
+            "preview_url" : "https://p.scdn.co/mp3-preview/5357d42cfd04a3940c7ad25866dc92eaef9c1864?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:6uDUc7CmBRd1rLv78MnUND"
+          }, {
+            "album" : {
+              "album_type" : "ALBUM",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3ycxRkcZ67ALN3GQJ57Vig",
+                "id" : "3ycxRkcZ67ALN3GQJ57Vig",
+                "name" : "Masego",
+                "type" : "artist",
+                "uri" : "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/2wqG59dVVQlJaxoO7N0LJt"
+              },
+              "href" : "https://api.spotify.com/v1/albums/2wqG59dVVQlJaxoO7N0LJt",
+              "id" : "2wqG59dVVQlJaxoO7N0LJt",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/bf4fe31668460b683cde775c3ae9a23156a34f3a",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/ac2c41af286a0674b61bfcfbbc2733fcd69921d1",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/670977fbbdb6a40bec1cb99e1e2c688e62f6d251",
+                "width" : 64
+              } ],
+              "name" : "Lady Lady",
+              "release_date" : "2018-09-07",
+              "release_date_precision" : "day",
+              "total_tracks" : 14,
+              "type" : "album",
+              "uri" : "spotify:album:2wqG59dVVQlJaxoO7N0LJt"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+              },
+              "href" : "https://api.spotify.com/v1/artists/3ycxRkcZ67ALN3GQJ57Vig",
+              "id" : "3ycxRkcZ67ALN3GQJ57Vig",
+              "name" : "Masego",
+              "type" : "artist",
+              "uri" : "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 154666,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QZD5H1800004"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/4q4kOEBru4PwKNUI8T8t1P"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/4q4kOEBru4PwKNUI8T8t1P",
+            "id" : "4q4kOEBru4PwKNUI8T8t1P",
+            "is_local" : false,
+            "name" : "Lady Lady",
+            "popularity" : 53,
+            "preview_url" : "https://p.scdn.co/mp3-preview/1600cc9072a93dcf289179629281464fad3839eb?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 10,
+            "type" : "track",
+            "uri" : "spotify:track:4q4kOEBru4PwKNUI8T8t1P"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+                "id" : "746nA9NSKsqBDRk343UtkE",
+                "name" : "chromonicci",
+                "type" : "artist",
+                "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/59symzPu8CwJftLyzZKxRy"
+              },
+              "href" : "https://api.spotify.com/v1/albums/59symzPu8CwJftLyzZKxRy",
+              "id" : "59symzPu8CwJftLyzZKxRy",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/432becee534dabac3a77847114e15cd243597eb7",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/92aa669936583aecfc7feed0b1815b331ff988f3",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/fb5e3ef305448a87361e2151462f51327c29c094",
+                "width" : 64
+              } ],
+              "name" : "Bounce Back.",
+              "release_date" : "2018-09-14",
+              "release_date_precision" : "day",
+              "total_tracks" : 5,
+              "type" : "album",
+              "uri" : "spotify:album:59symzPu8CwJftLyzZKxRy"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+              "id" : "746nA9NSKsqBDRk343UtkE",
+              "name" : "chromonicci",
+              "type" : "artist",
+              "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 245333,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QMPKX1887165"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/2iB8qT2jLfgEnMsS54XOXu"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/2iB8qT2jLfgEnMsS54XOXu",
+            "id" : "2iB8qT2jLfgEnMsS54XOXu",
+            "is_local" : false,
+            "name" : "No More.",
+            "popularity" : 13,
+            "preview_url" : "https://p.scdn.co/mp3-preview/99037389acc3324d1784d882fa164e60963e6c9e?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 4,
+            "type" : "track",
+            "uri" : "spotify:track:2iB8qT2jLfgEnMsS54XOXu"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+                "id" : "746nA9NSKsqBDRk343UtkE",
+                "name" : "chromonicci",
+                "type" : "artist",
+                "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/1EOwArI1blRMFSRLbxARfl"
+              },
+              "href" : "https://api.spotify.com/v1/albums/1EOwArI1blRMFSRLbxARfl",
+              "id" : "1EOwArI1blRMFSRLbxARfl",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/432becee534dabac3a77847114e15cd243597eb7",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/92aa669936583aecfc7feed0b1815b331ff988f3",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/fb5e3ef305448a87361e2151462f51327c29c094",
+                "width" : 64
+              } ],
+              "name" : "Let Go.",
+              "release_date" : "2018-08-31",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:1EOwArI1blRMFSRLbxARfl"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+              "id" : "746nA9NSKsqBDRk343UtkE",
+              "name" : "chromonicci",
+              "type" : "artist",
+              "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 186902,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QMPKX1802658"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/4bfi8IaJxPhfAncffLZLfb"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/4bfi8IaJxPhfAncffLZLfb",
+            "id" : "4bfi8IaJxPhfAncffLZLfb",
+            "is_local" : false,
+            "name" : "Let Go.",
+            "popularity" : 26,
+            "preview_url" : "https://p.scdn.co/mp3-preview/adb43863166baf54ecac768cfba82cd39b0adc79?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:4bfi8IaJxPhfAncffLZLfb"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/4VA3EAvncrTucjTmrvd4GE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/4VA3EAvncrTucjTmrvd4GE",
+                "id" : "4VA3EAvncrTucjTmrvd4GE",
+                "name" : "LION BABE",
+                "type" : "artist",
+                "uri" : "spotify:artist:4VA3EAvncrTucjTmrvd4GE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/7ixoMIHFujDeqLmaGLEKqL"
+              },
+              "href" : "https://api.spotify.com/v1/albums/7ixoMIHFujDeqLmaGLEKqL",
+              "id" : "7ixoMIHFujDeqLmaGLEKqL",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/68cfde96e798a9568d7a3dee1289624875b4fec0",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/be33ca910ddd228c0c5d6ea8786f1dca770d3b99",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/67d2ffa9b6f92ae4b0f755bf3f9d64cc8249add0",
+                "width" : 64
+              } ],
+              "name" : "Rockets (feat. Moe Moks)",
+              "release_date" : "2017-02-07",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:7ixoMIHFujDeqLmaGLEKqL"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/4VA3EAvncrTucjTmrvd4GE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/4VA3EAvncrTucjTmrvd4GE",
+              "id" : "4VA3EAvncrTucjTmrvd4GE",
+              "name" : "LION BABE",
+              "type" : "artist",
+              "uri" : "spotify:artist:4VA3EAvncrTucjTmrvd4GE"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/7DkftpjbqLhwjlCUe567y9"
+              },
+              "href" : "https://api.spotify.com/v1/artists/7DkftpjbqLhwjlCUe567y9",
+              "id" : "7DkftpjbqLhwjlCUe567y9",
+              "name" : "Moe Moks",
+              "type" : "artist",
+              "uri" : "spotify:artist:7DkftpjbqLhwjlCUe567y9"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 217386,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "TCACX1730996"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/5LWKsMeXaYBoKzCHk8syQy"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/5LWKsMeXaYBoKzCHk8syQy",
+            "id" : "5LWKsMeXaYBoKzCHk8syQy",
+            "is_local" : false,
+            "name" : "Rockets (feat. Moe Moks)",
+            "popularity" : 59,
+            "preview_url" : "https://p.scdn.co/mp3-preview/455ab300ceae179f0147bb1c86ee482f4b859b91?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:5LWKsMeXaYBoKzCHk8syQy"
+          } ],
+          "total" : 50,
+          "limit" : 5,
+          "offset" : 0,
+          "previous" : null,
+          "href" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=0",
+          "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5"
+        }
+    http_version: 
+  recorded_at: Fri, 15 Feb 2019 19:17:30 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/top/tracks?limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Fri, 15 Feb 2019 19:17:44 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "items" : [ {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3Aum3IcJEKuGsWVPBZnvyU"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3Aum3IcJEKuGsWVPBZnvyU",
+                "id" : "3Aum3IcJEKuGsWVPBZnvyU",
+                "name" : "ROMderful",
+                "type" : "artist",
+                "uri" : "spotify:artist:3Aum3IcJEKuGsWVPBZnvyU"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/4G0GdZ07wqJzQFqckOtaMG"
+              },
+              "href" : "https://api.spotify.com/v1/albums/4G0GdZ07wqJzQFqckOtaMG",
+              "id" : "4G0GdZ07wqJzQFqckOtaMG",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/6acddaabdf354f8d5582f5f6dfd52b5dd754d18e",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/771921c7b9b200176fc1c16c73542845ff2bf932",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/22c5147fe612deb75529413b0c37610aca0e391b",
+                "width" : 64
+              } ],
+              "name" : "SummerTimeTing",
+              "release_date" : "2017-09-09",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:4G0GdZ07wqJzQFqckOtaMG"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3Aum3IcJEKuGsWVPBZnvyU"
+              },
+              "href" : "https://api.spotify.com/v1/artists/3Aum3IcJEKuGsWVPBZnvyU",
+              "id" : "3Aum3IcJEKuGsWVPBZnvyU",
+              "name" : "ROMderful",
+              "type" : "artist",
+              "uri" : "spotify:artist:3Aum3IcJEKuGsWVPBZnvyU"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/52bD0lfgcUwxbQMrCrYMRd"
+              },
+              "href" : "https://api.spotify.com/v1/artists/52bD0lfgcUwxbQMrCrYMRd",
+              "id" : "52bD0lfgcUwxbQMrCrYMRd",
+              "name" : "Mayzin",
+              "type" : "artist",
+              "uri" : "spotify:artist:52bD0lfgcUwxbQMrCrYMRd"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/30SZetOBMEael27tboxz7f"
+              },
+              "href" : "https://api.spotify.com/v1/artists/30SZetOBMEael27tboxz7f",
+              "id" : "30SZetOBMEael27tboxz7f",
+              "name" : "Emmavie",
+              "type" : "artist",
+              "uri" : "spotify:artist:30SZetOBMEael27tboxz7f"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/0PJuk7yyhWqoTAQv0Dcw4w"
+              },
+              "href" : "https://api.spotify.com/v1/artists/0PJuk7yyhWqoTAQv0Dcw4w",
+              "id" : "0PJuk7yyhWqoTAQv0Dcw4w",
+              "name" : "KayFaraway",
+              "type" : "artist",
+              "uri" : "spotify:artist:0PJuk7yyhWqoTAQv0Dcw4w"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 214176,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QM24S1703133"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/6uDUc7CmBRd1rLv78MnUND"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/6uDUc7CmBRd1rLv78MnUND",
+            "id" : "6uDUc7CmBRd1rLv78MnUND",
+            "is_local" : false,
+            "name" : "SummerTimeTing",
+            "popularity" : 34,
+            "preview_url" : "https://p.scdn.co/mp3-preview/5357d42cfd04a3940c7ad25866dc92eaef9c1864?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:6uDUc7CmBRd1rLv78MnUND"
+          }, {
+            "album" : {
+              "album_type" : "ALBUM",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3ycxRkcZ67ALN3GQJ57Vig",
+                "id" : "3ycxRkcZ67ALN3GQJ57Vig",
+                "name" : "Masego",
+                "type" : "artist",
+                "uri" : "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/2wqG59dVVQlJaxoO7N0LJt"
+              },
+              "href" : "https://api.spotify.com/v1/albums/2wqG59dVVQlJaxoO7N0LJt",
+              "id" : "2wqG59dVVQlJaxoO7N0LJt",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/bf4fe31668460b683cde775c3ae9a23156a34f3a",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/ac2c41af286a0674b61bfcfbbc2733fcd69921d1",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/670977fbbdb6a40bec1cb99e1e2c688e62f6d251",
+                "width" : 64
+              } ],
+              "name" : "Lady Lady",
+              "release_date" : "2018-09-07",
+              "release_date_precision" : "day",
+              "total_tracks" : 14,
+              "type" : "album",
+              "uri" : "spotify:album:2wqG59dVVQlJaxoO7N0LJt"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+              },
+              "href" : "https://api.spotify.com/v1/artists/3ycxRkcZ67ALN3GQJ57Vig",
+              "id" : "3ycxRkcZ67ALN3GQJ57Vig",
+              "name" : "Masego",
+              "type" : "artist",
+              "uri" : "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 154666,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QZD5H1800004"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/4q4kOEBru4PwKNUI8T8t1P"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/4q4kOEBru4PwKNUI8T8t1P",
+            "id" : "4q4kOEBru4PwKNUI8T8t1P",
+            "is_local" : false,
+            "name" : "Lady Lady",
+            "popularity" : 53,
+            "preview_url" : "https://p.scdn.co/mp3-preview/1600cc9072a93dcf289179629281464fad3839eb?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 10,
+            "type" : "track",
+            "uri" : "spotify:track:4q4kOEBru4PwKNUI8T8t1P"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+                "id" : "746nA9NSKsqBDRk343UtkE",
+                "name" : "chromonicci",
+                "type" : "artist",
+                "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/59symzPu8CwJftLyzZKxRy"
+              },
+              "href" : "https://api.spotify.com/v1/albums/59symzPu8CwJftLyzZKxRy",
+              "id" : "59symzPu8CwJftLyzZKxRy",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/432becee534dabac3a77847114e15cd243597eb7",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/92aa669936583aecfc7feed0b1815b331ff988f3",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/fb5e3ef305448a87361e2151462f51327c29c094",
+                "width" : 64
+              } ],
+              "name" : "Bounce Back.",
+              "release_date" : "2018-09-14",
+              "release_date_precision" : "day",
+              "total_tracks" : 5,
+              "type" : "album",
+              "uri" : "spotify:album:59symzPu8CwJftLyzZKxRy"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+              "id" : "746nA9NSKsqBDRk343UtkE",
+              "name" : "chromonicci",
+              "type" : "artist",
+              "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 245333,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QMPKX1887165"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/2iB8qT2jLfgEnMsS54XOXu"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/2iB8qT2jLfgEnMsS54XOXu",
+            "id" : "2iB8qT2jLfgEnMsS54XOXu",
+            "is_local" : false,
+            "name" : "No More.",
+            "popularity" : 13,
+            "preview_url" : "https://p.scdn.co/mp3-preview/99037389acc3324d1784d882fa164e60963e6c9e?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 4,
+            "type" : "track",
+            "uri" : "spotify:track:2iB8qT2jLfgEnMsS54XOXu"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+                "id" : "746nA9NSKsqBDRk343UtkE",
+                "name" : "chromonicci",
+                "type" : "artist",
+                "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/1EOwArI1blRMFSRLbxARfl"
+              },
+              "href" : "https://api.spotify.com/v1/albums/1EOwArI1blRMFSRLbxARfl",
+              "id" : "1EOwArI1blRMFSRLbxARfl",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/432becee534dabac3a77847114e15cd243597eb7",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/92aa669936583aecfc7feed0b1815b331ff988f3",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/fb5e3ef305448a87361e2151462f51327c29c094",
+                "width" : 64
+              } ],
+              "name" : "Let Go.",
+              "release_date" : "2018-08-31",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:1EOwArI1blRMFSRLbxARfl"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+              "id" : "746nA9NSKsqBDRk343UtkE",
+              "name" : "chromonicci",
+              "type" : "artist",
+              "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 186902,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QMPKX1802658"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/4bfi8IaJxPhfAncffLZLfb"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/4bfi8IaJxPhfAncffLZLfb",
+            "id" : "4bfi8IaJxPhfAncffLZLfb",
+            "is_local" : false,
+            "name" : "Let Go.",
+            "popularity" : 26,
+            "preview_url" : "https://p.scdn.co/mp3-preview/adb43863166baf54ecac768cfba82cd39b0adc79?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:4bfi8IaJxPhfAncffLZLfb"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/4VA3EAvncrTucjTmrvd4GE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/4VA3EAvncrTucjTmrvd4GE",
+                "id" : "4VA3EAvncrTucjTmrvd4GE",
+                "name" : "LION BABE",
+                "type" : "artist",
+                "uri" : "spotify:artist:4VA3EAvncrTucjTmrvd4GE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/7ixoMIHFujDeqLmaGLEKqL"
+              },
+              "href" : "https://api.spotify.com/v1/albums/7ixoMIHFujDeqLmaGLEKqL",
+              "id" : "7ixoMIHFujDeqLmaGLEKqL",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/68cfde96e798a9568d7a3dee1289624875b4fec0",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/be33ca910ddd228c0c5d6ea8786f1dca770d3b99",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/67d2ffa9b6f92ae4b0f755bf3f9d64cc8249add0",
+                "width" : 64
+              } ],
+              "name" : "Rockets (feat. Moe Moks)",
+              "release_date" : "2017-02-07",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:7ixoMIHFujDeqLmaGLEKqL"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/4VA3EAvncrTucjTmrvd4GE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/4VA3EAvncrTucjTmrvd4GE",
+              "id" : "4VA3EAvncrTucjTmrvd4GE",
+              "name" : "LION BABE",
+              "type" : "artist",
+              "uri" : "spotify:artist:4VA3EAvncrTucjTmrvd4GE"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/7DkftpjbqLhwjlCUe567y9"
+              },
+              "href" : "https://api.spotify.com/v1/artists/7DkftpjbqLhwjlCUe567y9",
+              "id" : "7DkftpjbqLhwjlCUe567y9",
+              "name" : "Moe Moks",
+              "type" : "artist",
+              "uri" : "spotify:artist:7DkftpjbqLhwjlCUe567y9"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 217386,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "TCACX1730996"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/5LWKsMeXaYBoKzCHk8syQy"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/5LWKsMeXaYBoKzCHk8syQy",
+            "id" : "5LWKsMeXaYBoKzCHk8syQy",
+            "is_local" : false,
+            "name" : "Rockets (feat. Moe Moks)",
+            "popularity" : 59,
+            "preview_url" : "https://p.scdn.co/mp3-preview/455ab300ceae179f0147bb1c86ee482f4b859b91?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:5LWKsMeXaYBoKzCHk8syQy"
+          } ],
+          "total" : 50,
+          "limit" : 5,
+          "offset" : 0,
+          "previous" : null,
+          "href" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=0",
+          "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5"
+        }
+    http_version: 
+  recorded_at: Fri, 15 Feb 2019 19:17:42 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/top/tracks?limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Fri, 15 Feb 2019 19:17:50 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "items" : [ {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3Aum3IcJEKuGsWVPBZnvyU"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3Aum3IcJEKuGsWVPBZnvyU",
+                "id" : "3Aum3IcJEKuGsWVPBZnvyU",
+                "name" : "ROMderful",
+                "type" : "artist",
+                "uri" : "spotify:artist:3Aum3IcJEKuGsWVPBZnvyU"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/4G0GdZ07wqJzQFqckOtaMG"
+              },
+              "href" : "https://api.spotify.com/v1/albums/4G0GdZ07wqJzQFqckOtaMG",
+              "id" : "4G0GdZ07wqJzQFqckOtaMG",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/6acddaabdf354f8d5582f5f6dfd52b5dd754d18e",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/771921c7b9b200176fc1c16c73542845ff2bf932",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/22c5147fe612deb75529413b0c37610aca0e391b",
+                "width" : 64
+              } ],
+              "name" : "SummerTimeTing",
+              "release_date" : "2017-09-09",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:4G0GdZ07wqJzQFqckOtaMG"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3Aum3IcJEKuGsWVPBZnvyU"
+              },
+              "href" : "https://api.spotify.com/v1/artists/3Aum3IcJEKuGsWVPBZnvyU",
+              "id" : "3Aum3IcJEKuGsWVPBZnvyU",
+              "name" : "ROMderful",
+              "type" : "artist",
+              "uri" : "spotify:artist:3Aum3IcJEKuGsWVPBZnvyU"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/52bD0lfgcUwxbQMrCrYMRd"
+              },
+              "href" : "https://api.spotify.com/v1/artists/52bD0lfgcUwxbQMrCrYMRd",
+              "id" : "52bD0lfgcUwxbQMrCrYMRd",
+              "name" : "Mayzin",
+              "type" : "artist",
+              "uri" : "spotify:artist:52bD0lfgcUwxbQMrCrYMRd"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/30SZetOBMEael27tboxz7f"
+              },
+              "href" : "https://api.spotify.com/v1/artists/30SZetOBMEael27tboxz7f",
+              "id" : "30SZetOBMEael27tboxz7f",
+              "name" : "Emmavie",
+              "type" : "artist",
+              "uri" : "spotify:artist:30SZetOBMEael27tboxz7f"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/0PJuk7yyhWqoTAQv0Dcw4w"
+              },
+              "href" : "https://api.spotify.com/v1/artists/0PJuk7yyhWqoTAQv0Dcw4w",
+              "id" : "0PJuk7yyhWqoTAQv0Dcw4w",
+              "name" : "KayFaraway",
+              "type" : "artist",
+              "uri" : "spotify:artist:0PJuk7yyhWqoTAQv0Dcw4w"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 214176,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QM24S1703133"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/6uDUc7CmBRd1rLv78MnUND"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/6uDUc7CmBRd1rLv78MnUND",
+            "id" : "6uDUc7CmBRd1rLv78MnUND",
+            "is_local" : false,
+            "name" : "SummerTimeTing",
+            "popularity" : 34,
+            "preview_url" : "https://p.scdn.co/mp3-preview/5357d42cfd04a3940c7ad25866dc92eaef9c1864?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:6uDUc7CmBRd1rLv78MnUND"
+          }, {
+            "album" : {
+              "album_type" : "ALBUM",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3ycxRkcZ67ALN3GQJ57Vig",
+                "id" : "3ycxRkcZ67ALN3GQJ57Vig",
+                "name" : "Masego",
+                "type" : "artist",
+                "uri" : "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/2wqG59dVVQlJaxoO7N0LJt"
+              },
+              "href" : "https://api.spotify.com/v1/albums/2wqG59dVVQlJaxoO7N0LJt",
+              "id" : "2wqG59dVVQlJaxoO7N0LJt",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/bf4fe31668460b683cde775c3ae9a23156a34f3a",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/ac2c41af286a0674b61bfcfbbc2733fcd69921d1",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/670977fbbdb6a40bec1cb99e1e2c688e62f6d251",
+                "width" : 64
+              } ],
+              "name" : "Lady Lady",
+              "release_date" : "2018-09-07",
+              "release_date_precision" : "day",
+              "total_tracks" : 14,
+              "type" : "album",
+              "uri" : "spotify:album:2wqG59dVVQlJaxoO7N0LJt"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+              },
+              "href" : "https://api.spotify.com/v1/artists/3ycxRkcZ67ALN3GQJ57Vig",
+              "id" : "3ycxRkcZ67ALN3GQJ57Vig",
+              "name" : "Masego",
+              "type" : "artist",
+              "uri" : "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 154666,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QZD5H1800004"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/4q4kOEBru4PwKNUI8T8t1P"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/4q4kOEBru4PwKNUI8T8t1P",
+            "id" : "4q4kOEBru4PwKNUI8T8t1P",
+            "is_local" : false,
+            "name" : "Lady Lady",
+            "popularity" : 53,
+            "preview_url" : "https://p.scdn.co/mp3-preview/1600cc9072a93dcf289179629281464fad3839eb?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 10,
+            "type" : "track",
+            "uri" : "spotify:track:4q4kOEBru4PwKNUI8T8t1P"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+                "id" : "746nA9NSKsqBDRk343UtkE",
+                "name" : "chromonicci",
+                "type" : "artist",
+                "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/59symzPu8CwJftLyzZKxRy"
+              },
+              "href" : "https://api.spotify.com/v1/albums/59symzPu8CwJftLyzZKxRy",
+              "id" : "59symzPu8CwJftLyzZKxRy",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/432becee534dabac3a77847114e15cd243597eb7",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/92aa669936583aecfc7feed0b1815b331ff988f3",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/fb5e3ef305448a87361e2151462f51327c29c094",
+                "width" : 64
+              } ],
+              "name" : "Bounce Back.",
+              "release_date" : "2018-09-14",
+              "release_date_precision" : "day",
+              "total_tracks" : 5,
+              "type" : "album",
+              "uri" : "spotify:album:59symzPu8CwJftLyzZKxRy"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+              "id" : "746nA9NSKsqBDRk343UtkE",
+              "name" : "chromonicci",
+              "type" : "artist",
+              "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 245333,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QMPKX1887165"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/2iB8qT2jLfgEnMsS54XOXu"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/2iB8qT2jLfgEnMsS54XOXu",
+            "id" : "2iB8qT2jLfgEnMsS54XOXu",
+            "is_local" : false,
+            "name" : "No More.",
+            "popularity" : 13,
+            "preview_url" : "https://p.scdn.co/mp3-preview/99037389acc3324d1784d882fa164e60963e6c9e?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 4,
+            "type" : "track",
+            "uri" : "spotify:track:2iB8qT2jLfgEnMsS54XOXu"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+                "id" : "746nA9NSKsqBDRk343UtkE",
+                "name" : "chromonicci",
+                "type" : "artist",
+                "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/1EOwArI1blRMFSRLbxARfl"
+              },
+              "href" : "https://api.spotify.com/v1/albums/1EOwArI1blRMFSRLbxARfl",
+              "id" : "1EOwArI1blRMFSRLbxARfl",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/432becee534dabac3a77847114e15cd243597eb7",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/92aa669936583aecfc7feed0b1815b331ff988f3",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/fb5e3ef305448a87361e2151462f51327c29c094",
+                "width" : 64
+              } ],
+              "name" : "Let Go.",
+              "release_date" : "2018-08-31",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:1EOwArI1blRMFSRLbxARfl"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/746nA9NSKsqBDRk343UtkE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/746nA9NSKsqBDRk343UtkE",
+              "id" : "746nA9NSKsqBDRk343UtkE",
+              "name" : "chromonicci",
+              "type" : "artist",
+              "uri" : "spotify:artist:746nA9NSKsqBDRk343UtkE"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 186902,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "QMPKX1802658"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/4bfi8IaJxPhfAncffLZLfb"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/4bfi8IaJxPhfAncffLZLfb",
+            "id" : "4bfi8IaJxPhfAncffLZLfb",
+            "is_local" : false,
+            "name" : "Let Go.",
+            "popularity" : 26,
+            "preview_url" : "https://p.scdn.co/mp3-preview/adb43863166baf54ecac768cfba82cd39b0adc79?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:4bfi8IaJxPhfAncffLZLfb"
+          }, {
+            "album" : {
+              "album_type" : "SINGLE",
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/4VA3EAvncrTucjTmrvd4GE"
+                },
+                "href" : "https://api.spotify.com/v1/artists/4VA3EAvncrTucjTmrvd4GE",
+                "id" : "4VA3EAvncrTucjTmrvd4GE",
+                "name" : "LION BABE",
+                "type" : "artist",
+                "uri" : "spotify:artist:4VA3EAvncrTucjTmrvd4GE"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/album/7ixoMIHFujDeqLmaGLEKqL"
+              },
+              "href" : "https://api.spotify.com/v1/albums/7ixoMIHFujDeqLmaGLEKqL",
+              "id" : "7ixoMIHFujDeqLmaGLEKqL",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/68cfde96e798a9568d7a3dee1289624875b4fec0",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/be33ca910ddd228c0c5d6ea8786f1dca770d3b99",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/67d2ffa9b6f92ae4b0f755bf3f9d64cc8249add0",
+                "width" : 64
+              } ],
+              "name" : "Rockets (feat. Moe Moks)",
+              "release_date" : "2017-02-07",
+              "release_date_precision" : "day",
+              "total_tracks" : 1,
+              "type" : "album",
+              "uri" : "spotify:album:7ixoMIHFujDeqLmaGLEKqL"
+            },
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/4VA3EAvncrTucjTmrvd4GE"
+              },
+              "href" : "https://api.spotify.com/v1/artists/4VA3EAvncrTucjTmrvd4GE",
+              "id" : "4VA3EAvncrTucjTmrvd4GE",
+              "name" : "LION BABE",
+              "type" : "artist",
+              "uri" : "spotify:artist:4VA3EAvncrTucjTmrvd4GE"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/7DkftpjbqLhwjlCUe567y9"
+              },
+              "href" : "https://api.spotify.com/v1/artists/7DkftpjbqLhwjlCUe567y9",
+              "id" : "7DkftpjbqLhwjlCUe567y9",
+              "name" : "Moe Moks",
+              "type" : "artist",
+              "uri" : "spotify:artist:7DkftpjbqLhwjlCUe567y9"
+            } ],
+            "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+            "disc_number" : 1,
+            "duration_ms" : 217386,
+            "explicit" : false,
+            "external_ids" : {
+              "isrc" : "TCACX1730996"
+            },
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/5LWKsMeXaYBoKzCHk8syQy"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/5LWKsMeXaYBoKzCHk8syQy",
+            "id" : "5LWKsMeXaYBoKzCHk8syQy",
+            "is_local" : false,
+            "name" : "Rockets (feat. Moe Moks)",
+            "popularity" : 59,
+            "preview_url" : "https://p.scdn.co/mp3-preview/455ab300ceae179f0147bb1c86ee482f4b859b91?cid=<SPOTIFY_CLIENT_ID>",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:5LWKsMeXaYBoKzCHk8syQy"
+          } ],
+          "total" : 50,
+          "limit" : 5,
+          "offset" : 0,
+          "previous" : null,
+          "href" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=0",
+          "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5"
+        }
+    http_version: 
+  recorded_at: Fri, 15 Feb 2019 19:17:49 GMT
+recorded_with: VCR 4.0.0

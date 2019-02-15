@@ -19,6 +19,10 @@ class SpotifyService
     response[:items]
   end
 
+  def self.top_5_tracks(user)
+    response = conn(user).get("/v1/me/top/tracks?limit=5").body[:items]
+  end
+
   def self.most_recent_track(user)
     data = conn(user).get("/v1/me/player/recently-played?type=track&limit=1").body
     Track.new(data)
