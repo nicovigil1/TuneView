@@ -40,6 +40,7 @@ describe "A User" do
       end 
   
       expect(page).to have_content("Click a playlist for its stats!") 
+      expect(page).to have_css(".playlists")
     end 
   end
 end

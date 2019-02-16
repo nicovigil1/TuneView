@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def show
-    # SpotifyService.refresh_token(current_user) #if token_expired?
+    SpotifyService.refresh_token(current_user)  #if token_expired?
     s_service = SpotifyUserInfo.new(current_user)
     @top_5_artists = s_service.top_5_artists
     @top_5_tracks 
