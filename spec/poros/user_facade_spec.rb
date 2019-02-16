@@ -13,7 +13,7 @@ describe "User Facade" do
       SpotifyService.refresh_token(@current_user)
     end
 
-    it "can generate top 5 artists for a user" do
+    it "can generate top 5 artists for a user", :vcr do
       expected = UserFacade.top_5_artists(@current_user)
 
       expect(expected.class).to eq(Array)
@@ -22,13 +22,13 @@ describe "User Facade" do
       expect(expected.last.class).to eq(Artist) 
     end
 
-    it 'can return the most recent played track' do
+    it 'can return the most recent played track', :vcr do
       response = UserFacade.most_recent_track(@current_user)
 
       expect(response).to be_a(Track)
     end
 
-    it 'can return a users playlists' do 
+    it 'can return a users playlists', :vcr do 
       response = UserFacade.playlists(@current_user)
 
       expect(response.first).to be_a(Playlist)

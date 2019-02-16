@@ -23,7 +23,7 @@ describe "A User" do
   end
 
   context "on playlists index" do 
-    it "sees all of their playlists" do
+    it "sees all of their playlists", :vcr do
       info = {username: "12184696969", 
               image_url: "https://bit.ly/2tlLmZc", 
               spotify_token: ENV["S_TEST_TOKEN"], 

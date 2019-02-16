@@ -3,13 +3,16 @@ require "rails_helper"
 describe "Artist" do
   context "Attributes" do
     it "can be created with a hash of data" do
-      info = {name: "Kendrick Lamar", 
-              images: ["img1", "img2"], 
-              popularity: 90, 
-              genres: ["all the things"],
-              followers: {total: 999}, 
-              href: "google.com",
-              id: "1234qwer"}
+      info = {
+        name: "Kendrick Lamar",
+        images: ["img1", "img2"],
+        popularity: 90,
+        genres: ["all the things"],
+        followers: {total: 999},
+        href: "google.com",
+        id: "1234qwer"
+      }
+
       artist = Artist.new(info)
 
       expect(artist.name).to eq("Kendrick Lamar")

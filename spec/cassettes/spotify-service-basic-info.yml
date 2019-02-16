@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Vary:
+      - Authorization
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Fri, 15 Feb 2019 16:27:56 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "country" : "US",
+          "display_name" : "Anten Skrabec",
+          "email" : "cebarks@gmail.com",
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/user/1216333229"
+          },
+          "followers" : {
+            "href" : null,
+            "total" : 58
+          },
+          "href" : "https://api.spotify.com/v1/users/1216333229",
+          "id" : "1216333229",
+          "images" : [ {
+            "height" : null,
+            "url" : "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/51689212_2705323872818170_2636893921543716864_n.jpg?_nc_cat=105&_nc_ht=scontent.xx&oh=c2dd9982de055c9c37f1323959b74236&oe=5CE1DFD8",
+            "width" : null
+          } ],
+          "product" : "premium",
+          "type" : "user",
+          "uri" : "spotify:user:1216333229"
+        }
+    http_version: 
+  recorded_at: Fri, 15 Feb 2019 16:27:56 GMT
+recorded_with: VCR 4.0.0
