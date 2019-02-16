@@ -14,7 +14,7 @@ describe "Spotify User Info" do
       SpotifyService.refresh_token(@current_user)
     end
 
-    it "can generate a users top 5 artists (in objects)" do
+    it "can hold a users top 5 artists (in objects)" do
       # pass current user in at initialization & store as @user
       user_info = SpotifyUserInfo.new(@current_user)
       expected = user_info.top_5_artists
@@ -23,12 +23,19 @@ describe "Spotify User Info" do
       expect(expected.first.class).to eq(Artist) 
       expect(expected.last.class).to eq(Artist) 
     end
-    it 'can generate a users most recently played song' do 
+    it 'can hold a users most recently played song' do 
       user_info = SpotifyUserInfo.new(@current_user)
      
       expected = user_info.most_recent_song
 
       expect(expected.class).to eq(Track) 
+    end 
+
+    it 'can hold a users playlists' do 
+      user_info = SpotifyUserInfo.new(@current_user)
+
+      expect(user_info.playlists.first).to be_a(Playlist)
+      expect(user_info.playlists.last).to be_a(Playlist)
     end 
   end
 end

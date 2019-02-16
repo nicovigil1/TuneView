@@ -43,15 +43,16 @@ describe SpotifyService do
       expect(response).to eq(current_user.spotify_token)
     end 
 
-    it 'can return the most recent played track' do
-      response = SpotifyService.most_recent_track(@current_user)
-      # token has expired error message by the time our test suite gets to here
-      # expect(response)
-    end
+    # xit 'can return the most recent played track' do
+    #   response = SpotifyService.most_recent_track(@current_user)
+    #   # token has expired error message by the time our test suite gets to here
+    #   # expect(response)
+    # end
 
-    xit 'can return a users playlists' do 
+    it 'can return a users playlists' do 
+      response = SpotifyService.find_playlists(@current_user)
 
-
+      expect(response.first[:id]).to be_truthy
     end 
   end
 end
