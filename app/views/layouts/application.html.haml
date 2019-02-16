@@ -15,5 +15,8 @@
         .ui.inverted.black.top.menu
           = link_to("Home", home_path, html_options = {class: "item"})
           .right.menu
-            = link_to("Sign in/Register", "/auth/spotify", html_options = {class: "item"})
+            - unless current_user
+              = link_to("Sign in/Register", "/auth/spotify", html_options = {class: "item"})
+            = link_to('Dashboard', dashboard_path, html_options = {class: "item"})
+            = link_to('Playlists', playlists_path, html_options = {class: "item"})
       = yield
