@@ -7,7 +7,8 @@ class ApplicationController < ActionController::Base
   end
 
   def expired_filter
-    if SpotifyService.user_data(current_user)[:error]
+    if current_user && SpotifyService.user_data(current_user)[:error]
+      require 'pry'; binding.pry
       SpotifyService.refresh_token(current_user)
     else 
       nil
