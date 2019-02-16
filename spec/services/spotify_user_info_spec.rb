@@ -2,16 +2,21 @@ require 'rails_helper'
 
 describe "Spotify User Info" do
   context "attributes" do
+    before(:each) do
+      @info = {username: "12184696969",
+        image_url: "https://bit.ly/2tlLmZc",
+        spotify_token: ENV["S_TEST_TOKEN"],
+        refresh_token: ENV["REQUEST_TOKEN"],
+        profile_url: "https://open.spotify.com/user/12184696969"}
+
+      @current_user = User.create(@info)
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@current_user)
+      SpotifyService.refresh_token(@current_user)
+    end
+
     it "can generate a users top 5 artists (in objects)" do
       # pass current user in at initialization & store as @user
-      info = {username: "12184696969", 
-        image_url: "https://bit.ly/2tlLmZc", 
-        spotify_token: ENV["S_TEST_TOKEN"], 
-        profile_url: "https://open.spotify.com/user/12184696969"}
-      user = User.create(info)
-      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
-
-      user_info = SpotifyUserInfo.new(user)
+      user_info = SpotifyUserInfo.new(@current_user)
       expected = user_info.top_5_artists
       
       expect(expected.class).to eq(Array)
@@ -19,14 +24,7 @@ describe "Spotify User Info" do
       expect(expected.last.class).to eq(Artist) 
     end
     it 'can generate a users most recently played song' do 
-      info = {username: "12184696969", 
-              image_url: "https://bit.ly/2tlLmZc", 
-              spotify_token: ENV["S_TEST_TOKEN"], 
-              profile_url: "https://open.spotify.com/user/12184696969"}
-      current_user = User.create(info)
-      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(current_user)
-
-      user_info = SpotifyUserInfo.new(current_user)
+      user_info = SpotifyUserInfo.new(@current_user)
      
       expected = user_info.most_recent_song
 

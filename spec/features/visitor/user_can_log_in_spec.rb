@@ -10,7 +10,7 @@ describe 'A visitor to our web app' do
     # )
 
     OmniAuth.config.mock_auth[:spotify] = OmniAuth::AuthHash.new(
-      credentials: {token: ENV['S_TEST_TOKEN']},
+      credentials: {token: ENV['S_TEST_TOKEN'], refresh_token: ENV["REQUEST_TOKEN"]},
       info: {
         urls: {spotify: "google.com"},
         name: "mr_steal_yo_gurl",
