@@ -11,7 +11,7 @@ describe 'A visitor to our web app' do
         image: "https://www.google.com"
       }
     }
-    testing = OmniAuth.config.add_mock(:spotify, mock_hash)
+    OmniAuth.config.add_mock(:spotify, mock_hash)
 
     visit '/'
 

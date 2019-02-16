@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     )
 
     user = User.find_by(username: user_info[:username]) || User.create(user_info)
-    require 'pry'; binding.pry
+
     user.update(user_info)
     session[:user_id] = user.id
     flash[:success] = "Successfully signed in." if user.save
