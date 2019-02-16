@@ -3,16 +3,15 @@ require 'rails_helper'
 
 describe 'A visitor to our web app' do
   it 'can log into the page', :vcr do
-    OmniAuth.config.mock_auth[:spotify] = OmniAuth::AuthHash.new({
+    mock_hash = {
       credentials: {token: ENV['S_TEST_TOKEN'], refresh_token: ENV["REQUEST_TOKEN"]},
       info: {
         urls: {spotify: "google.com"},
         name: "mr_steal_yo_gurl",
         image: "https://www.google.com"
       }
-    })
-
-    # OmniAuth.config.mock_auth[:spotify] = OmniAuth::AuthHash.new(mock_hash)
+    }
+    testing = OmniAuth.config.add_mock(:spotify, mock_hash)
 
     visit '/'
 

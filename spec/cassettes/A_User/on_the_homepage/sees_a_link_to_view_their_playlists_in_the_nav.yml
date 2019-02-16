@@ -1,6 +1,73 @@
 ---
 http_interactions:
 - request:
+    method: get
+    uri: https://api.spotify.com/v1/me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Vary:
+      - Authorization
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Sat, 16 Feb 2019 18:55:28 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "country" : "US",
+          "display_name" : null,
+          "email" : "plash13556@yahoo.com",
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/user/12184696969"
+          },
+          "followers" : {
+            "href" : null,
+            "total" : 34
+          },
+          "href" : "https://api.spotify.com/v1/users/12184696969",
+          "id" : "12184696969",
+          "images" : [ ],
+          "product" : "premium",
+          "type" : "user",
+          "uri" : "spotify:user:12184696969"
+        }
+    http_version: 
+  recorded_at: Sat, 16 Feb 2019 18:55:28 GMT
+- request:
     method: post
     uri: https://accounts.spotify.com/api/token
     body:
@@ -25,7 +92,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 16 Feb 2019 18:17:11 GMT
+      - Sat, 16 Feb 2019 18:55:29 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -42,10 +109,10 @@ http_interactions:
       - max-age=31536000
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQAb4TnGVgFvSD_8MQ5hj_tB5I1P8Qq9kTBzJx0N3TEzrY1sKUqr6SxvCruGKfct28Y6d3AaDvHkF8DCqlvOOT3VZLSjwIaMARXMATmALmiuwTp_IYgCndvGKuLetZGfFC-J3zcIrRDFa1JjqupRMkgXOezN5pslZjo1z1xMYreu5whAx5OVRAUY","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+      string: '{"access_token":"BQAvdUADyuw7YkpTbh7pffTrALt4IJN5q91Mbrc_OW_zNaCTfYDwP2uK7-Shqd-u3AQPLi8BFHnEm83AX7-9ZG5xA2YWgceVcfz_V9li1_kv4PXFikI7JuV7zCFlD_iehnwf8TxWMLUouthCLjgWk4Gp56hRvHM-L8_VDr50unK-_OTRDVsB-1vc","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
         user-read-email user-read-recently-played user-read-private user-top-read"}'
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:17:11 GMT
+  recorded_at: Sat, 16 Feb 2019 18:55:29 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term
@@ -54,7 +121,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQAb4TnGVgFvSD_8MQ5hj_tB5I1P8Qq9kTBzJx0N3TEzrY1sKUqr6SxvCruGKfct28Y6d3AaDvHkF8DCqlvOOT3VZLSjwIaMARXMATmALmiuwTp_IYgCndvGKuLetZGfFC-J3zcIrRDFa1JjqupRMkgXOezN5pslZjo1z1xMYreu5whAx5OVRAUY
+      - Bearer BQAvdUADyuw7YkpTbh7pffTrALt4IJN5q91Mbrc_OW_zNaCTfYDwP2uK7-Shqd-u3AQPLi8BFHnEm83AX7-9ZG5xA2YWgceVcfz_V9li1_kv4PXFikI7JuV7zCFlD_iehnwf8TxWMLUouthCLjgWk4Gp56hRvHM-L8_VDr50unK-_OTRDVsB-1vc
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -81,7 +148,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Sat, 16 Feb 2019 18:17:12 GMT
+      - Sat, 16 Feb 2019 18:55:29 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -98,7 +165,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 11836253
+              "total" : 11836485
             },
             "genres" : [ "conscious hip hop", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
@@ -126,7 +193,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 1479431
+              "total" : 1479452
             },
             "genres" : [ "conscious hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "pop rap", "rap" ],
             "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
@@ -158,7 +225,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 7499144
+              "total" : 7499458
             },
             "genres" : [ "conscious hip hop", "nc hip hop", "pop", "pop rap", "rap" ],
             "href" : "https://api.spotify.com/v1/artists/6l3HvQ5sa6mXTsMTB19rO5",
@@ -186,7 +253,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 110406
+              "total" : 110414
             },
             "genres" : [ "alternative hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "jazz rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/3fJ60AcIgLzQkVitEvA7uq",
@@ -214,7 +281,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 5597263
+              "total" : 5597443
             },
             "genres" : [ "g funk", "gangster rap", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
@@ -249,7 +316,7 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:17:12 GMT
+  recorded_at: Sat, 16 Feb 2019 18:55:29 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track
@@ -258,7 +325,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQAb4TnGVgFvSD_8MQ5hj_tB5I1P8Qq9kTBzJx0N3TEzrY1sKUqr6SxvCruGKfct28Y6d3AaDvHkF8DCqlvOOT3VZLSjwIaMARXMATmALmiuwTp_IYgCndvGKuLetZGfFC-J3zcIrRDFa1JjqupRMkgXOezN5pslZjo1z1xMYreu5whAx5OVRAUY
+      - Bearer BQAvdUADyuw7YkpTbh7pffTrALt4IJN5q91Mbrc_OW_zNaCTfYDwP2uK7-Shqd-u3AQPLi8BFHnEm83AX7-9ZG5xA2YWgceVcfz_V9li1_kv4PXFikI7JuV7zCFlD_iehnwf8TxWMLUouthCLjgWk4Gp56hRvHM-L8_VDr50unK-_OTRDVsB-1vc
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -285,7 +352,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Sat, 16 Feb 2019 18:17:12 GMT
+      - Sat, 16 Feb 2019 18:55:29 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -378,7 +445,7 @@ http_interactions:
           "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
         }
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:17:12 GMT
+  recorded_at: Sat, 16 Feb 2019 18:55:29 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/playlists
@@ -387,7 +454,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQAb4TnGVgFvSD_8MQ5hj_tB5I1P8Qq9kTBzJx0N3TEzrY1sKUqr6SxvCruGKfct28Y6d3AaDvHkF8DCqlvOOT3VZLSjwIaMARXMATmALmiuwTp_IYgCndvGKuLetZGfFC-J3zcIrRDFa1JjqupRMkgXOezN5pslZjo1z1xMYreu5whAx5OVRAUY
+      - Bearer BQAvdUADyuw7YkpTbh7pffTrALt4IJN5q91Mbrc_OW_zNaCTfYDwP2uK7-Shqd-u3AQPLi8BFHnEm83AX7-9ZG5xA2YWgceVcfz_V9li1_kv4PXFikI7JuV7zCFlD_iehnwf8TxWMLUouthCLjgWk4Gp56hRvHM-L8_VDr50unK-_OTRDVsB-1vc
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -418,7 +485,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Sat, 16 Feb 2019 18:17:12 GMT
+      - Sat, 16 Feb 2019 18:55:29 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -1162,7 +1229,74 @@ http_interactions:
           "total" : 273
         }
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:17:12 GMT
+  recorded_at: Sat, 16 Feb 2019 18:55:29 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer BQAvdUADyuw7YkpTbh7pffTrALt4IJN5q91Mbrc_OW_zNaCTfYDwP2uK7-Shqd-u3AQPLi8BFHnEm83AX7-9ZG5xA2YWgceVcfz_V9li1_kv4PXFikI7JuV7zCFlD_iehnwf8TxWMLUouthCLjgWk4Gp56hRvHM-L8_VDr50unK-_OTRDVsB-1vc
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Vary:
+      - Authorization
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Sat, 16 Feb 2019 18:55:29 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "country" : "US",
+          "display_name" : null,
+          "email" : "plash13556@yahoo.com",
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/user/12184696969"
+          },
+          "followers" : {
+            "href" : null,
+            "total" : 34
+          },
+          "href" : "https://api.spotify.com/v1/users/12184696969",
+          "id" : "12184696969",
+          "images" : [ ],
+          "product" : "premium",
+          "type" : "user",
+          "uri" : "spotify:user:12184696969"
+        }
+    http_version: 
+  recorded_at: Sat, 16 Feb 2019 18:55:29 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term
@@ -1171,7 +1305,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQAb4TnGVgFvSD_8MQ5hj_tB5I1P8Qq9kTBzJx0N3TEzrY1sKUqr6SxvCruGKfct28Y6d3AaDvHkF8DCqlvOOT3VZLSjwIaMARXMATmALmiuwTp_IYgCndvGKuLetZGfFC-J3zcIrRDFa1JjqupRMkgXOezN5pslZjo1z1xMYreu5whAx5OVRAUY
+      - Bearer BQAvdUADyuw7YkpTbh7pffTrALt4IJN5q91Mbrc_OW_zNaCTfYDwP2uK7-Shqd-u3AQPLi8BFHnEm83AX7-9ZG5xA2YWgceVcfz_V9li1_kv4PXFikI7JuV7zCFlD_iehnwf8TxWMLUouthCLjgWk4Gp56hRvHM-L8_VDr50unK-_OTRDVsB-1vc
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -1198,7 +1332,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Sat, 16 Feb 2019 18:17:12 GMT
+      - Sat, 16 Feb 2019 18:55:29 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -1215,7 +1349,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 11836253
+              "total" : 11836485
             },
             "genres" : [ "conscious hip hop", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
@@ -1243,7 +1377,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 1479431
+              "total" : 1479452
             },
             "genres" : [ "conscious hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "pop rap", "rap" ],
             "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
@@ -1275,7 +1409,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 7499144
+              "total" : 7499458
             },
             "genres" : [ "conscious hip hop", "nc hip hop", "pop", "pop rap", "rap" ],
             "href" : "https://api.spotify.com/v1/artists/6l3HvQ5sa6mXTsMTB19rO5",
@@ -1303,7 +1437,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 110406
+              "total" : 110414
             },
             "genres" : [ "alternative hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "jazz rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/3fJ60AcIgLzQkVitEvA7uq",
@@ -1331,7 +1465,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 5597263
+              "total" : 5597443
             },
             "genres" : [ "g funk", "gangster rap", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
@@ -1366,7 +1500,7 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:17:12 GMT
+  recorded_at: Sat, 16 Feb 2019 18:55:29 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track
@@ -1375,7 +1509,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQAb4TnGVgFvSD_8MQ5hj_tB5I1P8Qq9kTBzJx0N3TEzrY1sKUqr6SxvCruGKfct28Y6d3AaDvHkF8DCqlvOOT3VZLSjwIaMARXMATmALmiuwTp_IYgCndvGKuLetZGfFC-J3zcIrRDFa1JjqupRMkgXOezN5pslZjo1z1xMYreu5whAx5OVRAUY
+      - Bearer BQAvdUADyuw7YkpTbh7pffTrALt4IJN5q91Mbrc_OW_zNaCTfYDwP2uK7-Shqd-u3AQPLi8BFHnEm83AX7-9ZG5xA2YWgceVcfz_V9li1_kv4PXFikI7JuV7zCFlD_iehnwf8TxWMLUouthCLjgWk4Gp56hRvHM-L8_VDr50unK-_OTRDVsB-1vc
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -1402,7 +1536,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Sat, 16 Feb 2019 18:17:12 GMT
+      - Sat, 16 Feb 2019 18:55:29 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -1495,7 +1629,7 @@ http_interactions:
           "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
         }
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:17:12 GMT
+  recorded_at: Sat, 16 Feb 2019 18:55:29 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/playlists
@@ -1504,7 +1638,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQAb4TnGVgFvSD_8MQ5hj_tB5I1P8Qq9kTBzJx0N3TEzrY1sKUqr6SxvCruGKfct28Y6d3AaDvHkF8DCqlvOOT3VZLSjwIaMARXMATmALmiuwTp_IYgCndvGKuLetZGfFC-J3zcIrRDFa1JjqupRMkgXOezN5pslZjo1z1xMYreu5whAx5OVRAUY
+      - Bearer BQAvdUADyuw7YkpTbh7pffTrALt4IJN5q91Mbrc_OW_zNaCTfYDwP2uK7-Shqd-u3AQPLi8BFHnEm83AX7-9ZG5xA2YWgceVcfz_V9li1_kv4PXFikI7JuV7zCFlD_iehnwf8TxWMLUouthCLjgWk4Gp56hRvHM-L8_VDr50unK-_OTRDVsB-1vc
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -1535,7 +1669,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Sat, 16 Feb 2019 18:17:12 GMT
+      - Sat, 16 Feb 2019 18:55:30 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -2279,5 +2413,5 @@ http_interactions:
           "total" : 273
         }
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:17:12 GMT
+  recorded_at: Sat, 16 Feb 2019 18:55:30 GMT
 recorded_with: VCR 4.0.0

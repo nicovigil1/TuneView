@@ -1,6 +1,73 @@
 ---
 http_interactions:
 - request:
+    method: get
+    uri: https://api.spotify.com/v1/me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Vary:
+      - Authorization
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Sat, 16 Feb 2019 19:10:11 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "country" : "US",
+          "display_name" : null,
+          "email" : "plash13556@yahoo.com",
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/user/12184696969"
+          },
+          "followers" : {
+            "href" : null,
+            "total" : 34
+          },
+          "href" : "https://api.spotify.com/v1/users/12184696969",
+          "id" : "12184696969",
+          "images" : [ ],
+          "product" : "premium",
+          "type" : "user",
+          "uri" : "spotify:user:12184696969"
+        }
+    http_version: 
+  recorded_at: Sat, 16 Feb 2019 19:10:11 GMT
+- request:
     method: post
     uri: https://accounts.spotify.com/api/token
     body:
@@ -25,7 +92,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 16 Feb 2019 18:23:51 GMT
+      - Sat, 16 Feb 2019 19:10:11 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -42,10 +109,10 @@ http_interactions:
       - max-age=31536000
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQDyjeVzkSMmnH48vtzBvb8X_Phm_98IQZkZaYxMHdHHhwYohKQisvN5C30fCUHHgILwKNQFDpaOsVnoD6rcFdYf1m37wkIrD4iLDaNekuebRVpq4pW1mxZ0BwrFKEPWN4JLZq8BlCex0PAztBCXm6AHdYdstR2kq7KXPrcGzsNGUiL5UZhaac65","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+      string: '{"access_token":"BQCkENdeEkuIOIJw3TZdG9MChibpVsaZJVQJjnuidnNV6AlM7P219-U5vZENmtZkiIcIgtHEBtDIlCLrjb4zHr_QihH7BavQeJ8x58Vef896i1aFo7bXh6tk9Q-z1-oLBIIidhKuFxqAIf-pUhzHcYG5_yTTBUOleFVCQuoo9hdMpuli60yK2ShR","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
         user-read-email user-read-recently-played user-read-private user-top-read"}'
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:23:51 GMT
+  recorded_at: Sat, 16 Feb 2019 19:10:11 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term
@@ -54,7 +121,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQDyjeVzkSMmnH48vtzBvb8X_Phm_98IQZkZaYxMHdHHhwYohKQisvN5C30fCUHHgILwKNQFDpaOsVnoD6rcFdYf1m37wkIrD4iLDaNekuebRVpq4pW1mxZ0BwrFKEPWN4JLZq8BlCex0PAztBCXm6AHdYdstR2kq7KXPrcGzsNGUiL5UZhaac65
+      - Bearer BQCkENdeEkuIOIJw3TZdG9MChibpVsaZJVQJjnuidnNV6AlM7P219-U5vZENmtZkiIcIgtHEBtDIlCLrjb4zHr_QihH7BavQeJ8x58Vef896i1aFo7bXh6tk9Q-z1-oLBIIidhKuFxqAIf-pUhzHcYG5_yTTBUOleFVCQuoo9hdMpuli60yK2ShR
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -81,7 +148,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Sat, 16 Feb 2019 18:23:52 GMT
+      - Sat, 16 Feb 2019 19:10:11 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -98,7 +165,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 11836287
+              "total" : 11836553
             },
             "genres" : [ "conscious hip hop", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
@@ -126,7 +193,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 1479435
+              "total" : 1479466
             },
             "genres" : [ "conscious hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "pop rap", "rap" ],
             "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
@@ -158,7 +225,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 7499202
+              "total" : 7499574
             },
             "genres" : [ "conscious hip hop", "nc hip hop", "pop", "pop rap", "rap" ],
             "href" : "https://api.spotify.com/v1/artists/6l3HvQ5sa6mXTsMTB19rO5",
@@ -186,7 +253,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 110406
+              "total" : 110416
             },
             "genres" : [ "alternative hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "jazz rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/3fJ60AcIgLzQkVitEvA7uq",
@@ -214,7 +281,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 5597286
+              "total" : 5597508
             },
             "genres" : [ "g funk", "gangster rap", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
@@ -249,7 +316,7 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:23:52 GMT
+  recorded_at: Sat, 16 Feb 2019 19:10:11 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track
@@ -258,7 +325,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQDyjeVzkSMmnH48vtzBvb8X_Phm_98IQZkZaYxMHdHHhwYohKQisvN5C30fCUHHgILwKNQFDpaOsVnoD6rcFdYf1m37wkIrD4iLDaNekuebRVpq4pW1mxZ0BwrFKEPWN4JLZq8BlCex0PAztBCXm6AHdYdstR2kq7KXPrcGzsNGUiL5UZhaac65
+      - Bearer BQCkENdeEkuIOIJw3TZdG9MChibpVsaZJVQJjnuidnNV6AlM7P219-U5vZENmtZkiIcIgtHEBtDIlCLrjb4zHr_QihH7BavQeJ8x58Vef896i1aFo7bXh6tk9Q-z1-oLBIIidhKuFxqAIf-pUhzHcYG5_yTTBUOleFVCQuoo9hdMpuli60yK2ShR
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -285,7 +352,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Sat, 16 Feb 2019 18:23:52 GMT
+      - Sat, 16 Feb 2019 19:10:11 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -378,7 +445,7 @@ http_interactions:
           "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
         }
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:23:52 GMT
+  recorded_at: Sat, 16 Feb 2019 19:10:11 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/playlists
@@ -387,7 +454,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQDyjeVzkSMmnH48vtzBvb8X_Phm_98IQZkZaYxMHdHHhwYohKQisvN5C30fCUHHgILwKNQFDpaOsVnoD6rcFdYf1m37wkIrD4iLDaNekuebRVpq4pW1mxZ0BwrFKEPWN4JLZq8BlCex0PAztBCXm6AHdYdstR2kq7KXPrcGzsNGUiL5UZhaac65
+      - Bearer BQCkENdeEkuIOIJw3TZdG9MChibpVsaZJVQJjnuidnNV6AlM7P219-U5vZENmtZkiIcIgtHEBtDIlCLrjb4zHr_QihH7BavQeJ8x58Vef896i1aFo7bXh6tk9Q-z1-oLBIIidhKuFxqAIf-pUhzHcYG5_yTTBUOleFVCQuoo9hdMpuli60yK2ShR
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -404,7 +471,7 @@ http_interactions:
       Cache-Control:
       - public, max-age=0
       Etag:
-      - '"MC-ImFmZWI5NjlmNTA2YTNlNDRiM2U0ZjUyYzNlM2IwOWJhIg=="'
+      - '"MC-IjdhMjliMTQzZmFjOTAzYThmNGE4YjI5M2RjNTQ2MDg3Ig=="'
       Vary:
       - Authorization
       Access-Control-Allow-Origin:
@@ -418,7 +485,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Sat, 16 Feb 2019 18:23:52 GMT
+      - Sat, 16 Feb 2019 19:10:14 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -437,19 +504,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/3CewmVIvc2e1svDfY7FupH",
             "id" : "3CewmVIvc2e1svDfY7FupH",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://mosaic.scdn.co/640/34a461c21d1a8b382380645bb765374497792eba6fc4c4fb5b3f7074367d327c60be464e914b8bc6a1e138712e36178d517042ab3475cc532922d1f5b3b97a6eef240a7b2214eff1a83901bd6e31f839",
-              "width" : 640
-            }, {
-              "height" : 300,
-              "url" : "https://mosaic.scdn.co/300/34a461c21d1a8b382380645bb765374497792eba6fc4c4fb5b3f7074367d327c60be464e914b8bc6a1e138712e36178d517042ab3475cc532922d1f5b3b97a6eef240a7b2214eff1a83901bd6e31f839",
-              "width" : 300
-            }, {
-              "height" : 60,
-              "url" : "https://mosaic.scdn.co/60/34a461c21d1a8b382380645bb765374497792eba6fc4c4fb5b3f7074367d327c60be464e914b8bc6a1e138712e36178d517042ab3475cc532922d1f5b3b97a6eef240a7b2214eff1a83901bd6e31f839",
-              "width" : 60
-            } ],
+            "images" : [ ],
             "name" : "Eclectic",
             "owner" : {
               "display_name" : null,
@@ -477,19 +532,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/51GTWGAMzL5zt7oUPcxwne",
             "id" : "51GTWGAMzL5zt7oUPcxwne",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://mosaic.scdn.co/640/5c789a8dfac2bfe069536dfe1272578fee9fa08986c44649bb45da39a236c7ec5d9550afa32b4745b5e5b27c53dcbbb51d6ff7771f37d5b7d4e84237f0348a89ae18721fbc7a35429ae0acc40a7fe386",
-              "width" : 640
-            }, {
-              "height" : 300,
-              "url" : "https://mosaic.scdn.co/300/5c789a8dfac2bfe069536dfe1272578fee9fa08986c44649bb45da39a236c7ec5d9550afa32b4745b5e5b27c53dcbbb51d6ff7771f37d5b7d4e84237f0348a89ae18721fbc7a35429ae0acc40a7fe386",
-              "width" : 300
-            }, {
-              "height" : 60,
-              "url" : "https://mosaic.scdn.co/60/5c789a8dfac2bfe069536dfe1272578fee9fa08986c44649bb45da39a236c7ec5d9550afa32b4745b5e5b27c53dcbbb51d6ff7771f37d5b7d4e84237f0348a89ae18721fbc7a35429ae0acc40a7fe386",
-              "width" : 60
-            } ],
+            "images" : [ ],
             "name" : "perfect. ",
             "owner" : {
               "display_name" : null,
@@ -517,11 +560,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/72HUIWUWo9eDF44KWzeimP",
             "id" : "72HUIWUWo9eDF44KWzeimP",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://i.scdn.co/image/d3a14498b800116fb925d92e12af9df829d52219",
-              "width" : 640
-            } ],
+            "images" : [ ],
             "name" : "Lighthearted",
             "owner" : {
               "display_name" : null,
@@ -549,19 +588,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/2xP8a4aNtgvzkaSMxsd7O7",
             "id" : "2xP8a4aNtgvzkaSMxsd7O7",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://mosaic.scdn.co/640/04dc306c21ac8ef06c83e956e53bc0bbe7fe60d74328584c455ba37830ef8d58b032c0b683b3627aa3e585c4a462de0a44329eec1e2adac349af2095c195daed8c5d8eb7a075cec9c5d5bc63492c0ee4",
-              "width" : 640
-            }, {
-              "height" : 300,
-              "url" : "https://mosaic.scdn.co/300/04dc306c21ac8ef06c83e956e53bc0bbe7fe60d74328584c455ba37830ef8d58b032c0b683b3627aa3e585c4a462de0a44329eec1e2adac349af2095c195daed8c5d8eb7a075cec9c5d5bc63492c0ee4",
-              "width" : 300
-            }, {
-              "height" : 60,
-              "url" : "https://mosaic.scdn.co/60/04dc306c21ac8ef06c83e956e53bc0bbe7fe60d74328584c455ba37830ef8d58b032c0b683b3627aa3e585c4a462de0a44329eec1e2adac349af2095c195daed8c5d8eb7a075cec9c5d5bc63492c0ee4",
-              "width" : 60
-            } ],
+            "images" : [ ],
             "name" : "Real old country",
             "owner" : {
               "display_name" : null,
@@ -589,19 +616,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/6Iufjo9wAVDfNMvKfr90Yl",
             "id" : "6Iufjo9wAVDfNMvKfr90Yl",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://mosaic.scdn.co/640/140a81a2d5930b281f6ce32d2e673461c5473718818504d2bfa2eb9a5f3e1122573f1e407a2407cbaf9321832a0c82a64a1c90d8d1f69a47dc4faf74bca9d702d246bb09c8fe36ebec2b53ef3daedffc",
-              "width" : 640
-            }, {
-              "height" : 300,
-              "url" : "https://mosaic.scdn.co/300/140a81a2d5930b281f6ce32d2e673461c5473718818504d2bfa2eb9a5f3e1122573f1e407a2407cbaf9321832a0c82a64a1c90d8d1f69a47dc4faf74bca9d702d246bb09c8fe36ebec2b53ef3daedffc",
-              "width" : 300
-            }, {
-              "height" : 60,
-              "url" : "https://mosaic.scdn.co/60/140a81a2d5930b281f6ce32d2e673461c5473718818504d2bfa2eb9a5f3e1122573f1e407a2407cbaf9321832a0c82a64a1c90d8d1f69a47dc4faf74bca9d702d246bb09c8fe36ebec2b53ef3daedffc",
-              "width" : 60
-            } ],
+            "images" : [ ],
             "name" : "Feel.",
             "owner" : {
               "display_name" : null,
@@ -629,11 +644,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/3cYi4r5WyOFB4xKjYI035L",
             "id" : "3cYi4r5WyOFB4xKjYI035L",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://i.scdn.co/image/4988546859334f9a5a3fa4acedc5aea275929026",
-              "width" : 640
-            } ],
+            "images" : [ ],
             "name" : "Damn",
             "owner" : {
               "display_name" : null,
@@ -661,11 +672,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DX3KoYiZJ8DD4",
             "id" : "37i9dQZF1DX3KoYiZJ8DD4",
-            "images" : [ {
-              "height" : null,
-              "url" : "https://pl.scdn.co/images/pl/default/b9ccdf80a7d320ef8fb0031206792136b1cea206",
-              "width" : null
-            } ],
+            "images" : [ ],
             "name" : "Sample School",
             "owner" : {
               "display_name" : null,
@@ -721,19 +728,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/4Vzy5drF6kmta5E8TOVfra",
             "id" : "4Vzy5drF6kmta5E8TOVfra",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://mosaic.scdn.co/640/2b748d8f5185896312e2629614508ab124dc50a032bd73da7cfe9a65ff7161d51f24b56f40d808fd5b919c3e01d09949205185e6823c722bcda912379a14bb92d918a4adb70d15f01d14c59cddb7667f",
-              "width" : 640
-            }, {
-              "height" : 300,
-              "url" : "https://mosaic.scdn.co/300/2b748d8f5185896312e2629614508ab124dc50a032bd73da7cfe9a65ff7161d51f24b56f40d808fd5b919c3e01d09949205185e6823c722bcda912379a14bb92d918a4adb70d15f01d14c59cddb7667f",
-              "width" : 300
-            }, {
-              "height" : 60,
-              "url" : "https://mosaic.scdn.co/60/2b748d8f5185896312e2629614508ab124dc50a032bd73da7cfe9a65ff7161d51f24b56f40d808fd5b919c3e01d09949205185e6823c722bcda912379a14bb92d918a4adb70d15f01d14c59cddb7667f",
-              "width" : 60
-            } ],
+            "images" : [ ],
             "name" : "2018",
             "owner" : {
               "display_name" : null,
@@ -761,11 +756,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DWSXWSaQmvWOB",
             "id" : "37i9dQZF1DWSXWSaQmvWOB",
-            "images" : [ {
-              "height" : null,
-              "url" : "https://pl.scdn.co/images/pl/default/32d197a6f11a4378caa070875b4d7fe5a4f49551",
-              "width" : null
-            } ],
+            "images" : [ ],
             "name" : "Soul 'n' the City",
             "owner" : {
               "display_name" : null,
@@ -793,11 +784,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1Ej7JRVCr8GjuZ",
             "id" : "37i9dQZF1Ej7JRVCr8GjuZ",
-            "images" : [ {
-              "height" : null,
-              "url" : "https://lineup-images.scdn.co/tastebreakers_DEFAULT-en.jpg",
-              "width" : null
-            } ],
+            "images" : [ ],
             "name" : "Tastebreakers",
             "owner" : {
               "display_name" : null,
@@ -825,11 +812,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1EjeS0grXwJVmo",
             "id" : "37i9dQZF1EjeS0grXwJVmo",
-            "images" : [ {
-              "height" : null,
-              "url" : "https://lineup-images.scdn.co/your-top-songs-2018_DEFAULT-en.jpg",
-              "width" : null
-            } ],
+            "images" : [ ],
             "name" : "Your Top Songs 2018",
             "owner" : {
               "display_name" : null,
@@ -857,19 +840,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/33iEqqtd4AgycgzD5acwFV",
             "id" : "33iEqqtd4AgycgzD5acwFV",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://mosaic.scdn.co/640/10f685e5a087afc3b37e44487d88247a29ce5edb6bae5d01e577c1fad255bd304f42af40b856e2ee843772aced01a4fd70d21d360e47a1999c3a75f2e795b78bee96211fea69a4a5552612ec773b62ed",
-              "width" : 640
-            }, {
-              "height" : 300,
-              "url" : "https://mosaic.scdn.co/300/10f685e5a087afc3b37e44487d88247a29ce5edb6bae5d01e577c1fad255bd304f42af40b856e2ee843772aced01a4fd70d21d360e47a1999c3a75f2e795b78bee96211fea69a4a5552612ec773b62ed",
-              "width" : 300
-            }, {
-              "height" : 60,
-              "url" : "https://mosaic.scdn.co/60/10f685e5a087afc3b37e44487d88247a29ce5edb6bae5d01e577c1fad255bd304f42af40b856e2ee843772aced01a4fd70d21d360e47a1999c3a75f2e795b78bee96211fea69a4a5552612ec773b62ed",
-              "width" : 60
-            } ],
+            "images" : [ ],
             "name" : "Don't think just feel.",
             "owner" : {
               "display_name" : null,
@@ -897,19 +868,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/4EI06v43B94ccev5vZEApr",
             "id" : "4EI06v43B94ccev5vZEApr",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://mosaic.scdn.co/640/10f685e5a087afc3b37e44487d88247a29ce5edb4e24622c931b573be9d069c89ad0752f2134d71f9e1484c528939f05c09f062fd482d7d07a7bf263e91c580d99e56ec8cca2036368aed560bd1f2cdf",
-              "width" : 640
-            }, {
-              "height" : 300,
-              "url" : "https://mosaic.scdn.co/300/10f685e5a087afc3b37e44487d88247a29ce5edb4e24622c931b573be9d069c89ad0752f2134d71f9e1484c528939f05c09f062fd482d7d07a7bf263e91c580d99e56ec8cca2036368aed560bd1f2cdf",
-              "width" : 300
-            }, {
-              "height" : 60,
-              "url" : "https://mosaic.scdn.co/60/10f685e5a087afc3b37e44487d88247a29ce5edb4e24622c931b573be9d069c89ad0752f2134d71f9e1484c528939f05c09f062fd482d7d07a7bf263e91c580d99e56ec8cca2036368aed560bd1f2cdf",
-              "width" : 60
-            } ],
+            "images" : [ ],
             "name" : "You get 15 minutes",
             "owner" : {
               "display_name" : null,
@@ -937,19 +896,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/2XtZ3woJGVRpILRefo09Py",
             "id" : "2XtZ3woJGVRpILRefo09Py",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://mosaic.scdn.co/640/4e24622c931b573be9d069c89ad0752f2134d71faf9321832a0c82a64a1c90d8d1f69a47dc4faf74caa334a497de0d0c321a28f4861f79d42ce4f9e9ec5422fbeed9457f0ffc03e4888ef7a49930e222",
-              "width" : 640
-            }, {
-              "height" : 300,
-              "url" : "https://mosaic.scdn.co/300/4e24622c931b573be9d069c89ad0752f2134d71faf9321832a0c82a64a1c90d8d1f69a47dc4faf74caa334a497de0d0c321a28f4861f79d42ce4f9e9ec5422fbeed9457f0ffc03e4888ef7a49930e222",
-              "width" : 300
-            }, {
-              "height" : 60,
-              "url" : "https://mosaic.scdn.co/60/4e24622c931b573be9d069c89ad0752f2134d71faf9321832a0c82a64a1c90d8d1f69a47dc4faf74caa334a497de0d0c321a28f4861f79d42ce4f9e9ec5422fbeed9457f0ffc03e4888ef7a49930e222",
-              "width" : 60
-            } ],
+            "images" : [ ],
             "name" : "You get 15 minutes ygf",
             "owner" : {
               "display_name" : null,
@@ -977,19 +924,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/64xhGrHpmLlmjoJw9FZyfl",
             "id" : "64xhGrHpmLlmjoJw9FZyfl",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://mosaic.scdn.co/640/52b5974e4b1b33a5e64409ecae6444eb062d02b0d489664f13892cec7eff939413b9a9eb94fbb904ff1fdc97adc8ee939dc59c58f5f65362595f2eeeff265b76479c781fca1fca6e19855a690bd55a42",
-              "width" : 640
-            }, {
-              "height" : 300,
-              "url" : "https://mosaic.scdn.co/300/52b5974e4b1b33a5e64409ecae6444eb062d02b0d489664f13892cec7eff939413b9a9eb94fbb904ff1fdc97adc8ee939dc59c58f5f65362595f2eeeff265b76479c781fca1fca6e19855a690bd55a42",
-              "width" : 300
-            }, {
-              "height" : 60,
-              "url" : "https://mosaic.scdn.co/60/52b5974e4b1b33a5e64409ecae6444eb062d02b0d489664f13892cec7eff939413b9a9eb94fbb904ff1fdc97adc8ee939dc59c58f5f65362595f2eeeff265b76479c781fca1fca6e19855a690bd55a42",
-              "width" : 60
-            } ],
+            "images" : [ ],
             "name" : "Soul",
             "owner" : {
               "display_name" : null,
@@ -1017,19 +952,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/1JAPufdOwzWhFIRqBbzNQ8",
             "id" : "1JAPufdOwzWhFIRqBbzNQ8",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://mosaic.scdn.co/640/0e1dd10af8d8ce24a4309d1132491286a9bd685da7d3fbe053e83e5f7a61204cd3c4929b741b4a0aaa5b579c2da0dba06b5597127644d3d46f254cdbc62c0411a89e826e3af24086814a352ee574bdb6",
-              "width" : 640
-            }, {
-              "height" : 300,
-              "url" : "https://mosaic.scdn.co/300/0e1dd10af8d8ce24a4309d1132491286a9bd685da7d3fbe053e83e5f7a61204cd3c4929b741b4a0aaa5b579c2da0dba06b5597127644d3d46f254cdbc62c0411a89e826e3af24086814a352ee574bdb6",
-              "width" : 300
-            }, {
-              "height" : 60,
-              "url" : "https://mosaic.scdn.co/60/0e1dd10af8d8ce24a4309d1132491286a9bd685da7d3fbe053e83e5f7a61204cd3c4929b741b4a0aaa5b579c2da0dba06b5597127644d3d46f254cdbc62c0411a89e826e3af24086814a352ee574bdb6",
-              "width" : 60
-            } ],
+            "images" : [ ],
             "name" : "Hip Hop Essentials",
             "owner" : {
               "display_name" : null,
@@ -1057,11 +980,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DWWx0cclkzHdP",
             "id" : "37i9dQZF1DWWx0cclkzHdP",
-            "images" : [ {
-              "height" : null,
-              "url" : "https://pl.scdn.co/images/pl/default/8e5b10ac6087dfc17208f9ef028cebfb122cca65",
-              "width" : null
-            } ],
+            "images" : [ ],
             "name" : "This Is Native Tongues",
             "owner" : {
               "display_name" : null,
@@ -1089,19 +1008,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/0JBSgMmEbBi3y4eftHTOhz",
             "id" : "0JBSgMmEbBi3y4eftHTOhz",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://mosaic.scdn.co/640/02b5219e40d3d2d97b25229927de148197ba8cf97a2c22636d7a0ac22830a90c002218dfd13e7064963a65e9758f4be0dff405035cc81ffe44867469a85cf35c582dcd1b8bb91627d14305038c18ed39",
-              "width" : 640
-            }, {
-              "height" : 300,
-              "url" : "https://mosaic.scdn.co/300/02b5219e40d3d2d97b25229927de148197ba8cf97a2c22636d7a0ac22830a90c002218dfd13e7064963a65e9758f4be0dff405035cc81ffe44867469a85cf35c582dcd1b8bb91627d14305038c18ed39",
-              "width" : 300
-            }, {
-              "height" : 60,
-              "url" : "https://mosaic.scdn.co/60/02b5219e40d3d2d97b25229927de148197ba8cf97a2c22636d7a0ac22830a90c002218dfd13e7064963a65e9758f4be0dff405035cc81ffe44867469a85cf35c582dcd1b8bb91627d14305038c18ed39",
-              "width" : 60
-            } ],
+            "images" : [ ],
             "name" : "Ding dong your opinion's wrong",
             "owner" : {
               "display_name" : null,
@@ -1129,11 +1036,7 @@ http_interactions:
             },
             "href" : "https://api.spotify.com/v1/playlists/6gvxhvoDFhDxPtICejdQGM",
             "id" : "6gvxhvoDFhDxPtICejdQGM",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://i.scdn.co/image/abfbf65de537365a809fa9fa1e71436e33e9b42f",
-              "width" : 640
-            } ],
+            "images" : [ ],
             "name" : "Mumu Fresh",
             "owner" : {
               "display_name" : null,
@@ -1162,5 +1065,5 @@ http_interactions:
           "total" : 273
         }
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:23:52 GMT
+  recorded_at: Sat, 16 Feb 2019 19:10:14 GMT
 recorded_with: VCR 4.0.0

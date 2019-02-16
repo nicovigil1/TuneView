@@ -35,7 +35,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Fri, 15 Feb 2019 16:27:56 GMT
+      - Sat, 16 Feb 2019 18:55:27 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -48,146 +48,154 @@ http_interactions:
         {
           "items" : [ {
             "external_urls" : {
-              "spotify" : "https://open.spotify.com/artist/51Pn4gGnZuyOMDfIT1Zy3N"
+              "spotify" : "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
             },
             "followers" : {
               "href" : null,
-              "total" : 239994
+              "total" : 11836485
             },
-            "genres" : [ "deep underground hip hop", "hip hop", "rap", "underground hip hop" ],
-            "href" : "https://api.spotify.com/v1/artists/51Pn4gGnZuyOMDfIT1Zy3N",
-            "id" : "51Pn4gGnZuyOMDfIT1Zy3N",
+            "genres" : [ "conscious hip hop", "hip hop", "pop rap", "rap", "west coast rap" ],
+            "href" : "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+            "id" : "2YZyLoL8N0Wb9xBt1NhZWg",
             "images" : [ {
               "height" : 640,
-              "url" : "https://i.scdn.co/image/93f1723647435b9b14f956233a27fc7b0876c3a3",
+              "url" : "https://i.scdn.co/image/3a836196bfb341f736c7fe2704fb75de53f8dfbb",
               "width" : 640
             }, {
               "height" : 320,
-              "url" : "https://i.scdn.co/image/e68aa738a1d2b364f3fe9db993b695ba18759913",
+              "url" : "https://i.scdn.co/image/5259c0496329b3f608a1ae0edb799cd2f8451acc",
               "width" : 320
             }, {
               "height" : 160,
-              "url" : "https://i.scdn.co/image/54ef48881c5eeb2abe7406c54621a5b8d0ad632f",
+              "url" : "https://i.scdn.co/image/b772a78d4cb192268d6f601a78f21044c17d6dda",
               "width" : 160
             } ],
-            "name" : "The Underachievers",
-            "popularity" : 57,
+            "name" : "Kendrick Lamar",
+            "popularity" : 89,
             "type" : "artist",
-            "uri" : "spotify:artist:51Pn4gGnZuyOMDfIT1Zy3N"
+            "uri" : "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
           }, {
             "external_urls" : {
-              "spotify" : "https://open.spotify.com/artist/0GzsRlVbRZ1j4rkTlRNRXW"
+              "spotify" : "https://open.spotify.com/artist/20qISvAhX20dpIbOOzGK3q"
             },
             "followers" : {
               "href" : null,
-              "total" : 6164
+              "total" : 1479452
             },
-            "genres" : [ ],
-            "href" : "https://api.spotify.com/v1/artists/0GzsRlVbRZ1j4rkTlRNRXW",
-            "id" : "0GzsRlVbRZ1j4rkTlRNRXW",
+            "genres" : [ "conscious hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "pop rap", "rap" ],
+            "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
+            "id" : "20qISvAhX20dpIbOOzGK3q",
             "images" : [ {
-              "height" : 640,
-              "url" : "https://i.scdn.co/image/ab0abf5abc1b030b0349fb5b244422a2284f915a",
+              "height" : 735,
+              "url" : "https://i.scdn.co/image/ba18d0131343ca84cb9ab0eb31f56745302bc78f",
+              "width" : 1000
+            }, {
+              "height" : 471,
+              "url" : "https://i.scdn.co/image/7f6d93659bb6ad6d8e13b97d07ed78b52bad1287",
               "width" : 640
             }, {
-              "height" : 300,
-              "url" : "https://i.scdn.co/image/45a0dad0f882ec9de0674166106133dfd3056a4f",
-              "width" : 300
+              "height" : 147,
+              "url" : "https://i.scdn.co/image/0e6a0ce11380a894c723e3ae9c9c82468f0ad174",
+              "width" : 200
             }, {
-              "height" : 64,
-              "url" : "https://i.scdn.co/image/80dcb53ab25696b8b22ee23ede86213aee2cd187",
+              "height" : 47,
+              "url" : "https://i.scdn.co/image/531bc7dbf458cacde0d4d9a8f5696b7b4e8d4ada",
               "width" : 64
             } ],
-            "name" : "Jarv",
-            "popularity" : 37,
+            "name" : "Nas",
+            "popularity" : 73,
             "type" : "artist",
-            "uri" : "spotify:artist:0GzsRlVbRZ1j4rkTlRNRXW"
+            "uri" : "spotify:artist:20qISvAhX20dpIbOOzGK3q"
           }, {
             "external_urls" : {
-              "spotify" : "https://open.spotify.com/artist/1dqGS5sT6PE2wEvP1gROZC"
+              "spotify" : "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
             },
             "followers" : {
               "href" : null,
-              "total" : 623327
+              "total" : 7499458
             },
-            "genres" : [ "hip hop", "pop rap", "rap", "trap music", "underground hip hop" ],
-            "href" : "https://api.spotify.com/v1/artists/1dqGS5sT6PE2wEvP1gROZC",
-            "id" : "1dqGS5sT6PE2wEvP1gROZC",
+            "genres" : [ "conscious hip hop", "nc hip hop", "pop", "pop rap", "rap" ],
+            "href" : "https://api.spotify.com/v1/artists/6l3HvQ5sa6mXTsMTB19rO5",
+            "id" : "6l3HvQ5sa6mXTsMTB19rO5",
             "images" : [ {
               "height" : 640,
-              "url" : "https://i.scdn.co/image/7589d3af38aea0b36336e1e7049cb2e7ca248da3",
+              "url" : "https://i.scdn.co/image/1e9eeefb2c94579150fc37916e8319b975ec8a52",
               "width" : 640
             }, {
               "height" : 320,
-              "url" : "https://i.scdn.co/image/47a05d2a352a98c054a836ae400159619c60de40",
+              "url" : "https://i.scdn.co/image/e021db512f24f1b9aafad580db7408863346e9cf",
               "width" : 320
             }, {
               "height" : 160,
-              "url" : "https://i.scdn.co/image/d0fc15b24637c5031938ed7ebfcfa06eb4b4b54a",
+              "url" : "https://i.scdn.co/image/35c726dfde2a3d5545a8b6cbe9cfeaaea3666764",
               "width" : 160
             } ],
-            "name" : "Flatbush Zombies",
-            "popularity" : 67,
+            "name" : "J. Cole",
+            "popularity" : 89,
             "type" : "artist",
-            "uri" : "spotify:artist:1dqGS5sT6PE2wEvP1gROZC"
+            "uri" : "spotify:artist:6l3HvQ5sa6mXTsMTB19rO5"
           }, {
             "external_urls" : {
-              "spotify" : "https://open.spotify.com/artist/6U3ybJ9UHNKEdsH7ktGBZ7"
+              "spotify" : "https://open.spotify.com/artist/3fJ60AcIgLzQkVitEvA7uq"
             },
             "followers" : {
               "href" : null,
-              "total" : 253090
+              "total" : 110414
             },
-            "genres" : [ "hip hop", "pop rap", "rap", "trap music", "underground hip hop" ],
-            "href" : "https://api.spotify.com/v1/artists/6U3ybJ9UHNKEdsH7ktGBZ7",
-            "id" : "6U3ybJ9UHNKEdsH7ktGBZ7",
+            "genres" : [ "alternative hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "jazz rap", "rap", "turntablism" ],
+            "href" : "https://api.spotify.com/v1/artists/3fJ60AcIgLzQkVitEvA7uq",
+            "id" : "3fJ60AcIgLzQkVitEvA7uq",
             "images" : [ {
-              "height" : 640,
-              "url" : "https://i.scdn.co/image/462cd021c5357436b923c28759e4424b659f403a",
-              "width" : 640
+              "height" : 500,
+              "url" : "https://i.scdn.co/image/f206b28b49faedc145f993eec554cb03055f7fd8",
+              "width" : 500
             }, {
-              "height" : 320,
-              "url" : "https://i.scdn.co/image/90c88feaab7e615252c4a35a69f12146c1ecb242",
-              "width" : 320
+              "height" : 200,
+              "url" : "https://i.scdn.co/image/70386c40cadc6c9d273557ca41f1c13350ccb405",
+              "width" : 200
             }, {
-              "height" : 160,
-              "url" : "https://i.scdn.co/image/850355b6dd218765cff30856442660d15d04c22e",
-              "width" : 160
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/4db6527d3a430b536a5d692302763374c1a2c5d9",
+              "width" : 64
             } ],
-            "name" : "JID",
-            "popularity" : 75,
+            "name" : "Pete Rock & C.L. Smooth",
+            "popularity" : 52,
             "type" : "artist",
-            "uri" : "spotify:artist:6U3ybJ9UHNKEdsH7ktGBZ7"
+            "uri" : "spotify:artist:3fJ60AcIgLzQkVitEvA7uq"
           }, {
             "external_urls" : {
-              "spotify" : "https://open.spotify.com/artist/42crL07E4WPfVovyUtMpvC"
+              "spotify" : "https://open.spotify.com/artist/1ZwdS5xdxEREPySFridCfh"
             },
             "followers" : {
               "href" : null,
-              "total" : 86695
+              "total" : 5597443
             },
-            "genres" : [ "indie pop", "indie poptimism", "modern alternative rock", "modern rock" ],
-            "href" : "https://api.spotify.com/v1/artists/42crL07E4WPfVovyUtMpvC",
-            "id" : "42crL07E4WPfVovyUtMpvC",
+            "genres" : [ "g funk", "gangster rap", "hip hop", "pop rap", "rap", "west coast rap" ],
+            "href" : "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
+            "id" : "1ZwdS5xdxEREPySFridCfh",
             "images" : [ {
+              "height" : 1000,
+              "url" : "https://i.scdn.co/image/fdb2382075f400ca2f2fbddaebb93add82ca8f32",
+              "width" : 1000
+            }, {
               "height" : 640,
-              "url" : "https://i.scdn.co/image/d6226ae2c8a6dba18f70d76f79344773a85ea01b",
+              "url" : "https://i.scdn.co/image/e92cf49011e4c26f736cd479b0b64cb08f1b52c6",
               "width" : 640
             }, {
-              "height" : 320,
-              "url" : "https://i.scdn.co/image/10c15e32fd693fcf947138fabfa540e612650743",
-              "width" : 320
+              "height" : 200,
+              "url" : "https://i.scdn.co/image/0334d2f0cd1eb65f81831c4ddf4a0b249479564c",
+              "width" : 200
             }, {
-              "height" : 160,
-              "url" : "https://i.scdn.co/image/690929cf769992fc60998abddcd58415d0f19593",
-              "width" : 160
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/c9baaaa56cc3e4c1b5b60e09632ba8b78ff52abd",
+              "width" : 64
             } ],
-            "name" : "Robert DeLong",
-            "popularity" : 54,
+            "name" : "2Pac",
+            "popularity" : 80,
             "type" : "artist",
-            "uri" : "spotify:artist:42crL07E4WPfVovyUtMpvC"
+            "uri" : "spotify:artist:1ZwdS5xdxEREPySFridCfh"
           } ],
-          "total" : 30,
+          "total" : 35,
           "limit" : 5,
           "offset" : 0,
           "previous" : null,
@@ -195,5 +203,5 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Fri, 15 Feb 2019 16:27:56 GMT
+  recorded_at: Sat, 16 Feb 2019 18:55:27 GMT
 recorded_with: VCR 4.0.0

@@ -12,31 +12,38 @@ http_interactions:
       Content-Type:
       - application/x-www-form-urlencoded
       Authorization:
-      - Basic MTUwOWVlM2E2NmU4NDFlNGEwNDg1MzAxZThkNWEyODc6NmZlZmJiYjI3NzBjNDY2Y2EyYmM1YzhlNzY0ODM1OGI=
+      - Basic NWYwNzM3MTE1NzVhNGMwM2I2NjJhYjgwY2M0MDFiMDI6NzFmYWE3ZTE5ZTVhNDM2MDhmODAyZWZhNjE5ZjIzNmU=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
       Server:
       - nginx
       Date:
-      - Fri, 15 Feb 2019 16:44:00 GMT
+      - Sat, 16 Feb 2019 18:55:26 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '63'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Keep-Alive:
       - timeout=600
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
     body:
-      encoding: UTF-8
-      string: '{"error":"invalid_client","error_description":"Invalid client"}'
+      encoding: ASCII-8BIT
+      string: '{"access_token":"BQDcnQMonRpXHYIexvJGrCNf7RjdI57BhzI2EvMsuZizYoAMclGQndAHlCbIhAPiVpjROfThX4Ztc1Cka7Ovc5RL_QGTTukeNFf8WrsyyICvlf1o0l-gQ2kFXHfaqfeLZL_JBbMMZV-aqJhk0HJMdIImT_kYkaqevDVtLosbYviZZxzf3Oy6124P","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+        user-read-email user-read-recently-played user-read-private user-top-read"}'
     http_version: 
-  recorded_at: Fri, 15 Feb 2019 16:44:00 GMT
+  recorded_at: Sat, 16 Feb 2019 18:55:27 GMT
 recorded_with: VCR 4.0.0

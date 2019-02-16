@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 16 Feb 2019 18:22:15 GMT
+      - Sat, 16 Feb 2019 18:55:28 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -42,10 +42,10 @@ http_interactions:
       - max-age=31536000
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQBrvCezELTv9qNhiEpIvFeh-m4QY-Ds_kVWCACYHA1kcE6LaHru2XcVLRoSWUdkDxSkFcC3yuZRDcaqfrlnBlOVpUrjZIwt6B8YXSw6lczlcFKxb1QQAJRq_kMqoc3YRTwPAaUAM_dnU80HCYmXNNMeRnpSdgCQ2BevCl65jerGnuF9POgSAErH","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+      string: '{"access_token":"BQCCVrkKmW_tPjoNKwdh21w8jikU4tF7vRTlDKTbgjEBlaQ6Z_OKxblnqhoFCPoEMBH4MMGlwHTfi1UyqhulRDoOyAj1vANTceBK73w98hpqkMHP2wncNHOu6FucxmpuUPNiqkuLaPVY59F-QatuVWa2s6vsaoAG84sUQdRF6iPN4Cw7G6iSIEgD","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
         user-read-email user-read-recently-played user-read-private user-top-read"}'
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:22:15 GMT
+  recorded_at: Sat, 16 Feb 2019 18:55:28 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track
@@ -54,7 +54,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQBrvCezELTv9qNhiEpIvFeh-m4QY-Ds_kVWCACYHA1kcE6LaHru2XcVLRoSWUdkDxSkFcC3yuZRDcaqfrlnBlOVpUrjZIwt6B8YXSw6lczlcFKxb1QQAJRq_kMqoc3YRTwPAaUAM_dnU80HCYmXNNMeRnpSdgCQ2BevCl65jerGnuF9POgSAErH
+      - Bearer BQCCVrkKmW_tPjoNKwdh21w8jikU4tF7vRTlDKTbgjEBlaQ6Z_OKxblnqhoFCPoEMBH4MMGlwHTfi1UyqhulRDoOyAj1vANTceBK73w98hpqkMHP2wncNHOu6FucxmpuUPNiqkuLaPVY59F-QatuVWa2s6vsaoAG84sUQdRF6iPN4Cw7G6iSIEgD
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -81,7 +81,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Sat, 16 Feb 2019 18:22:15 GMT
+      - Sat, 16 Feb 2019 18:55:28 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -174,5 +174,5 @@ http_interactions:
           "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
         }
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:22:15 GMT
+  recorded_at: Sat, 16 Feb 2019 18:55:28 GMT
 recorded_with: VCR 4.0.0

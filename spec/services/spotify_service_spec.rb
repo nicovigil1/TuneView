@@ -52,7 +52,7 @@ describe SpotifyService do
         end
         end
 
-        it 'can return the most recent played track' do
+        it 'can return the most recent played track', :vcr do
           user = User.create(@info)
           VCR.use_cassette("spotify-service-most-recent-track") do
             response = SpotifyService.most_recent_track(user)
