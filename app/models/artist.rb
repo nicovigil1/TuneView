@@ -11,10 +11,10 @@ class Artist
     @uid = data[:id]
   end 
 
-  def self.top_5(user)
-    artist_data = SpotifyService.top_5_artists(user)
-    artist_data.map do |data|
-      Artist.new(data)
-    end
-  end 
+  # def self.top_5(user)
+  #   artist_data = SpotifyService.top_5_artists(user)
+  #   artist_data.map do |data|
+  #     Artist.new(data)
+  #   end
+  # end 
 end 
