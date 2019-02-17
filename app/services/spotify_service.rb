@@ -29,6 +29,7 @@ class SpotifyService
     end.body[:items]
   end
 
+  private
   def self.playlist_tracks(user, playlist_id)
     conn(user).get("/v1/playlists/#{playlist_id}/tracks").body[:items].map do |data|
       Track.new(data[:track])

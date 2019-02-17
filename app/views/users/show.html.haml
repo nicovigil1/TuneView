@@ -1,47 +1,41 @@
+- cache current_user.username do
+  .ui.grid
+    .row
+      .five.wide.left.aligned.column
+        .ui.teal.inverted.segment
+          %h1 Welcome, #{current_user.username}
+    .row
+      .four.wide.column
+        .ui.teal.inverted.raised.segment#most-recent
+          .ui.items
+            %h3 Your most recently played song:
+            - cache [@most_recent.artist, @most_recent.title].join('-') do
+              .item
+                .image
+                  =image_tag "#{@most_recent.cover_url}"
+                .content.card-text
+                  .header.card-text= @most_recent.title
+                  .meta.card-text
+                    %span by: #{@most_recent.artist}
+                  .extra.card-text= @most_recent.album
+      .four.wide.column
+      .four.wide.column
+      .four.wide.column
+        .ui.teal.inverted.raised.segment#top-5-artists
+          %h3 Top 5 Artists of the past month:
+          %ol
+            - @top_5_artists.each do |artist|
+              %li
+                = artist.name
 
-.ui.grid
-  .row
-    .five.wide.left.aligned.column
-      .ui.teal.inverted.segment
-        %h1 Welcome, #{current_user.username}
-        %img{src: current_user.image_url}
-  .row
-    .four.wide.column
-      .ui.teal.inverted.raised.segment#most-recent
-        .ui.items
-          %h3 Your most recently played song:
-          .item
-            .image
-              =image_tag "#{@most_recent.cover_url}"
-            .content.card-text
-              .header.card-text= @most_recent.title
-              .meta.card-text
-                %span by: #{@most_recent.artist}
-              .extra.card-text= @most_recent.album
-
-    .four.wide.column
-      .ui.fluid.raised.card.chatbox
-        .content#msgs
-          .ui.small.feed#message-container
-            = render @messages
-        .extra.content
-          = form_for :message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true do |f|
-            .field
-              .ui.fluid.icon.input
-                = f.text_field :body
-                = f.button '<i class="bordered inverted teal edit icon"></i>'.html_safe
-
-    .four.wide.column
-      .ui.teal.inverted.raised.segment#top-5-tracks
-        %h3 Top 5 Tracks of the past month:
-        %ol
-          - @top_5_tracks.each do |track|
-            %li
-              #{track.title} by #{track.artist}
-    .four.wide.column
-      .ui.teal.inverted.raised.segment#top-5-artists
-        %h3 Top 5 Artists of the past month:
-        %ol
-          - @top_5_artists.each do |artist|
-            %li
-              = artist.name
+    -# .sixteen.wide.column
+    -#   .ui.centered.link.cards
+    -#     - @top_5_artists.each do |artist|
+    -#       .card
+    -#         .image
+    -#           = image_tag artist.images[1][:url]
+    -#         .content
+    -#           .header
+    -#             =artist.name
+    -#           .description
+    -#             =artist.genres.join(", ")

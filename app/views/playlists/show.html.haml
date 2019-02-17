@@ -1,76 +1,73 @@
-.ui.stackable.grid
-  .row
-    .five.wide.left.aligned.column
-      .ui.teal.inverted.segment
-        %h1 
-          = @playlist
-  .row
-    .ui.twelve.wide.column.centered.grid
-      .ui.inverted.teal.segment 
-        .row
-          .six.wide.column
-            Moods  
-        .row
-          .ui.grid
-            .four.wide.left.floated.column
-              Danceability:
-              %br/
-              .ui.star.rating{"data-rating": "#{(@metrics[:danceability] * 10)}", "data-max-rating": 10}
-            .four.wide.left.floated.column 
-              Energy:
-              %br/
-              .ui.star.rating{"data-rating": "#{(@metrics[:energy] * 10)}", "data-max-rating": 10}
-            .four.wide.left.floated.column 
-              Happiness:
-              %br/
-              .ui.star.rating{"data-rating": "#{(@metrics[:valence] * 10)}", "data-max-rating": 10}
-            .four.wide.left.floated.column 
-              Loudness:
-              %br/
-              #{@metrics[:loudness] * 10} dbs (Max: 0 dbs)
-        .row
-          %br/
-        .row
-          .six.wide.column
-            Musicality
-        .row 
-          .ui.grid
-            .four.wide.left.floated.column 
-              Instrumentalness:
-              %br/
-              .ui.star.rating{"data-rating": "#{(@metrics[:instrumentalness] * 10)}", "data-max-rating": 10}
-            .four.wide.left.floated.column
-              Average Time Signature:
-              %br/
-              = @metrics[:time_signature].to_i
-            .four.wide.left.floated.column
-              Acousticness:
-              %br/
-              .ui.star.rating{"data-rating": "#{(@metrics[:acousticness] * 10)}", "data-max-rating": 10}
-            .four.wide.left.floated.column 
-              Average Tempo:
-              %br/
-              #{@metrics[:tempo]} bpm  
-
-          
-  .row
-    .fourteen.wide.centered.column
-      %table.ui.inverted.teal.celled.table
-        %thead
-          %tr
-            %th
-              Title
-            %th
-              Artist
-        - @tracks.each do |track|
-          %tbody
+- cache [current_user.username, @playlist].join('-') do
+  .ui.grid
+    .row
+      .five.wide.left.aligned.column
+        .ui.teal.inverted.segment
+          %h1
+            = @playlist
+    .row
+      .ui.twelve.wide.column.centered.grid
+        .ui.inverted.teal.segment
+          .row
+            .six.wide.column
+              Moods
+          .row
+            .ui.grid
+              .four.wide.left.floated.column
+                Danceability:
+                %br/
+                .ui.star.rating{"data-rating": "#{(@metrics[:danceability] * 10)}", "data-max-rating": 10}
+              .four.wide.left.floated.column
+                Energy:
+                %br/
+                .ui.star.rating{"data-rating": "#{(@metrics[:energy] * 10)}", "data-max-rating": 10}
+              .four.wide.left.floated.column
+                Happiness:
+                %br/
+                .ui.star.rating{"data-rating": "#{(@metrics[:valence] * 10)}", "data-max-rating": 10}
+              .four.wide.left.floated.column
+                Loudness:
+                %br/
+                #{@metrics[:loudness] * 10} dbs (Max: 0 dbs)
+          .row
+            %br/
+          .row
+            .six.wide.column
+              Musicality
+          .row
+            .ui.grid
+              .four.wide.left.floated.column
+                Instrumentalness:
+                %br/
+                .ui.star.rating{"data-rating": "#{(@metrics[:instrumentalness] * 10)}", "data-max-rating": 10}
+              .four.wide.left.floated.column
+                Average Time Signature:
+                %br/
+                = @metrics[:time_signature].to_i
+              .four.wide.left.floated.column
+                Acousticness:
+                %br/
+                .ui.star.rating{"data-rating": "#{(@metrics[:acousticness] * 10)}", "data-max-rating": 10}
+              .four.wide.left.floated.column
+                Average Tempo:
+                %br/
+                #{@metrics[:tempo]} bpm
+    .row
+      .fourteen.wide.centered.column
+        %table.ui.inverted.teal.celled.table
+          %thead
             %tr
-              %td
-                = track.title
-              %td 
-                = track.artist
+              %th
+                Title
+              %th
+                Artist
+          - @tracks.each do |track|
+            - cache "track-#{track.artist}-#{track.title}" do
+              %tbody
+                %tr
+                  %td
+                    = track.title
+                  %td
+                    = track.artist
 :javascript
-  $('.ui.rating')
-    .rating("disable")
-  ;
-  $(document).ready('.ui.rating')
+  $('.ui.rating').rating("disable");
