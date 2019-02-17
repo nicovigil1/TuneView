@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "Playlist Show Page" do
   context "can be accessed from it's index page" do
-    it "when a playlist is clicked", :vcr do
+    xit "when a playlist is clicked", :vcr do
       info = {username: "12184696969", 
               image_url: "https://bit.ly/2tlLmZc", 
               spotify_token: ENV["S_TEST_TOKEN"], 
