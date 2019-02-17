@@ -52,4 +52,6 @@ VCR.configure do |c|
   c.filter_sensitive_data('<SPOTIFY_CLIENT_SECRET>') { ENV["SPOTIFY_CLIENT_SECRET"] }
   c.filter_sensitive_data('<SPOTIFY_TEST_TOKEN>') { ENV["S_TEST_TOKEN"] }
   c.filter_sensitive_data('<SPOTIFY_REQUEST_TOKEN>') { ENV["REQUEST_TOKEN"] }
+  c.filter_sensitive_data('<DISCOGS_KEY>') { ENV["DISCOGS_KEY"] }
+  c.filter_sensitive_data('<DISCOGS_SECRET>') { ENV["DISCOGS_SECRET"] }
 end
