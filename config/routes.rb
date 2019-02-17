@@ -6,5 +6,7 @@ Rails.application.routes.draw do
 
   get '/dashboard', to: "users#show", as: "dashboard"
 
+  
   resources :playlists, only: [:index]
+  get '/playlists/:playlist(?id=:id)', to: "playlists#show", as: "playlist"
 end

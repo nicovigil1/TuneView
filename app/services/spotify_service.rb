@@ -8,13 +8,26 @@ class SpotifyService
 
   def self.most_recent_track(user)
     data = conn(user).get("/v1/me/player/recently-played?type=track&limit=1").body
-    Track.new(data)
+    Track.new(data[:items].first)
   end
 
   def self.find_playlists(user)
     data = conn(user).get do |c|
       c.url '/v1/me/playlists'
     end.body[:items]
+  end 
+
+  def self.playlist_tracks(user, playlist_id)
+    conn(user).get("/v1/playlists/#{playlist_id}/tracks").body[:items].map do |data|
+      Track.new(data)
+    end 
+  end 
+
+  def self.playlist_stats(user, playlist_id)
+    ids = conn(user).get("/v1/playlists/#{playlist_id}/tracks").body[:items].map do |data|
+      data[:track][:id]
+    end
+    conn(user).get("/v1/audio-features/?ids=#{ids.join(",")}").body
   end 
 
   private 

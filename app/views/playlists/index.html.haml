@@ -8,7 +8,7 @@
       .sixteen.wide.column
         .ui.centered.link.cards
           - @playlists.each do |playlist|
-            .teal.card
+            %a.teal.card{:href => playlist_path(playlist.name, playlist.id)}
               .image
                 - unless playlist.track_count == 0
                   = image_tag playlist.images[0][:url]

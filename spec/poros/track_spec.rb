@@ -4,20 +4,15 @@ describe Track do
   context "attributes" do
     it 'can be initialized from a reponse' do 
       data = {
-        items: [{
-          track: {
-            name: "wonderwall", 
-            artists: [{name: "oasis"}],
-              album: {
-                name: "album",
-                images: [
-                  {},
-                  {url: "google.com"}
-                ]
+              track: {
+                name: "wonderwall", 
+                artists: [{name: "oasis"}],
+                  album: {
+                    name: "album",
+                    images: [{}, {url: "google.com"}]
+                  }
+                }
               }
-            }
-        }]
-      }
 
       track = Track.new(data)
 
