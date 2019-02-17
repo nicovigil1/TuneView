@@ -6,6 +6,7 @@ describe SpotifyService do
       @info = {username: "12184696969",
         image_url: "https://bit.ly/2tlLmZc",
         spotify_token: ENV["S_TEST_TOKEN"],
+        refresh_token: ENV["REQUEST_TOKEN"],
         profile_url: "https://open.spotify.com/user/12184696969"}
       end
 
@@ -51,7 +52,7 @@ describe SpotifyService do
         end
         end
 
-        it 'can return the most recent played track' do
+        it 'can return the most recent played track', :vcr do
           user = User.create(@info)
           VCR.use_cassette("spotify-service-most-recent-track") do
             response = SpotifyService.most_recent_track(user)

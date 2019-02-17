@@ -1,0 +1,25 @@
+.ui.grid
+  .row
+    .five.wide.left.aligned.column
+      .ui.teal.inverted.segment
+        %h1 Click a playlist for its stats!
+  .row
+    .playlists.four.teal.centered.link.cards
+      .sixteen.wide.column
+        .ui.centered.link.cards
+          - @playlists.each do |playlist|
+            .teal.card
+              .image
+                - unless playlist.track_count == 0
+                  = image_tag playlist.images[0][:url]
+                - else
+                  = image_tag "https://bit.ly/2tlLmZc"
+              .playlist.content
+                .playlist.header
+                  =playlist.name
+                .description
+                  .meta
+                    Track Count: #{playlist.track_count}
+                
+
+  

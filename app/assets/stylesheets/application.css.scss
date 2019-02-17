@@ -15,11 +15,12 @@
  */
 @import "semantic-ui";
 
-div.ui.container {
+body {
   height: 100%;
   background-size: 100%;
   background-image: image-url("test_run.jpg");
   background-repeat: repeat-y;
+
 }
 
 .login.content {
@@ -57,3 +58,17 @@ h3 {
 .ui.items > .item .extra {
   color: white;
 }
+
+.ui.cards > .card > .content, .ui.card > .playlist.content {
+  background-color: #00B4AD;
+  color: white;
+}
+
+.ui.cards>.card>.content>.header,
+.ui.card .meta,
+.ui.cards>.card .meta,
+.ui.card>.content>.description,
+.ui.cards>.card>.content>.description {
+  color: white;
+}
+

@@ -1,0 +1,1069 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Vary:
+      - Authorization
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Sat, 16 Feb 2019 19:10:11 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "country" : "US",
+          "display_name" : null,
+          "email" : "plash13556@yahoo.com",
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/user/12184696969"
+          },
+          "followers" : {
+            "href" : null,
+            "total" : 34
+          },
+          "href" : "https://api.spotify.com/v1/users/12184696969",
+          "id" : "12184696969",
+          "images" : [ ],
+          "product" : "premium",
+          "type" : "user",
+          "uri" : "spotify:user:12184696969"
+        }
+    http_version: 
+  recorded_at: Sat, 16 Feb 2019 19:10:11 GMT
+- request:
+    method: post
+    uri: https://accounts.spotify.com/api/token
+    body:
+      encoding: UTF-8
+      string: grant_type=refresh_token&refresh_token=<SPOTIFY_REQUEST_TOKEN>
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Basic NWYwNzM3MTE1NzVhNGMwM2I2NjJhYjgwY2M0MDFiMDI6NzFmYWE3ZTE5ZTVhNDM2MDhmODAyZWZhNjE5ZjIzNmU=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 16 Feb 2019 19:10:11 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"BQCkENdeEkuIOIJw3TZdG9MChibpVsaZJVQJjnuidnNV6AlM7P219-U5vZENmtZkiIcIgtHEBtDIlCLrjb4zHr_QihH7BavQeJ8x58Vef896i1aFo7bXh6tk9Q-z1-oLBIIidhKuFxqAIf-pUhzHcYG5_yTTBUOleFVCQuoo9hdMpuli60yK2ShR","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+        user-read-email user-read-recently-played user-read-private user-top-read"}'
+    http_version: 
+  recorded_at: Sat, 16 Feb 2019 19:10:11 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer BQCkENdeEkuIOIJw3TZdG9MChibpVsaZJVQJjnuidnNV6AlM7P219-U5vZENmtZkiIcIgtHEBtDIlCLrjb4zHr_QihH7BavQeJ8x58Vef896i1aFo7bXh6tk9Q-z1-oLBIIidhKuFxqAIf-pUhzHcYG5_yTTBUOleFVCQuoo9hdMpuli60yK2ShR
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Sat, 16 Feb 2019 19:10:11 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "items" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+            },
+            "followers" : {
+              "href" : null,
+              "total" : 11836553
+            },
+            "genres" : [ "conscious hip hop", "hip hop", "pop rap", "rap", "west coast rap" ],
+            "href" : "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+            "id" : "2YZyLoL8N0Wb9xBt1NhZWg",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/3a836196bfb341f736c7fe2704fb75de53f8dfbb",
+              "width" : 640
+            }, {
+              "height" : 320,
+              "url" : "https://i.scdn.co/image/5259c0496329b3f608a1ae0edb799cd2f8451acc",
+              "width" : 320
+            }, {
+              "height" : 160,
+              "url" : "https://i.scdn.co/image/b772a78d4cb192268d6f601a78f21044c17d6dda",
+              "width" : 160
+            } ],
+            "name" : "Kendrick Lamar",
+            "popularity" : 89,
+            "type" : "artist",
+            "uri" : "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
+          }, {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/20qISvAhX20dpIbOOzGK3q"
+            },
+            "followers" : {
+              "href" : null,
+              "total" : 1479466
+            },
+            "genres" : [ "conscious hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "pop rap", "rap" ],
+            "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
+            "id" : "20qISvAhX20dpIbOOzGK3q",
+            "images" : [ {
+              "height" : 735,
+              "url" : "https://i.scdn.co/image/ba18d0131343ca84cb9ab0eb31f56745302bc78f",
+              "width" : 1000
+            }, {
+              "height" : 471,
+              "url" : "https://i.scdn.co/image/7f6d93659bb6ad6d8e13b97d07ed78b52bad1287",
+              "width" : 640
+            }, {
+              "height" : 147,
+              "url" : "https://i.scdn.co/image/0e6a0ce11380a894c723e3ae9c9c82468f0ad174",
+              "width" : 200
+            }, {
+              "height" : 47,
+              "url" : "https://i.scdn.co/image/531bc7dbf458cacde0d4d9a8f5696b7b4e8d4ada",
+              "width" : 64
+            } ],
+            "name" : "Nas",
+            "popularity" : 73,
+            "type" : "artist",
+            "uri" : "spotify:artist:20qISvAhX20dpIbOOzGK3q"
+          }, {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
+            },
+            "followers" : {
+              "href" : null,
+              "total" : 7499574
+            },
+            "genres" : [ "conscious hip hop", "nc hip hop", "pop", "pop rap", "rap" ],
+            "href" : "https://api.spotify.com/v1/artists/6l3HvQ5sa6mXTsMTB19rO5",
+            "id" : "6l3HvQ5sa6mXTsMTB19rO5",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/1e9eeefb2c94579150fc37916e8319b975ec8a52",
+              "width" : 640
+            }, {
+              "height" : 320,
+              "url" : "https://i.scdn.co/image/e021db512f24f1b9aafad580db7408863346e9cf",
+              "width" : 320
+            }, {
+              "height" : 160,
+              "url" : "https://i.scdn.co/image/35c726dfde2a3d5545a8b6cbe9cfeaaea3666764",
+              "width" : 160
+            } ],
+            "name" : "J. Cole",
+            "popularity" : 89,
+            "type" : "artist",
+            "uri" : "spotify:artist:6l3HvQ5sa6mXTsMTB19rO5"
+          }, {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/3fJ60AcIgLzQkVitEvA7uq"
+            },
+            "followers" : {
+              "href" : null,
+              "total" : 110416
+            },
+            "genres" : [ "alternative hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "jazz rap", "rap", "turntablism" ],
+            "href" : "https://api.spotify.com/v1/artists/3fJ60AcIgLzQkVitEvA7uq",
+            "id" : "3fJ60AcIgLzQkVitEvA7uq",
+            "images" : [ {
+              "height" : 500,
+              "url" : "https://i.scdn.co/image/f206b28b49faedc145f993eec554cb03055f7fd8",
+              "width" : 500
+            }, {
+              "height" : 200,
+              "url" : "https://i.scdn.co/image/70386c40cadc6c9d273557ca41f1c13350ccb405",
+              "width" : 200
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/4db6527d3a430b536a5d692302763374c1a2c5d9",
+              "width" : 64
+            } ],
+            "name" : "Pete Rock & C.L. Smooth",
+            "popularity" : 52,
+            "type" : "artist",
+            "uri" : "spotify:artist:3fJ60AcIgLzQkVitEvA7uq"
+          }, {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/1ZwdS5xdxEREPySFridCfh"
+            },
+            "followers" : {
+              "href" : null,
+              "total" : 5597508
+            },
+            "genres" : [ "g funk", "gangster rap", "hip hop", "pop rap", "rap", "west coast rap" ],
+            "href" : "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
+            "id" : "1ZwdS5xdxEREPySFridCfh",
+            "images" : [ {
+              "height" : 1000,
+              "url" : "https://i.scdn.co/image/fdb2382075f400ca2f2fbddaebb93add82ca8f32",
+              "width" : 1000
+            }, {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/e92cf49011e4c26f736cd479b0b64cb08f1b52c6",
+              "width" : 640
+            }, {
+              "height" : 200,
+              "url" : "https://i.scdn.co/image/0334d2f0cd1eb65f81831c4ddf4a0b249479564c",
+              "width" : 200
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/c9baaaa56cc3e4c1b5b60e09632ba8b78ff52abd",
+              "width" : 64
+            } ],
+            "name" : "2Pac",
+            "popularity" : 80,
+            "type" : "artist",
+            "uri" : "spotify:artist:1ZwdS5xdxEREPySFridCfh"
+          } ],
+          "total" : 35,
+          "limit" : 5,
+          "offset" : 0,
+          "previous" : null,
+          "href" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=0&time_range=short_term",
+          "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
+        }
+    http_version: 
+  recorded_at: Sat, 16 Feb 2019 19:10:11 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer BQCkENdeEkuIOIJw3TZdG9MChibpVsaZJVQJjnuidnNV6AlM7P219-U5vZENmtZkiIcIgtHEBtDIlCLrjb4zHr_QihH7BavQeJ8x58Vef896i1aFo7bXh6tk9Q-z1-oLBIIidhKuFxqAIf-pUhzHcYG5_yTTBUOleFVCQuoo9hdMpuli60yK2ShR
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Sat, 16 Feb 2019 19:10:11 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "items" : [ {
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/46njgd2Rq9tZc4ZjeQMgbh"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/46njgd2Rq9tZc4ZjeQMgbh",
+                  "id" : "46njgd2Rq9tZc4ZjeQMgbh",
+                  "name" : "Boz Scaggs",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:46njgd2Rq9tZc4ZjeQMgbh"
+                } ],
+                "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/4i1GgeitxAC8fy48Cwcl54"
+                },
+                "href" : "https://api.spotify.com/v1/albums/4i1GgeitxAC8fy48Cwcl54",
+                "id" : "4i1GgeitxAC8fy48Cwcl54",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/f6551a0ab898e6ba9526ab5ff59a66c20db05ef7",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/02eb0fc3aec9ef9e0dbe6ac2d5968df0e195cabb",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/8d3ff6a5b44301502d031584605e53c01a6387a6",
+                  "width" : 64
+                } ],
+                "name" : "Boz Scaggs",
+                "release_date" : "1969",
+                "release_date_precision" : "year",
+                "total_tracks" : 9,
+                "type" : "album",
+                "uri" : "spotify:album:4i1GgeitxAC8fy48Cwcl54"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/46njgd2Rq9tZc4ZjeQMgbh"
+                },
+                "href" : "https://api.spotify.com/v1/artists/46njgd2Rq9tZc4ZjeQMgbh",
+                "id" : "46njgd2Rq9tZc4ZjeQMgbh",
+                "name" : "Boz Scaggs",
+                "type" : "artist",
+                "uri" : "spotify:artist:46njgd2Rq9tZc4ZjeQMgbh"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "disc_number" : 1,
+              "duration_ms" : 188240,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USAT20103799"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/6XTub0V1DpwX278rcn8fWx"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/6XTub0V1DpwX278rcn8fWx",
+              "id" : "6XTub0V1DpwX278rcn8fWx",
+              "is_local" : false,
+              "name" : "I'm Easy",
+              "popularity" : 38,
+              "preview_url" : "https://p.scdn.co/mp3-preview/1be7a0f36682b3c100ba3efbda4e9737b52d0ac4?cid=<SPOTIFY_CLIENT_ID>",
+              "track_number" : 1,
+              "type" : "track",
+              "uri" : "spotify:track:6XTub0V1DpwX278rcn8fWx"
+            },
+            "played_at" : "2019-02-16T15:43:00.781Z",
+            "context" : null
+          } ],
+          "next" : "https://api.spotify.com/v1/me/player/recently-played?before=1550331780781&limit=1&type=track",
+          "cursors" : {
+            "after" : "1550331780781",
+            "before" : "1550331780781"
+          },
+          "limit" : 1,
+          "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
+        }
+    http_version: 
+  recorded_at: Sat, 16 Feb 2019 19:10:11 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/me/playlists
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer BQCkENdeEkuIOIJw3TZdG9MChibpVsaZJVQJjnuidnNV6AlM7P219-U5vZENmtZkiIcIgtHEBtDIlCLrjb4zHr_QihH7BavQeJ8x58Vef896i1aFo7bXh6tk9Q-z1-oLBIIidhKuFxqAIf-pUhzHcYG5_yTTBUOleFVCQuoo9hdMpuli60yK2ShR
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=0
+      Etag:
+      - '"MC-IjdhMjliMTQzZmFjOTAzYThmNGE4YjI5M2RjNTQ2MDg3Ig=="'
+      Vary:
+      - Authorization
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Sat, 16 Feb 2019 19:10:14 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "href" : "https://api.spotify.com/v1/users/12184696969/playlists?offset=0&limit=20",
+          "items" : [ {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/3CewmVIvc2e1svDfY7FupH"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/3CewmVIvc2e1svDfY7FupH",
+            "id" : "3CewmVIvc2e1svDfY7FupH",
+            "images" : [ ],
+            "name" : "Eclectic",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "primary_color" : null,
+            "public" : true,
+            "snapshot_id" : "NSxmNTliOGY5ZWIwNTQzYjNiMjZhZWU3OTkwMDQ2MjkwNmM4Mzc5NTdk",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/3CewmVIvc2e1svDfY7FupH/tracks",
+              "total" : 4
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:12184696969:playlist:3CewmVIvc2e1svDfY7FupH"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/51GTWGAMzL5zt7oUPcxwne"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/51GTWGAMzL5zt7oUPcxwne",
+            "id" : "51GTWGAMzL5zt7oUPcxwne",
+            "images" : [ ],
+            "name" : "perfect. ",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/alexant33"
+              },
+              "href" : "https://api.spotify.com/v1/users/alexant33",
+              "id" : "alexant33",
+              "type" : "user",
+              "uri" : "spotify:user:alexant33"
+            },
+            "primary_color" : null,
+            "public" : false,
+            "snapshot_id" : "NzA5LGYzMDJkOWRlNmM3YjFkZDliODZkYTY0MzI4YTQzNjU2Y2I0ZjVlY2M=",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/51GTWGAMzL5zt7oUPcxwne/tracks",
+              "total" : 704
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:alexant33:playlist:51GTWGAMzL5zt7oUPcxwne"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/72HUIWUWo9eDF44KWzeimP"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/72HUIWUWo9eDF44KWzeimP",
+            "id" : "72HUIWUWo9eDF44KWzeimP",
+            "images" : [ ],
+            "name" : "Lighthearted",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "primary_color" : null,
+            "public" : true,
+            "snapshot_id" : "MiwwMWZlNWI0ZmUyNWRiY2E3YThjZGEwYmY3ZTc2ZDJkNTc3ZTNmM2Rl",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/72HUIWUWo9eDF44KWzeimP/tracks",
+              "total" : 1
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:12184696969:playlist:72HUIWUWo9eDF44KWzeimP"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/2xP8a4aNtgvzkaSMxsd7O7"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/2xP8a4aNtgvzkaSMxsd7O7",
+            "id" : "2xP8a4aNtgvzkaSMxsd7O7",
+            "images" : [ ],
+            "name" : "Real old country",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "primary_color" : null,
+            "public" : true,
+            "snapshot_id" : "MTYsYWQ5ZGU5YTg5ODU3YmY0ODQzOWVmYmRjZmFiNjBjY2U2YTBjMDkyOA==",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/2xP8a4aNtgvzkaSMxsd7O7/tracks",
+              "total" : 13
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:12184696969:playlist:2xP8a4aNtgvzkaSMxsd7O7"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/6Iufjo9wAVDfNMvKfr90Yl"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/6Iufjo9wAVDfNMvKfr90Yl",
+            "id" : "6Iufjo9wAVDfNMvKfr90Yl",
+            "images" : [ ],
+            "name" : "Feel.",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "primary_color" : null,
+            "public" : true,
+            "snapshot_id" : "NywyODJkYmI1ZmE0ODAzZTQzOWUzYzVlMzg3MmUzNjRjYTMwMzJlZDhi",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/6Iufjo9wAVDfNMvKfr90Yl/tracks",
+              "total" : 6
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:12184696969:playlist:6Iufjo9wAVDfNMvKfr90Yl"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/3cYi4r5WyOFB4xKjYI035L"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/3cYi4r5WyOFB4xKjYI035L",
+            "id" : "3cYi4r5WyOFB4xKjYI035L",
+            "images" : [ ],
+            "name" : "Damn",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "primary_color" : null,
+            "public" : true,
+            "snapshot_id" : "Miw0N2M3NTZkNTNjZjViZTM5NjgxOWYzNGQ4NjcwNWZhZjlmMGMyNWM5",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/3cYi4r5WyOFB4xKjYI035L/tracks",
+              "total" : 14
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:12184696969:playlist:3cYi4r5WyOFB4xKjYI035L"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/37i9dQZF1DX3KoYiZJ8DD4"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DX3KoYiZJ8DD4",
+            "id" : "37i9dQZF1DX3KoYiZJ8DD4",
+            "images" : [ ],
+            "name" : "Sample School",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/spotify"
+              },
+              "href" : "https://api.spotify.com/v1/users/spotify",
+              "id" : "spotify",
+              "type" : "user",
+              "uri" : "spotify:user:spotify"
+            },
+            "primary_color" : null,
+            "public" : false,
+            "snapshot_id" : "MTU0ODY5Mjg5NywwMDAwMDAxMDAwMDAwMTY1NmYzZWVlZjcwMDAwMDE2ODk1NGEzZDdj",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DX3KoYiZJ8DD4/tracks",
+              "total" : 26
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:spotify:playlist:37i9dQZF1DX3KoYiZJ8DD4"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/3lztnG1sEix5R7ruiBQbl8"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/3lztnG1sEix5R7ruiBQbl8",
+            "id" : "3lztnG1sEix5R7ruiBQbl8",
+            "images" : [ ],
+            "name" : "2018 w/ more hip hop",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "primary_color" : null,
+            "public" : true,
+            "snapshot_id" : "MSxmZTZkZDEwYTNlZWJkMGZkZTRiNjk3MDRlNWI2ZDAzODczMzk2Yzg1",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/3lztnG1sEix5R7ruiBQbl8/tracks",
+              "total" : 0
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:12184696969:playlist:3lztnG1sEix5R7ruiBQbl8"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/4Vzy5drF6kmta5E8TOVfra"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/4Vzy5drF6kmta5E8TOVfra",
+            "id" : "4Vzy5drF6kmta5E8TOVfra",
+            "images" : [ ],
+            "name" : "2018",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "primary_color" : null,
+            "public" : true,
+            "snapshot_id" : "MTAsMjExZDJjMjA1OGVkNjM2YzBiYTlhYzcyZmQ1Yzg0YzViMDNhYjk1ZA==",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/4Vzy5drF6kmta5E8TOVfra/tracks",
+              "total" : 500
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:12184696969:playlist:4Vzy5drF6kmta5E8TOVfra"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/37i9dQZF1DWSXWSaQmvWOB"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DWSXWSaQmvWOB",
+            "id" : "37i9dQZF1DWSXWSaQmvWOB",
+            "images" : [ ],
+            "name" : "Soul 'n' the City",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/spotify"
+              },
+              "href" : "https://api.spotify.com/v1/users/spotify",
+              "id" : "spotify",
+              "type" : "user",
+              "uri" : "spotify:user:spotify"
+            },
+            "primary_color" : null,
+            "public" : false,
+            "snapshot_id" : "MTU0OTU1NjQxNiwwMDAwMDA0ODAwMDAwMTY4YzhjMjdmYzcwMDAwMDE2OGEzMGQ3MmYx",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DWSXWSaQmvWOB/tracks",
+              "total" : 50
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:spotify:playlist:37i9dQZF1DWSXWSaQmvWOB"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/37i9dQZF1Ej7JRVCr8GjuZ"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1Ej7JRVCr8GjuZ",
+            "id" : "37i9dQZF1Ej7JRVCr8GjuZ",
+            "images" : [ ],
+            "name" : "Tastebreakers",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/spotify"
+              },
+              "href" : "https://api.spotify.com/v1/users/spotify",
+              "id" : "spotify",
+              "type" : "user",
+              "uri" : "spotify:user:spotify"
+            },
+            "primary_color" : null,
+            "public" : false,
+            "snapshot_id" : "MjU3MzMwNjQsMDAwMDAwMDA3NzIwZjVmOGVhZjJhMGI0Yjc3ZWM1NzdhMmFmZTQxNg==",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1Ej7JRVCr8GjuZ/tracks",
+              "total" : 50
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:spotify:playlist:37i9dQZF1Ej7JRVCr8GjuZ"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/37i9dQZF1EjeS0grXwJVmo"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1EjeS0grXwJVmo",
+            "id" : "37i9dQZF1EjeS0grXwJVmo",
+            "images" : [ ],
+            "name" : "Your Top Songs 2018",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/spotify"
+              },
+              "href" : "https://api.spotify.com/v1/users/spotify",
+              "id" : "spotify",
+              "type" : "user",
+              "uri" : "spotify:user:spotify"
+            },
+            "primary_color" : null,
+            "public" : false,
+            "snapshot_id" : "MjU3NjA4NzQsMDAwMDAwMDBiM2QyMzJmODk2YjAzYjUxYjVlNzhiZmU0MGJmZmExZA==",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1EjeS0grXwJVmo/tracks",
+              "total" : 100
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:spotify:playlist:37i9dQZF1EjeS0grXwJVmo"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/33iEqqtd4AgycgzD5acwFV"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/33iEqqtd4AgycgzD5acwFV",
+            "id" : "33iEqqtd4AgycgzD5acwFV",
+            "images" : [ ],
+            "name" : "Don't think just feel.",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "primary_color" : null,
+            "public" : true,
+            "snapshot_id" : "MjQsMTAwN2VhM2RhYzJiY2NjNjFlN2I0YTJiODcxZTkzZjBiMjVkZGYyMQ==",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/33iEqqtd4AgycgzD5acwFV/tracks",
+              "total" : 18
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:12184696969:playlist:33iEqqtd4AgycgzD5acwFV"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/4EI06v43B94ccev5vZEApr"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/4EI06v43B94ccev5vZEApr",
+            "id" : "4EI06v43B94ccev5vZEApr",
+            "images" : [ ],
+            "name" : "You get 15 minutes",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "primary_color" : null,
+            "public" : true,
+            "snapshot_id" : "NTAsZjllNjViMzY1ZDE4NTQxM2M2ZGNiMTY3ODlmZDY0MGMwYjg5ZDUzMA==",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/4EI06v43B94ccev5vZEApr/tracks",
+              "total" : 18
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:12184696969:playlist:4EI06v43B94ccev5vZEApr"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/2XtZ3woJGVRpILRefo09Py"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/2XtZ3woJGVRpILRefo09Py",
+            "id" : "2XtZ3woJGVRpILRefo09Py",
+            "images" : [ ],
+            "name" : "You get 15 minutes ygf",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "primary_color" : null,
+            "public" : true,
+            "snapshot_id" : "MTQsYWFiNjE1MGY2ZmI3OTI1Yzc0NzZiNTVlNDFlNDFlNTdmN2I4MTZhOQ==",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/2XtZ3woJGVRpILRefo09Py/tracks",
+              "total" : 10
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:12184696969:playlist:2XtZ3woJGVRpILRefo09Py"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/64xhGrHpmLlmjoJw9FZyfl"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/64xhGrHpmLlmjoJw9FZyfl",
+            "id" : "64xhGrHpmLlmjoJw9FZyfl",
+            "images" : [ ],
+            "name" : "Soul",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/122463206"
+              },
+              "href" : "https://api.spotify.com/v1/users/122463206",
+              "id" : "122463206",
+              "type" : "user",
+              "uri" : "spotify:user:122463206"
+            },
+            "primary_color" : null,
+            "public" : false,
+            "snapshot_id" : "MTUwLGE1ZmMwZTdiM2FkZWUyODVlNjcxZWY0NjZiM2ZhY2RkYTk2YTY2MTg=",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/64xhGrHpmLlmjoJw9FZyfl/tracks",
+              "total" : 101
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:122463206:playlist:64xhGrHpmLlmjoJw9FZyfl"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/1JAPufdOwzWhFIRqBbzNQ8"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/1JAPufdOwzWhFIRqBbzNQ8",
+            "id" : "1JAPufdOwzWhFIRqBbzNQ8",
+            "images" : [ ],
+            "name" : "Hip Hop Essentials",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/jaken7"
+              },
+              "href" : "https://api.spotify.com/v1/users/jaken7",
+              "id" : "jaken7",
+              "type" : "user",
+              "uri" : "spotify:user:jaken7"
+            },
+            "primary_color" : null,
+            "public" : false,
+            "snapshot_id" : "MjcwLGNlOTg0OTc4ZTc5YzA3YmRkZDhlMGQ3MjliOTgyZjQ1MzRlNmVjZDQ=",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/1JAPufdOwzWhFIRqBbzNQ8/tracks",
+              "total" : 241
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:jaken7:playlist:1JAPufdOwzWhFIRqBbzNQ8"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/37i9dQZF1DWWx0cclkzHdP"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DWWx0cclkzHdP",
+            "id" : "37i9dQZF1DWWx0cclkzHdP",
+            "images" : [ ],
+            "name" : "This Is Native Tongues",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/spotify"
+              },
+              "href" : "https://api.spotify.com/v1/users/spotify",
+              "id" : "spotify",
+              "type" : "user",
+              "uri" : "spotify:user:spotify"
+            },
+            "primary_color" : null,
+            "public" : false,
+            "snapshot_id" : "MTU0ODc1MDYyMiwwMDAwMDAwNTAwMDAwMTYxYmFhM2JlMjAwMDAwMDE2ODk4YmIwZmEy",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DWWx0cclkzHdP/tracks",
+              "total" : 52
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:spotify:playlist:37i9dQZF1DWWx0cclkzHdP"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/0JBSgMmEbBi3y4eftHTOhz"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/0JBSgMmEbBi3y4eftHTOhz",
+            "id" : "0JBSgMmEbBi3y4eftHTOhz",
+            "images" : [ ],
+            "name" : "Ding dong your opinion's wrong",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "primary_color" : null,
+            "public" : true,
+            "snapshot_id" : "Niw2ZTY5OTRjMzJjMmJjYWIyZDQxNTdhODJiM2IwYjRkYjdlZjJlOTUx",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/0JBSgMmEbBi3y4eftHTOhz/tracks",
+              "total" : 5
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:12184696969:playlist:0JBSgMmEbBi3y4eftHTOhz"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/playlist/6gvxhvoDFhDxPtICejdQGM"
+            },
+            "href" : "https://api.spotify.com/v1/playlists/6gvxhvoDFhDxPtICejdQGM",
+            "id" : "6gvxhvoDFhDxPtICejdQGM",
+            "images" : [ ],
+            "name" : "Mumu Fresh",
+            "owner" : {
+              "display_name" : null,
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/i_am_potassium"
+              },
+              "href" : "https://api.spotify.com/v1/users/i_am_potassium",
+              "id" : "i_am_potassium",
+              "type" : "user",
+              "uri" : "spotify:user:i_am_potassium"
+            },
+            "primary_color" : null,
+            "public" : false,
+            "snapshot_id" : "NSwzZWEyMGYzMGE4NmVhMjFiNTcyMWI3OTcwNTc1MTI2MjI3YWMwYjdm",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/playlists/6gvxhvoDFhDxPtICejdQGM/tracks",
+              "total" : 29
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:i_am_potassium:playlist:6gvxhvoDFhDxPtICejdQGM"
+          } ],
+          "limit" : 20,
+          "next" : "https://api.spotify.com/v1/users/12184696969/playlists?offset=20&limit=20",
+          "offset" : 0,
+          "previous" : null,
+          "total" : 273
+        }
+    http_version: 
+  recorded_at: Sat, 16 Feb 2019 19:10:14 GMT
+recorded_with: VCR 4.0.0

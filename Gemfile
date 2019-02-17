@@ -52,6 +52,7 @@ group :development, :test do
   gem 'figaro'
   gem 'factory_bot_rails'
   gem 'vcr'
+  gem 'launchy'
   gem 'webmock'
 end
 

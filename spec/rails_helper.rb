@@ -43,6 +43,7 @@ end
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
+  c.configure_rspec_metadata!
   c.filter_sensitive_data('<SPOTIFY_CLIENT_ID>') { ENV["SPOTIFY_CLIENT_ID"] }
   c.filter_sensitive_data('<SPOTIFY_CLIENT_SECRET>') { ENV["SPOTIFY_CLIENT_SECRET"] }
   c.filter_sensitive_data('<SPOTIFY_TEST_TOKEN>') { ENV["S_TEST_TOKEN"] }
