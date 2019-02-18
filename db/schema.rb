@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_14_051736) do
+ActiveRecord::Schema.define(version: 2019_02_18_174035) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "messages", force: :cascade do |t|
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_messages_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -25,4 +33,5 @@ ActiveRecord::Schema.define(version: 2019_02_14_051736) do
     t.string "refresh_token"
   end
 
+  add_foreign_key "messages", "users"
 end
