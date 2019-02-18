@@ -1,6 +1,52 @@
 ---
 http_interactions:
 - request:
+    method: post
+    uri: https://accounts.spotify.com/api/token
+    body:
+      encoding: UTF-8
+      string: grant_type=refresh_token&refresh_token=<SPOTIFY_REQUEST_TOKEN>
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Basic NWYwNzM3MTE1NzVhNGMwM2I2NjJhYjgwY2M0MDFiMDI6NzFmYWE3ZTE5ZTVhNDM2MDhmODAyZWZhNjE5ZjIzNmU=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 18 Feb 2019 19:40:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"BQBdelIz42miNXA_Hmcyp3-ShTykG65J790fGtlu_sTZx-eS59p59O6rJzfzni0yHxx6PcNqklHfUNkcFeatX_FhLE52CsraYyj5My8Ske3uNFrLihTfHRlOHvfdk4aWs2R5tl8ljg_-JJ8P_AcscdzuHHfWwAx-x1WUPqgytdHnlpPy9m7ckdf_","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+        user-read-email user-read-recently-played user-read-private user-top-read"}'
+    http_version: 
+  recorded_at: Mon, 18 Feb 2019 19:40:20 GMT
+- request:
     method: get
     uri: https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track
     body:
@@ -8,7 +54,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer <SPOTIFY_TEST_TOKEN>
+      - Bearer BQBdelIz42miNXA_Hmcyp3-ShTykG65J790fGtlu_sTZx-eS59p59O6rJzfzni0yHxx6PcNqklHfUNkcFeatX_FhLE52CsraYyj5My8Ske3uNFrLihTfHRlOHvfdk4aWs2R5tl8ljg_-JJ8P_AcscdzuHHfWwAx-x1WUPqgytdHnlpPy9m7ckdf_
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -35,7 +81,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 19:40:18 GMT
+      - Mon, 18 Feb 2019 19:40:20 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -144,7 +190,7 @@ http_interactions:
           "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:40:18 GMT
+  recorded_at: Mon, 18 Feb 2019 19:40:20 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/tracks/5PQmSHzWnlgG4EBuIqjac2
@@ -153,7 +199,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer <SPOTIFY_TEST_TOKEN>
+      - Bearer BQBdelIz42miNXA_Hmcyp3-ShTykG65J790fGtlu_sTZx-eS59p59O6rJzfzni0yHxx6PcNqklHfUNkcFeatX_FhLE52CsraYyj5My8Ske3uNFrLihTfHRlOHvfdk4aWs2R5tl8ljg_-JJ8P_AcscdzuHHfWwAx-x1WUPqgytdHnlpPy9m7ckdf_
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -180,7 +226,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 19:40:18 GMT
+      - Mon, 18 Feb 2019 19:40:20 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -269,5 +315,5 @@ http_interactions:
           "uri" : "spotify:track:5PQmSHzWnlgG4EBuIqjac2"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:40:18 GMT
+  recorded_at: Mon, 18 Feb 2019 19:40:20 GMT
 recorded_with: VCR 4.0.0
