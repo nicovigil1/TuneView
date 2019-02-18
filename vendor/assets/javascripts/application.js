@@ -15,10 +15,12 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
 //= require semantic-ui
+//= require_tree .
+
 
 $('.ui.rating')
   .rating("disable")
   ;
+$(document).ready('.ui.rating')
 
