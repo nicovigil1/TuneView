@@ -22,6 +22,14 @@ describe "Spotify User Info" do
       expect(expected.first.class).to eq(Artist) 
       expect(expected.last.class).to eq(Artist) 
     end
+    it "can hold a users top 5 tracks (in objects)", :vcr do
+      user_info = SpotifyUserInfo.new(@current_user)
+      expected = user_info.top_5_tracks
+      
+      expect(expected.class).to eq(Array)
+      expect(expected.first.class).to eq(Track) 
+      expect(expected.last.class).to eq(Track) 
+    end
     it 'can hold a users most recently played song', :vcr do 
       user_info = SpotifyUserInfo.new(@current_user)
      

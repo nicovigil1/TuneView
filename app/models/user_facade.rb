@@ -6,6 +6,13 @@ class UserFacade
     end
   end 
 
+  def self.top_5_tracks(user)
+    track_data = SpotifyService.top_5_tracks(user)
+    track_data.map do |data|
+      Track.new(data)
+    end
+  end 
+
   def self.most_recent_track(user)
     SpotifyService.most_recent_track(user)
   end 

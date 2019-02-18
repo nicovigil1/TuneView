@@ -1,8 +1,9 @@
 class SpotifyUserInfo
-  attr_reader :user, :top_5_artists, :most_recent_song, :playlists, :hash
+  attr_reader :user, :top_5_artists, :top_5_tracks, :most_recent_song, :playlists, :hash
   def initialize(user)
     @user = user
     @top_5_artists = UserFacade.top_5_artists(@user)
+    @top_5_tracks = UserFacade.top_5_tracks(@user)
     @most_recent_song = UserFacade.most_recent_track(@user)
     @playlists = UserFacade.playlists(@user)
     @hash = nil
