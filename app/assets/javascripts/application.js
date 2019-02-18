@@ -16,6 +16,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require_self
 //= require semantic-ui
 
 scroll_bottom = function() {
