@@ -22,6 +22,15 @@ describe "User Facade" do
       expect(expected.last.class).to eq(Artist) 
     end
 
+    it "can generate top 5 tracks for a user", :vcr do
+      expected = UserFacade.top_5_tracks(@current_user)
+
+      expect(expected.class).to eq(Array)
+      expect(expected.count).to eq(5)
+      expect(expected.first.class).to eq(Track) 
+      expect(expected.last.class).to eq(Track) 
+    end
+
     it 'can return the most recent played track', :vcr do
       response = UserFacade.most_recent_track(@current_user)
 

@@ -35,7 +35,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Sat, 16 Feb 2019 18:55:27 GMT
+      - Mon, 18 Feb 2019 19:40:18 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -52,7 +52,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 11836485
+              "total" : 11847213
             },
             "genres" : [ "conscious hip hop", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
@@ -80,7 +80,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 1479452
+              "total" : 1480987
             },
             "genres" : [ "conscious hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "pop rap", "rap" ],
             "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
@@ -108,39 +108,11 @@ http_interactions:
             "uri" : "spotify:artist:20qISvAhX20dpIbOOzGK3q"
           }, {
             "external_urls" : {
-              "spotify" : "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
-            },
-            "followers" : {
-              "href" : null,
-              "total" : 7499458
-            },
-            "genres" : [ "conscious hip hop", "nc hip hop", "pop", "pop rap", "rap" ],
-            "href" : "https://api.spotify.com/v1/artists/6l3HvQ5sa6mXTsMTB19rO5",
-            "id" : "6l3HvQ5sa6mXTsMTB19rO5",
-            "images" : [ {
-              "height" : 640,
-              "url" : "https://i.scdn.co/image/1e9eeefb2c94579150fc37916e8319b975ec8a52",
-              "width" : 640
-            }, {
-              "height" : 320,
-              "url" : "https://i.scdn.co/image/e021db512f24f1b9aafad580db7408863346e9cf",
-              "width" : 320
-            }, {
-              "height" : 160,
-              "url" : "https://i.scdn.co/image/35c726dfde2a3d5545a8b6cbe9cfeaaea3666764",
-              "width" : 160
-            } ],
-            "name" : "J. Cole",
-            "popularity" : 89,
-            "type" : "artist",
-            "uri" : "spotify:artist:6l3HvQ5sa6mXTsMTB19rO5"
-          }, {
-            "external_urls" : {
               "spotify" : "https://open.spotify.com/artist/3fJ60AcIgLzQkVitEvA7uq"
             },
             "followers" : {
               "href" : null,
-              "total" : 110414
+              "total" : 110635
             },
             "genres" : [ "alternative hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "jazz rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/3fJ60AcIgLzQkVitEvA7uq",
@@ -168,7 +140,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 5597443
+              "total" : 5608294
             },
             "genres" : [ "g funk", "gangster rap", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
@@ -194,8 +166,40 @@ http_interactions:
             "popularity" : 80,
             "type" : "artist",
             "uri" : "spotify:artist:1ZwdS5xdxEREPySFridCfh"
+          }, {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/6jHG1YQkqgojdEzerwvrVv"
+            },
+            "followers" : {
+              "href" : null,
+              "total" : 257477
+            },
+            "genres" : [ "alternative hip hop", "bboy", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "hip house", "old school hip hop", "pop rap", "rap", "turntablism" ],
+            "href" : "https://api.spotify.com/v1/artists/6jHG1YQkqgojdEzerwvrVv",
+            "id" : "6jHG1YQkqgojdEzerwvrVv",
+            "images" : [ {
+              "height" : 674,
+              "url" : "https://i.scdn.co/image/3749993d2b60bbbaa02602a09737f2107cbae4dd",
+              "width" : 1000
+            }, {
+              "height" : 431,
+              "url" : "https://i.scdn.co/image/b731704e1ebed00801a0f8daa3323881680cf36f",
+              "width" : 639
+            }, {
+              "height" : 135,
+              "url" : "https://i.scdn.co/image/eb3c94a64d00bbb07dd3a3cb3293773c72ec0f69",
+              "width" : 200
+            }, {
+              "height" : 43,
+              "url" : "https://i.scdn.co/image/4d696d6ffa35a8b5129555c412a36bb20cee72c4",
+              "width" : 64
+            } ],
+            "name" : "Eric B. & Rakim",
+            "popularity" : 54,
+            "type" : "artist",
+            "uri" : "spotify:artist:6jHG1YQkqgojdEzerwvrVv"
           } ],
-          "total" : 35,
+          "total" : 34,
           "limit" : 5,
           "offset" : 0,
           "previous" : null,
@@ -203,5 +207,5 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Sat, 16 Feb 2019 18:55:27 GMT
+  recorded_at: Mon, 18 Feb 2019 19:40:18 GMT
 recorded_with: VCR 4.0.0
