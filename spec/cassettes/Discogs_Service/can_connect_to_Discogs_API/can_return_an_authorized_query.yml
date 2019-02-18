@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 18 Feb 2019 19:40:09 GMT
+      - Mon, 18 Feb 2019 21:19:44 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -70,5 +70,5 @@ http_interactions:
         "title": "Cyndi Lauper - She''s So Unusual", "resource_url": "https://api.discogs.com/releases/914104",
         "master_id": 28859, "type": "release", "id": 914104}]}'
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:40:10 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:44 GMT
 recorded_with: VCR 4.0.0

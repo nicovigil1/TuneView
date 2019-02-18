@@ -13,7 +13,7 @@ class SpotifyUserInfo
     SpotifyService.playlist_tracks(@user, playlist_id)
   end
   
-  def get_playlist_stats(playlist_id)
+  def generate_playlist_stats(playlist_id)
     playlists = SpotifyService.playlist_stats(@user, playlist_id)
     @hash = Hash.new(0)
     length = playlists[:audio_features].length
@@ -26,7 +26,7 @@ class SpotifyUserInfo
   end
 
   def playlist_stats(playlist_id)
-    get_playlist_stats(playlist_id)
+    generate_playlist_stats(playlist_id)
     length = @hash[:length].to_f
     stats = {}
     @hash.map do |feature, metric|

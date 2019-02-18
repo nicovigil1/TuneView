@@ -2,8 +2,8 @@ class DiscogsService
   def self.conn
     Faraday.new(url: "https://api.discogs.com") do |conn|
       conn.request :url_encoded
-      conn.adapter Faraday.default_adapter
       conn.response :json, :parser_options => {symbolize_names: true}
+      conn.adapter Faraday.default_adapter
       conn.params["key"] = ENV["DISCOGS_KEY"]
       conn.params["secret"] = ENV["DISCOGS_SECRET"]
     end

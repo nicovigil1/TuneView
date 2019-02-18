@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 18 Feb 2019 19:40:15 GMT
+      - Mon, 18 Feb 2019 21:19:51 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -42,10 +42,10 @@ http_interactions:
       - max-age=31536000
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQByFu_gSVbZBdw57uh0eEU_RBZab2X-OH7kiDzyduwXKrCcqyxgHQIqtAvKYAdN5eb5b16hEoTDtp6FQnKiEAQZs_LY73L7m9NHT35K00apIXJ8K24kYAwVZ_rqVqeoc0NuhIR8J_CPNnHtiQyUAIk5ttzJ9T0PztAqA6YSulWZqXsZ2sHqTtCP","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+      string: '{"access_token":"BQDHWE0brVVvbbiKnCi13iTd7zCpM9ZyKMYjk1FUYfVKgSFKFhRBOFlDeXNKJ1Csao91_-j8z39bWF2lGT6MIYZz-oWk4JTyEZoFlE9kEixNz3vX46ViKS1lULSDuQBChK1YyS5TnsttNWV-UPfCRnKXWfP1WLHvb_H6Fy_JqI-uS2gZVVM7eoxi","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
         user-read-email user-read-recently-played user-read-private user-top-read"}'
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:40:15 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:52 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term
@@ -54,7 +54,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQByFu_gSVbZBdw57uh0eEU_RBZab2X-OH7kiDzyduwXKrCcqyxgHQIqtAvKYAdN5eb5b16hEoTDtp6FQnKiEAQZs_LY73L7m9NHT35K00apIXJ8K24kYAwVZ_rqVqeoc0NuhIR8J_CPNnHtiQyUAIk5ttzJ9T0PztAqA6YSulWZqXsZ2sHqTtCP
+      - Bearer BQDHWE0brVVvbbiKnCi13iTd7zCpM9ZyKMYjk1FUYfVKgSFKFhRBOFlDeXNKJ1Csao91_-j8z39bWF2lGT6MIYZz-oWk4JTyEZoFlE9kEixNz3vX46ViKS1lULSDuQBChK1YyS5TnsttNWV-UPfCRnKXWfP1WLHvb_H6Fy_JqI-uS2gZVVM7eoxi
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -81,7 +81,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 19:40:15 GMT
+      - Mon, 18 Feb 2019 21:19:52 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -98,7 +98,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 11847213
+              "total" : 11847696
             },
             "genres" : [ "conscious hip hop", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
@@ -126,7 +126,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 1480987
+              "total" : 1481063
             },
             "genres" : [ "conscious hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "pop rap", "rap" ],
             "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
@@ -158,7 +158,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 110635
+              "total" : 110642
             },
             "genres" : [ "alternative hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "jazz rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/3fJ60AcIgLzQkVitEvA7uq",
@@ -186,7 +186,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 5608294
+              "total" : 5608792
             },
             "genres" : [ "g funk", "gangster rap", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
@@ -218,7 +218,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 257477
+              "total" : 257494
             },
             "genres" : [ "alternative hip hop", "bboy", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "hip house", "old school hip hop", "pop rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/6jHG1YQkqgojdEzerwvrVv",
@@ -253,7 +253,7 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:40:15 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:52 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=short_term
@@ -262,7 +262,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQByFu_gSVbZBdw57uh0eEU_RBZab2X-OH7kiDzyduwXKrCcqyxgHQIqtAvKYAdN5eb5b16hEoTDtp6FQnKiEAQZs_LY73L7m9NHT35K00apIXJ8K24kYAwVZ_rqVqeoc0NuhIR8J_CPNnHtiQyUAIk5ttzJ9T0PztAqA6YSulWZqXsZ2sHqTtCP
+      - Bearer BQDHWE0brVVvbbiKnCi13iTd7zCpM9ZyKMYjk1FUYfVKgSFKFhRBOFlDeXNKJ1Csao91_-j8z39bWF2lGT6MIYZz-oWk4JTyEZoFlE9kEixNz3vX46ViKS1lULSDuQBChK1YyS5TnsttNWV-UPfCRnKXWfP1WLHvb_H6Fy_JqI-uS2gZVVM7eoxi
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -289,7 +289,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 19:40:15 GMT
+      - Mon, 18 Feb 2019 21:19:52 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -685,7 +685,7 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:40:15 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:52 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track
@@ -694,7 +694,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQByFu_gSVbZBdw57uh0eEU_RBZab2X-OH7kiDzyduwXKrCcqyxgHQIqtAvKYAdN5eb5b16hEoTDtp6FQnKiEAQZs_LY73L7m9NHT35K00apIXJ8K24kYAwVZ_rqVqeoc0NuhIR8J_CPNnHtiQyUAIk5ttzJ9T0PztAqA6YSulWZqXsZ2sHqTtCP
+      - Bearer BQDHWE0brVVvbbiKnCi13iTd7zCpM9ZyKMYjk1FUYfVKgSFKFhRBOFlDeXNKJ1Csao91_-j8z39bWF2lGT6MIYZz-oWk4JTyEZoFlE9kEixNz3vX46ViKS1lULSDuQBChK1YyS5TnsttNWV-UPfCRnKXWfP1WLHvb_H6Fy_JqI-uS2gZVVM7eoxi
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -721,7 +721,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 19:40:15 GMT
+      - Mon, 18 Feb 2019 21:19:52 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -735,111 +735,102 @@ http_interactions:
           "items" : [ {
             "track" : {
               "album" : {
-                "album_type" : "album",
+                "album_type" : "compilation",
                 "artists" : [ {
                   "external_urls" : {
-                    "spotify" : "https://open.spotify.com/artist/20qISvAhX20dpIbOOzGK3q"
+                    "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
                   },
-                  "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
-                  "id" : "20qISvAhX20dpIbOOzGK3q",
-                  "name" : "Nas",
+                  "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                  "id" : "0LyfQWJT6nXafLPZqxe9Of",
+                  "name" : "Various Artists",
                   "type" : "artist",
-                  "uri" : "spotify:artist:20qISvAhX20dpIbOOzGK3q"
+                  "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
                 } ],
                 "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
                 "external_urls" : {
-                  "spotify" : "https://open.spotify.com/album/78Fgb88MY0ECc4GVMejqTg"
+                  "spotify" : "https://open.spotify.com/album/1k7WkNHGPNPnri2tsowvtg"
                 },
-                "href" : "https://api.spotify.com/v1/albums/78Fgb88MY0ECc4GVMejqTg",
-                "id" : "78Fgb88MY0ECc4GVMejqTg",
+                "href" : "https://api.spotify.com/v1/albums/1k7WkNHGPNPnri2tsowvtg",
+                "id" : "1k7WkNHGPNPnri2tsowvtg",
                 "images" : [ {
                   "height" : 640,
-                  "url" : "https://i.scdn.co/image/063cc795acad294c97dc660b662e8977b3a55737",
+                  "url" : "https://i.scdn.co/image/3e06dc46b19b83ba87a5f8ef2eb0d837b74a7fbb",
                   "width" : 640
                 }, {
                   "height" : 300,
-                  "url" : "https://i.scdn.co/image/1add3bb46d4f547456b64226488491cf0d46c444",
+                  "url" : "https://i.scdn.co/image/516d83d5a58c4fd7334d3d2e61b81949c6d07f63",
                   "width" : 300
                 }, {
                   "height" : 64,
-                  "url" : "https://i.scdn.co/image/ecaae84c6f58000393ddb28bf8d6a11273da0b21",
+                  "url" : "https://i.scdn.co/image/39a7bc1c70ce2377ac1d8ffd1f9b9b54f2b3b290",
                   "width" : 64
                 } ],
-                "name" : "It Was Written",
-                "release_date" : "1996-07-02",
+                "name" : "70s 100 Hits",
+                "release_date" : "2010-02-26",
                 "release_date_precision" : "day",
-                "total_tracks" : 14,
+                "total_tracks" : 100,
                 "type" : "album",
-                "uri" : "spotify:album:78Fgb88MY0ECc4GVMejqTg"
+                "uri" : "spotify:album:1k7WkNHGPNPnri2tsowvtg"
               },
               "artists" : [ {
                 "external_urls" : {
-                  "spotify" : "https://open.spotify.com/artist/20qISvAhX20dpIbOOzGK3q"
+                  "spotify" : "https://open.spotify.com/artist/2yrbLiuBmc9j81lTX3XUuI"
                 },
-                "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
-                "id" : "20qISvAhX20dpIbOOzGK3q",
-                "name" : "Nas",
+                "href" : "https://api.spotify.com/v1/artists/2yrbLiuBmc9j81lTX3XUuI",
+                "id" : "2yrbLiuBmc9j81lTX3XUuI",
+                "name" : "The Jacksons",
                 "type" : "artist",
-                "uri" : "spotify:artist:20qISvAhX20dpIbOOzGK3q"
-              }, {
-                "external_urls" : {
-                  "spotify" : "https://open.spotify.com/artist/2Mu5NfyYm8n5iTomuKAEHl"
-                },
-                "href" : "https://api.spotify.com/v1/artists/2Mu5NfyYm8n5iTomuKAEHl",
-                "id" : "2Mu5NfyYm8n5iTomuKAEHl",
-                "name" : "Ms. Lauryn Hill",
-                "type" : "artist",
-                "uri" : "spotify:artist:2Mu5NfyYm8n5iTomuKAEHl"
+                "uri" : "spotify:artist:2yrbLiuBmc9j81lTX3XUuI"
               } ],
               "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
               "disc_number" : 1,
-              "duration_ms" : 282373,
-              "explicit" : true,
+              "duration_ms" : 214200,
+              "explicit" : false,
               "external_ids" : {
-                "isrc" : "USSM19601375"
+                "isrc" : "USSM17801252"
               },
               "external_urls" : {
-                "spotify" : "https://open.spotify.com/track/5PQmSHzWnlgG4EBuIqjac2"
+                "spotify" : "https://open.spotify.com/track/0bfmfUQQ291rU0BUxc33u0"
               },
-              "href" : "https://api.spotify.com/v1/tracks/5PQmSHzWnlgG4EBuIqjac2",
-              "id" : "5PQmSHzWnlgG4EBuIqjac2",
+              "href" : "https://api.spotify.com/v1/tracks/0bfmfUQQ291rU0BUxc33u0",
+              "id" : "0bfmfUQQ291rU0BUxc33u0",
               "is_local" : false,
-              "name" : "If I Ruled the World (Imagine That)",
-              "popularity" : 69,
-              "preview_url" : "https://p.scdn.co/mp3-preview/f91858bdae13124834a3519b9e5271747c55585e?cid=<SPOTIFY_CLIENT_ID>",
-              "track_number" : 14,
+              "name" : "Blame It on the Boogie",
+              "popularity" : 42,
+              "preview_url" : "https://p.scdn.co/mp3-preview/6800be39a47aa34ccacca76ae8bbd25258bf5cc5?cid=<SPOTIFY_CLIENT_ID>",
+              "track_number" : 1,
               "type" : "track",
-              "uri" : "spotify:track:5PQmSHzWnlgG4EBuIqjac2"
+              "uri" : "spotify:track:0bfmfUQQ291rU0BUxc33u0"
             },
-            "played_at" : "2019-02-18T17:33:57.665Z",
+            "played_at" : "2019-02-18T21:18:41.654Z",
             "context" : {
-              "uri" : "spotify:playlist:37i9dQZF1DX7KNKjOK0o75",
+              "uri" : "spotify:album:1k7WkNHGPNPnri2tsowvtg",
               "external_urls" : {
-                "spotify" : "https://open.spotify.com/playlist/37i9dQZF1DX7KNKjOK0o75"
+                "spotify" : "https://open.spotify.com/album/1k7WkNHGPNPnri2tsowvtg"
               },
-              "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DX7KNKjOK0o75",
-              "type" : "playlist_v2"
+              "href" : "https://api.spotify.com/v1/albums/1k7WkNHGPNPnri2tsowvtg",
+              "type" : "album"
             }
           } ],
-          "next" : "https://api.spotify.com/v1/me/player/recently-played?before=1550511237665&limit=1&type=track",
+          "next" : "https://api.spotify.com/v1/me/player/recently-played?before=1550524721654&limit=1&type=track",
           "cursors" : {
-            "after" : "1550511237665",
-            "before" : "1550511237665"
+            "after" : "1550524721654",
+            "before" : "1550524721654"
           },
           "limit" : 1,
           "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:40:15 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:52 GMT
 - request:
     method: get
-    uri: https://api.spotify.com/v1/tracks/5PQmSHzWnlgG4EBuIqjac2
+    uri: https://api.spotify.com/v1/tracks/0bfmfUQQ291rU0BUxc33u0
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Authorization:
-      - Bearer BQByFu_gSVbZBdw57uh0eEU_RBZab2X-OH7kiDzyduwXKrCcqyxgHQIqtAvKYAdN5eb5b16hEoTDtp6FQnKiEAQZs_LY73L7m9NHT35K00apIXJ8K24kYAwVZ_rqVqeoc0NuhIR8J_CPNnHtiQyUAIk5ttzJ9T0PztAqA6YSulWZqXsZ2sHqTtCP
+      - Bearer BQDHWE0brVVvbbiKnCi13iTd7zCpM9ZyKMYjk1FUYfVKgSFKFhRBOFlDeXNKJ1Csao91_-j8z39bWF2lGT6MIYZz-oWk4JTyEZoFlE9kEixNz3vX46ViKS1lULSDuQBChK1YyS5TnsttNWV-UPfCRnKXWfP1WLHvb_H6Fy_JqI-uS2gZVVM7eoxi
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -866,7 +857,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 19:40:15 GMT
+      - Mon, 18 Feb 2019 21:19:52 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -878,84 +869,75 @@ http_interactions:
       string: |-
         {
           "album" : {
-            "album_type" : "album",
+            "album_type" : "compilation",
             "artists" : [ {
               "external_urls" : {
-                "spotify" : "https://open.spotify.com/artist/20qISvAhX20dpIbOOzGK3q"
+                "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
               },
-              "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
-              "id" : "20qISvAhX20dpIbOOzGK3q",
-              "name" : "Nas",
+              "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id" : "0LyfQWJT6nXafLPZqxe9Of",
+              "name" : "Various Artists",
               "type" : "artist",
-              "uri" : "spotify:artist:20qISvAhX20dpIbOOzGK3q"
+              "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
             } ],
             "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
             "external_urls" : {
-              "spotify" : "https://open.spotify.com/album/78Fgb88MY0ECc4GVMejqTg"
+              "spotify" : "https://open.spotify.com/album/1k7WkNHGPNPnri2tsowvtg"
             },
-            "href" : "https://api.spotify.com/v1/albums/78Fgb88MY0ECc4GVMejqTg",
-            "id" : "78Fgb88MY0ECc4GVMejqTg",
+            "href" : "https://api.spotify.com/v1/albums/1k7WkNHGPNPnri2tsowvtg",
+            "id" : "1k7WkNHGPNPnri2tsowvtg",
             "images" : [ {
               "height" : 640,
-              "url" : "https://i.scdn.co/image/063cc795acad294c97dc660b662e8977b3a55737",
+              "url" : "https://i.scdn.co/image/3e06dc46b19b83ba87a5f8ef2eb0d837b74a7fbb",
               "width" : 640
             }, {
               "height" : 300,
-              "url" : "https://i.scdn.co/image/1add3bb46d4f547456b64226488491cf0d46c444",
+              "url" : "https://i.scdn.co/image/516d83d5a58c4fd7334d3d2e61b81949c6d07f63",
               "width" : 300
             }, {
               "height" : 64,
-              "url" : "https://i.scdn.co/image/ecaae84c6f58000393ddb28bf8d6a11273da0b21",
+              "url" : "https://i.scdn.co/image/39a7bc1c70ce2377ac1d8ffd1f9b9b54f2b3b290",
               "width" : 64
             } ],
-            "name" : "It Was Written",
-            "release_date" : "1996-07-02",
+            "name" : "70s 100 Hits",
+            "release_date" : "2010-02-26",
             "release_date_precision" : "day",
-            "total_tracks" : 14,
+            "total_tracks" : 100,
             "type" : "album",
-            "uri" : "spotify:album:78Fgb88MY0ECc4GVMejqTg"
+            "uri" : "spotify:album:1k7WkNHGPNPnri2tsowvtg"
           },
           "artists" : [ {
             "external_urls" : {
-              "spotify" : "https://open.spotify.com/artist/20qISvAhX20dpIbOOzGK3q"
+              "spotify" : "https://open.spotify.com/artist/2yrbLiuBmc9j81lTX3XUuI"
             },
-            "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
-            "id" : "20qISvAhX20dpIbOOzGK3q",
-            "name" : "Nas",
+            "href" : "https://api.spotify.com/v1/artists/2yrbLiuBmc9j81lTX3XUuI",
+            "id" : "2yrbLiuBmc9j81lTX3XUuI",
+            "name" : "The Jacksons",
             "type" : "artist",
-            "uri" : "spotify:artist:20qISvAhX20dpIbOOzGK3q"
-          }, {
-            "external_urls" : {
-              "spotify" : "https://open.spotify.com/artist/2Mu5NfyYm8n5iTomuKAEHl"
-            },
-            "href" : "https://api.spotify.com/v1/artists/2Mu5NfyYm8n5iTomuKAEHl",
-            "id" : "2Mu5NfyYm8n5iTomuKAEHl",
-            "name" : "Ms. Lauryn Hill",
-            "type" : "artist",
-            "uri" : "spotify:artist:2Mu5NfyYm8n5iTomuKAEHl"
+            "uri" : "spotify:artist:2yrbLiuBmc9j81lTX3XUuI"
           } ],
           "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
           "disc_number" : 1,
-          "duration_ms" : 282373,
-          "explicit" : true,
+          "duration_ms" : 214200,
+          "explicit" : false,
           "external_ids" : {
-            "isrc" : "USSM19601375"
+            "isrc" : "USSM17801252"
           },
           "external_urls" : {
-            "spotify" : "https://open.spotify.com/track/5PQmSHzWnlgG4EBuIqjac2"
+            "spotify" : "https://open.spotify.com/track/0bfmfUQQ291rU0BUxc33u0"
           },
-          "href" : "https://api.spotify.com/v1/tracks/5PQmSHzWnlgG4EBuIqjac2",
-          "id" : "5PQmSHzWnlgG4EBuIqjac2",
+          "href" : "https://api.spotify.com/v1/tracks/0bfmfUQQ291rU0BUxc33u0",
+          "id" : "0bfmfUQQ291rU0BUxc33u0",
           "is_local" : false,
-          "name" : "If I Ruled the World (Imagine That)",
-          "popularity" : 69,
-          "preview_url" : "https://p.scdn.co/mp3-preview/f91858bdae13124834a3519b9e5271747c55585e?cid=<SPOTIFY_CLIENT_ID>",
-          "track_number" : 14,
+          "name" : "Blame It on the Boogie",
+          "popularity" : 42,
+          "preview_url" : "https://p.scdn.co/mp3-preview/6800be39a47aa34ccacca76ae8bbd25258bf5cc5?cid=<SPOTIFY_CLIENT_ID>",
+          "track_number" : 1,
           "type" : "track",
-          "uri" : "spotify:track:5PQmSHzWnlgG4EBuIqjac2"
+          "uri" : "spotify:track:0bfmfUQQ291rU0BUxc33u0"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:40:15 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:52 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/playlists
@@ -964,7 +946,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQByFu_gSVbZBdw57uh0eEU_RBZab2X-OH7kiDzyduwXKrCcqyxgHQIqtAvKYAdN5eb5b16hEoTDtp6FQnKiEAQZs_LY73L7m9NHT35K00apIXJ8K24kYAwVZ_rqVqeoc0NuhIR8J_CPNnHtiQyUAIk5ttzJ9T0PztAqA6YSulWZqXsZ2sHqTtCP
+      - Bearer BQDHWE0brVVvbbiKnCi13iTd7zCpM9ZyKMYjk1FUYfVKgSFKFhRBOFlDeXNKJ1Csao91_-j8z39bWF2lGT6MIYZz-oWk4JTyEZoFlE9kEixNz3vX46ViKS1lULSDuQBChK1YyS5TnsttNWV-UPfCRnKXWfP1WLHvb_H6Fy_JqI-uS2gZVVM7eoxi
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -995,7 +977,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 19:40:16 GMT
+      - Mon, 18 Feb 2019 21:19:52 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -1739,5 +1721,5 @@ http_interactions:
           "total" : 273
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:40:16 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:52 GMT
 recorded_with: VCR 4.0.0

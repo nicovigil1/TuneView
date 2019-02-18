@@ -37,7 +37,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:03 GMT
+      - Mon, 18 Feb 2019 21:19:49 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -66,7 +66,7 @@ http_interactions:
           "uri" : "spotify:user:12184696969"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:03 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:49 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term
@@ -102,7 +102,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:03 GMT
+      - Mon, 18 Feb 2019 21:19:49 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -274,7 +274,7 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:03 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:49 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=short_term
@@ -310,7 +310,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:03 GMT
+      - Mon, 18 Feb 2019 21:19:49 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -706,7 +706,7 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:03 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:49 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track
@@ -742,7 +742,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:03 GMT
+      - Mon, 18 Feb 2019 21:19:49 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -842,7 +842,7 @@ http_interactions:
           "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:03 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:49 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/tracks/0bfmfUQQ291rU0BUxc33u0
@@ -878,7 +878,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:03 GMT
+      - Mon, 18 Feb 2019 21:19:49 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -958,7 +958,7 @@ http_interactions:
           "uri" : "spotify:track:0bfmfUQQ291rU0BUxc33u0"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:03 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:49 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/playlists
@@ -998,7 +998,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:03 GMT
+      - Mon, 18 Feb 2019 21:19:50 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -1742,7 +1742,7 @@ http_interactions:
           "total" : 273
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:03 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:50 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/
@@ -1780,7 +1780,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:03 GMT
+      - Mon, 18 Feb 2019 21:19:50 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -1809,7 +1809,7 @@ http_interactions:
           "uri" : "spotify:user:12184696969"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:04 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:50 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term
@@ -1845,7 +1845,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:04 GMT
+      - Mon, 18 Feb 2019 21:19:50 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -1950,7 +1950,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 5608793
+              "total" : 5608792
             },
             "genres" : [ "g funk", "gangster rap", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
@@ -2017,7 +2017,7 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:04 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:50 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=short_term
@@ -2053,7 +2053,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:04 GMT
+      - Mon, 18 Feb 2019 21:19:50 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -2449,7 +2449,7 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:04 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:50 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track
@@ -2485,7 +2485,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:04 GMT
+      - Mon, 18 Feb 2019 21:19:50 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -2585,7 +2585,7 @@ http_interactions:
           "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:04 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:50 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/tracks/0bfmfUQQ291rU0BUxc33u0
@@ -2621,7 +2621,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:04 GMT
+      - Mon, 18 Feb 2019 21:19:50 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -2701,7 +2701,7 @@ http_interactions:
           "uri" : "spotify:track:0bfmfUQQ291rU0BUxc33u0"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:04 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:50 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/playlists
@@ -2741,7 +2741,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:04 GMT
+      - Mon, 18 Feb 2019 21:19:51 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -3485,5 +3485,943 @@ http_interactions:
           "total" : 273
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:04 GMT
+  recorded_at: Mon, 18 Feb 2019 21:19:51 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/playlists/3CewmVIvc2e1svDfY7FupH/tracks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=0
+      Etag:
+      - '"MC-Ijk4YTJiNmI1MjEyMmE3MTM3YmFiNGYyZmUwNzdmYzQwIg=="'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Mon, 18 Feb 2019 21:19:51 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "href" : "https://api.spotify.com/v1/playlists/3CewmVIvc2e1svDfY7FupH/tracks?offset=0&limit=100",
+          "items" : [ {
+            "added_at" : "2019-01-24T06:22:59Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "is_local" : false,
+            "primary_color" : null,
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/7G1GBhoKtEPnP86X2PvEYO"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/7G1GBhoKtEPnP86X2PvEYO",
+                  "id" : "7G1GBhoKtEPnP86X2PvEYO",
+                  "name" : "Nina Simone",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:7G1GBhoKtEPnP86X2PvEYO"
+                } ],
+                "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/20MmAFHmVVc2eBVecjyTLc"
+                },
+                "href" : "https://api.spotify.com/v1/albums/20MmAFHmVVc2eBVecjyTLc",
+                "id" : "20MmAFHmVVc2eBVecjyTLc",
+                "images" : [ {
+                  "height" : 635,
+                  "url" : "https://i.scdn.co/image/6fc4c4fb5b3f7074367d327c60be464e914b8bc6",
+                  "width" : 640
+                }, {
+                  "height" : 297,
+                  "url" : "https://i.scdn.co/image/d037df855f471df272ed802ca0fd1250230f80bd",
+                  "width" : 300
+                }, {
+                  "height" : 63,
+                  "url" : "https://i.scdn.co/image/7dda2994e6e4bc6a97ec82f2c15bb43e3ad05d08",
+                  "width" : 64
+                } ],
+                "name" : "Pastel Blues",
+                "release_date" : "1965-10",
+                "release_date_precision" : "month",
+                "total_tracks" : 9,
+                "type" : "album",
+                "uri" : "spotify:album:20MmAFHmVVc2eBVecjyTLc"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/7G1GBhoKtEPnP86X2PvEYO"
+                },
+                "href" : "https://api.spotify.com/v1/artists/7G1GBhoKtEPnP86X2PvEYO",
+                "id" : "7G1GBhoKtEPnP86X2PvEYO",
+                "name" : "Nina Simone",
+                "type" : "artist",
+                "uri" : "spotify:artist:7G1GBhoKtEPnP86X2PvEYO"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "disc_number" : 1,
+              "duration_ms" : 622000,
+              "episode" : false,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USWWW0127197"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/5XI9hva1F1WCRSvNNYCK1w"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/5XI9hva1F1WCRSvNNYCK1w",
+              "id" : "5XI9hva1F1WCRSvNNYCK1w",
+              "is_local" : false,
+              "name" : "Sinnerman - Live In New York/1965",
+              "popularity" : 60,
+              "preview_url" : "https://p.scdn.co/mp3-preview/862a12c7aa89e9fb165ea0af1521e8133029aa2a?cid=<SPOTIFY_CLIENT_ID>",
+              "track" : true,
+              "track_number" : 9,
+              "type" : "track",
+              "uri" : "spotify:track:5XI9hva1F1WCRSvNNYCK1w"
+            },
+            "video_thumbnail" : {
+              "url" : null
+            }
+          }, {
+            "added_at" : "2019-01-24T06:23:11Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "is_local" : false,
+            "primary_color" : null,
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/5hW4L92KnC6dX9t7tYM4Ve"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/5hW4L92KnC6dX9t7tYM4Ve",
+                  "id" : "5hW4L92KnC6dX9t7tYM4Ve",
+                  "name" : "Joni Mitchell",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:5hW4L92KnC6dX9t7tYM4Ve"
+                } ],
+                "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/7JOdtLDLyXJIppDRB7kxr9"
+                },
+                "href" : "https://api.spotify.com/v1/albums/7JOdtLDLyXJIppDRB7kxr9",
+                "id" : "7JOdtLDLyXJIppDRB7kxr9",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/34a461c21d1a8b382380645bb765374497792eba",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/07bee899339a822a7d8485b0b7f8b9579477db06",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/bfcb21915743fd2388efc8b3c42b108da2bb645d",
+                  "width" : 64
+                } ],
+                "name" : "Ladies Of The Canyon",
+                "release_date" : "1970-03-01",
+                "release_date_precision" : "day",
+                "total_tracks" : 12,
+                "type" : "album",
+                "uri" : "spotify:album:7JOdtLDLyXJIppDRB7kxr9"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/5hW4L92KnC6dX9t7tYM4Ve"
+                },
+                "href" : "https://api.spotify.com/v1/artists/5hW4L92KnC6dX9t7tYM4Ve",
+                "id" : "5hW4L92KnC6dX9t7tYM4Ve",
+                "name" : "Joni Mitchell",
+                "type" : "artist",
+                "uri" : "spotify:artist:5hW4L92KnC6dX9t7tYM4Ve"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "disc_number" : 1,
+              "duration_ms" : 134800,
+              "episode" : false,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USRE19600222"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/6UkMcAA19lTdjs22jtB7o2"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/6UkMcAA19lTdjs22jtB7o2",
+              "id" : "6UkMcAA19lTdjs22jtB7o2",
+              "is_local" : false,
+              "name" : "Big Yellow Taxi",
+              "popularity" : 67,
+              "preview_url" : "https://p.scdn.co/mp3-preview/48c0b1294058b0006ceb0cdaf84958cb51da45a7?cid=<SPOTIFY_CLIENT_ID>",
+              "track" : true,
+              "track_number" : 10,
+              "type" : "track",
+              "uri" : "spotify:track:6UkMcAA19lTdjs22jtB7o2"
+            },
+            "video_thumbnail" : {
+              "url" : null
+            }
+          }, {
+            "added_at" : "2019-01-24T06:23:20Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "is_local" : false,
+            "primary_color" : null,
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/5hW4L92KnC6dX9t7tYM4Ve"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/5hW4L92KnC6dX9t7tYM4Ve",
+                  "id" : "5hW4L92KnC6dX9t7tYM4Ve",
+                  "name" : "Joni Mitchell",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:5hW4L92KnC6dX9t7tYM4Ve"
+                } ],
+                "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/1vz94WpXDVYIEGja8cjFNa"
+                },
+                "href" : "https://api.spotify.com/v1/albums/1vz94WpXDVYIEGja8cjFNa",
+                "id" : "1vz94WpXDVYIEGja8cjFNa",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/b3b97a6eef240a7b2214eff1a83901bd6e31f839",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/2d01fe1175bf9b65c4165f8bb59a784a134567fc",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/41bc2cf999ecaf4b6d637b540d736c2369837d39",
+                  "width" : 64
+                } ],
+                "name" : "Blue",
+                "release_date" : "1971-06-22",
+                "release_date_precision" : "day",
+                "total_tracks" : 10,
+                "type" : "album",
+                "uri" : "spotify:album:1vz94WpXDVYIEGja8cjFNa"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/5hW4L92KnC6dX9t7tYM4Ve"
+                },
+                "href" : "https://api.spotify.com/v1/artists/5hW4L92KnC6dX9t7tYM4Ve",
+                "id" : "5hW4L92KnC6dX9t7tYM4Ve",
+                "name" : "Joni Mitchell",
+                "type" : "artist",
+                "uri" : "spotify:artist:5hW4L92KnC6dX9t7tYM4Ve"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "disc_number" : 1,
+              "duration_ms" : 263480,
+              "episode" : false,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USRE19600208"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/7shVwhUdVbHpykOfbzvDc1"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/7shVwhUdVbHpykOfbzvDc1",
+              "id" : "7shVwhUdVbHpykOfbzvDc1",
+              "is_local" : false,
+              "name" : "A Case of You",
+              "popularity" : 66,
+              "preview_url" : "https://p.scdn.co/mp3-preview/73dc2986980c9dd2e3542fd6103c940f9d3643be?cid=<SPOTIFY_CLIENT_ID>",
+              "track" : true,
+              "track_number" : 9,
+              "type" : "track",
+              "uri" : "spotify:track:7shVwhUdVbHpykOfbzvDc1"
+            },
+            "video_thumbnail" : {
+              "url" : null
+            }
+          }, {
+            "added_at" : "2019-01-24T06:23:52Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "is_local" : false,
+            "primary_color" : null,
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/0ECwFtbIWEVNwjlrfc6xoL"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/0ECwFtbIWEVNwjlrfc6xoL",
+                  "id" : "0ECwFtbIWEVNwjlrfc6xoL",
+                  "name" : "Eagles",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:0ECwFtbIWEVNwjlrfc6xoL"
+                } ],
+                "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/0F77QekrNe8vVAjU2sepja"
+                },
+                "href" : "https://api.spotify.com/v1/albums/0F77QekrNe8vVAjU2sepja",
+                "id" : "0F77QekrNe8vVAjU2sepja",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/a1e138712e36178d517042ab3475cc532922d1f5",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/450a2bb0b61b584c9d87afd536bb5cb274243b65",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/1da6afdfdcc642eb1a790b94a0dfa60972686d33",
+                  "width" : 64
+                } ],
+                "name" : "One Of These Nights (Remastered)",
+                "release_date" : "1975",
+                "release_date_precision" : "year",
+                "total_tracks" : 9,
+                "type" : "album",
+                "uri" : "spotify:album:0F77QekrNe8vVAjU2sepja"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/0ECwFtbIWEVNwjlrfc6xoL"
+                },
+                "href" : "https://api.spotify.com/v1/artists/0ECwFtbIWEVNwjlrfc6xoL",
+                "id" : "0ECwFtbIWEVNwjlrfc6xoL",
+                "name" : "Eagles",
+                "type" : "artist",
+                "uri" : "spotify:artist:0ECwFtbIWEVNwjlrfc6xoL"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "disc_number" : 1,
+              "duration_ms" : 381998,
+              "episode" : false,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USEE11300348"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/5lQKRR3MdJLtAwNBiT8Cq0"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/5lQKRR3MdJLtAwNBiT8Cq0",
+              "id" : "5lQKRR3MdJLtAwNBiT8Cq0",
+              "is_local" : false,
+              "name" : "Lyin' Eyes - Eagles 2013 Remaster",
+              "popularity" : 63,
+              "preview_url" : "https://p.scdn.co/mp3-preview/bdb447e2d6c874a727c4cf09592f90536376e781?cid=<SPOTIFY_CLIENT_ID>",
+              "track" : true,
+              "track_number" : 5,
+              "type" : "track",
+              "uri" : "spotify:track:5lQKRR3MdJLtAwNBiT8Cq0"
+            },
+            "video_thumbnail" : {
+              "url" : null
+            }
+          } ],
+          "limit" : 100,
+          "next" : null,
+          "offset" : 0,
+          "previous" : null,
+          "total" : 4
+        }
+    http_version: 
+  recorded_at: Mon, 18 Feb 2019 21:19:51 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/playlists/3CewmVIvc2e1svDfY7FupH/tracks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=0
+      Etag:
+      - '"MC-Ijk4YTJiNmI1MjEyMmE3MTM3YmFiNGYyZmUwNzdmYzQwIg=="'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Mon, 18 Feb 2019 21:19:51 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "href" : "https://api.spotify.com/v1/playlists/3CewmVIvc2e1svDfY7FupH/tracks?offset=0&limit=100",
+          "items" : [ {
+            "added_at" : "2019-01-24T06:22:59Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "is_local" : false,
+            "primary_color" : null,
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/7G1GBhoKtEPnP86X2PvEYO"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/7G1GBhoKtEPnP86X2PvEYO",
+                  "id" : "7G1GBhoKtEPnP86X2PvEYO",
+                  "name" : "Nina Simone",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:7G1GBhoKtEPnP86X2PvEYO"
+                } ],
+                "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/20MmAFHmVVc2eBVecjyTLc"
+                },
+                "href" : "https://api.spotify.com/v1/albums/20MmAFHmVVc2eBVecjyTLc",
+                "id" : "20MmAFHmVVc2eBVecjyTLc",
+                "images" : [ {
+                  "height" : 635,
+                  "url" : "https://i.scdn.co/image/6fc4c4fb5b3f7074367d327c60be464e914b8bc6",
+                  "width" : 640
+                }, {
+                  "height" : 297,
+                  "url" : "https://i.scdn.co/image/d037df855f471df272ed802ca0fd1250230f80bd",
+                  "width" : 300
+                }, {
+                  "height" : 63,
+                  "url" : "https://i.scdn.co/image/7dda2994e6e4bc6a97ec82f2c15bb43e3ad05d08",
+                  "width" : 64
+                } ],
+                "name" : "Pastel Blues",
+                "release_date" : "1965-10",
+                "release_date_precision" : "month",
+                "total_tracks" : 9,
+                "type" : "album",
+                "uri" : "spotify:album:20MmAFHmVVc2eBVecjyTLc"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/7G1GBhoKtEPnP86X2PvEYO"
+                },
+                "href" : "https://api.spotify.com/v1/artists/7G1GBhoKtEPnP86X2PvEYO",
+                "id" : "7G1GBhoKtEPnP86X2PvEYO",
+                "name" : "Nina Simone",
+                "type" : "artist",
+                "uri" : "spotify:artist:7G1GBhoKtEPnP86X2PvEYO"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "disc_number" : 1,
+              "duration_ms" : 622000,
+              "episode" : false,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USWWW0127197"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/5XI9hva1F1WCRSvNNYCK1w"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/5XI9hva1F1WCRSvNNYCK1w",
+              "id" : "5XI9hva1F1WCRSvNNYCK1w",
+              "is_local" : false,
+              "name" : "Sinnerman - Live In New York/1965",
+              "popularity" : 60,
+              "preview_url" : "https://p.scdn.co/mp3-preview/862a12c7aa89e9fb165ea0af1521e8133029aa2a?cid=<SPOTIFY_CLIENT_ID>",
+              "track" : true,
+              "track_number" : 9,
+              "type" : "track",
+              "uri" : "spotify:track:5XI9hva1F1WCRSvNNYCK1w"
+            },
+            "video_thumbnail" : {
+              "url" : null
+            }
+          }, {
+            "added_at" : "2019-01-24T06:23:11Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "is_local" : false,
+            "primary_color" : null,
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/5hW4L92KnC6dX9t7tYM4Ve"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/5hW4L92KnC6dX9t7tYM4Ve",
+                  "id" : "5hW4L92KnC6dX9t7tYM4Ve",
+                  "name" : "Joni Mitchell",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:5hW4L92KnC6dX9t7tYM4Ve"
+                } ],
+                "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/7JOdtLDLyXJIppDRB7kxr9"
+                },
+                "href" : "https://api.spotify.com/v1/albums/7JOdtLDLyXJIppDRB7kxr9",
+                "id" : "7JOdtLDLyXJIppDRB7kxr9",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/34a461c21d1a8b382380645bb765374497792eba",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/07bee899339a822a7d8485b0b7f8b9579477db06",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/bfcb21915743fd2388efc8b3c42b108da2bb645d",
+                  "width" : 64
+                } ],
+                "name" : "Ladies Of The Canyon",
+                "release_date" : "1970-03-01",
+                "release_date_precision" : "day",
+                "total_tracks" : 12,
+                "type" : "album",
+                "uri" : "spotify:album:7JOdtLDLyXJIppDRB7kxr9"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/5hW4L92KnC6dX9t7tYM4Ve"
+                },
+                "href" : "https://api.spotify.com/v1/artists/5hW4L92KnC6dX9t7tYM4Ve",
+                "id" : "5hW4L92KnC6dX9t7tYM4Ve",
+                "name" : "Joni Mitchell",
+                "type" : "artist",
+                "uri" : "spotify:artist:5hW4L92KnC6dX9t7tYM4Ve"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "disc_number" : 1,
+              "duration_ms" : 134800,
+              "episode" : false,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USRE19600222"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/6UkMcAA19lTdjs22jtB7o2"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/6UkMcAA19lTdjs22jtB7o2",
+              "id" : "6UkMcAA19lTdjs22jtB7o2",
+              "is_local" : false,
+              "name" : "Big Yellow Taxi",
+              "popularity" : 67,
+              "preview_url" : "https://p.scdn.co/mp3-preview/48c0b1294058b0006ceb0cdaf84958cb51da45a7?cid=<SPOTIFY_CLIENT_ID>",
+              "track" : true,
+              "track_number" : 10,
+              "type" : "track",
+              "uri" : "spotify:track:6UkMcAA19lTdjs22jtB7o2"
+            },
+            "video_thumbnail" : {
+              "url" : null
+            }
+          }, {
+            "added_at" : "2019-01-24T06:23:20Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "is_local" : false,
+            "primary_color" : null,
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/5hW4L92KnC6dX9t7tYM4Ve"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/5hW4L92KnC6dX9t7tYM4Ve",
+                  "id" : "5hW4L92KnC6dX9t7tYM4Ve",
+                  "name" : "Joni Mitchell",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:5hW4L92KnC6dX9t7tYM4Ve"
+                } ],
+                "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/1vz94WpXDVYIEGja8cjFNa"
+                },
+                "href" : "https://api.spotify.com/v1/albums/1vz94WpXDVYIEGja8cjFNa",
+                "id" : "1vz94WpXDVYIEGja8cjFNa",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/b3b97a6eef240a7b2214eff1a83901bd6e31f839",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/2d01fe1175bf9b65c4165f8bb59a784a134567fc",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/41bc2cf999ecaf4b6d637b540d736c2369837d39",
+                  "width" : 64
+                } ],
+                "name" : "Blue",
+                "release_date" : "1971-06-22",
+                "release_date_precision" : "day",
+                "total_tracks" : 10,
+                "type" : "album",
+                "uri" : "spotify:album:1vz94WpXDVYIEGja8cjFNa"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/5hW4L92KnC6dX9t7tYM4Ve"
+                },
+                "href" : "https://api.spotify.com/v1/artists/5hW4L92KnC6dX9t7tYM4Ve",
+                "id" : "5hW4L92KnC6dX9t7tYM4Ve",
+                "name" : "Joni Mitchell",
+                "type" : "artist",
+                "uri" : "spotify:artist:5hW4L92KnC6dX9t7tYM4Ve"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "disc_number" : 1,
+              "duration_ms" : 263480,
+              "episode" : false,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USRE19600208"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/7shVwhUdVbHpykOfbzvDc1"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/7shVwhUdVbHpykOfbzvDc1",
+              "id" : "7shVwhUdVbHpykOfbzvDc1",
+              "is_local" : false,
+              "name" : "A Case of You",
+              "popularity" : 66,
+              "preview_url" : "https://p.scdn.co/mp3-preview/73dc2986980c9dd2e3542fd6103c940f9d3643be?cid=<SPOTIFY_CLIENT_ID>",
+              "track" : true,
+              "track_number" : 9,
+              "type" : "track",
+              "uri" : "spotify:track:7shVwhUdVbHpykOfbzvDc1"
+            },
+            "video_thumbnail" : {
+              "url" : null
+            }
+          }, {
+            "added_at" : "2019-01-24T06:23:52Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/user/12184696969"
+              },
+              "href" : "https://api.spotify.com/v1/users/12184696969",
+              "id" : "12184696969",
+              "type" : "user",
+              "uri" : "spotify:user:12184696969"
+            },
+            "is_local" : false,
+            "primary_color" : null,
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/0ECwFtbIWEVNwjlrfc6xoL"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/0ECwFtbIWEVNwjlrfc6xoL",
+                  "id" : "0ECwFtbIWEVNwjlrfc6xoL",
+                  "name" : "Eagles",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:0ECwFtbIWEVNwjlrfc6xoL"
+                } ],
+                "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/0F77QekrNe8vVAjU2sepja"
+                },
+                "href" : "https://api.spotify.com/v1/albums/0F77QekrNe8vVAjU2sepja",
+                "id" : "0F77QekrNe8vVAjU2sepja",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/a1e138712e36178d517042ab3475cc532922d1f5",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/450a2bb0b61b584c9d87afd536bb5cb274243b65",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/1da6afdfdcc642eb1a790b94a0dfa60972686d33",
+                  "width" : 64
+                } ],
+                "name" : "One Of These Nights (Remastered)",
+                "release_date" : "1975",
+                "release_date_precision" : "year",
+                "total_tracks" : 9,
+                "type" : "album",
+                "uri" : "spotify:album:0F77QekrNe8vVAjU2sepja"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/0ECwFtbIWEVNwjlrfc6xoL"
+                },
+                "href" : "https://api.spotify.com/v1/artists/0ECwFtbIWEVNwjlrfc6xoL",
+                "id" : "0ECwFtbIWEVNwjlrfc6xoL",
+                "name" : "Eagles",
+                "type" : "artist",
+                "uri" : "spotify:artist:0ECwFtbIWEVNwjlrfc6xoL"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "disc_number" : 1,
+              "duration_ms" : 381998,
+              "episode" : false,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USEE11300348"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/5lQKRR3MdJLtAwNBiT8Cq0"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/5lQKRR3MdJLtAwNBiT8Cq0",
+              "id" : "5lQKRR3MdJLtAwNBiT8Cq0",
+              "is_local" : false,
+              "name" : "Lyin' Eyes - Eagles 2013 Remaster",
+              "popularity" : 63,
+              "preview_url" : "https://p.scdn.co/mp3-preview/bdb447e2d6c874a727c4cf09592f90536376e781?cid=<SPOTIFY_CLIENT_ID>",
+              "track" : true,
+              "track_number" : 5,
+              "type" : "track",
+              "uri" : "spotify:track:5lQKRR3MdJLtAwNBiT8Cq0"
+            },
+            "video_thumbnail" : {
+              "url" : null
+            }
+          } ],
+          "limit" : 100,
+          "next" : null,
+          "offset" : 0,
+          "previous" : null,
+          "total" : 4
+        }
+    http_version: 
+  recorded_at: Mon, 18 Feb 2019 21:19:51 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/audio-features/?ids=5XI9hva1F1WCRSvNNYCK1w,6UkMcAA19lTdjs22jtB7o2,7shVwhUdVbHpykOfbzvDc1,5lQKRR3MdJLtAwNBiT8Cq0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Mon, 18 Feb 2019 21:19:51 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "audio_features" : [ {
+            "danceability" : 0.439,
+            "energy" : 0.529,
+            "key" : 11,
+            "loudness" : -13.224,
+            "mode" : 0,
+            "speechiness" : 0.0971,
+            "acousticness" : 0.638,
+            "instrumentalness" : 0.00000607,
+            "liveness" : 0.102,
+            "valence" : 0.705,
+            "tempo" : 146.735,
+            "type" : "audio_features",
+            "id" : "5XI9hva1F1WCRSvNNYCK1w",
+            "uri" : "spotify:track:5XI9hva1F1WCRSvNNYCK1w",
+            "track_href" : "https://api.spotify.com/v1/tracks/5XI9hva1F1WCRSvNNYCK1w",
+            "analysis_url" : "https://api.spotify.com/v1/audio-analysis/5XI9hva1F1WCRSvNNYCK1w",
+            "duration_ms" : 622000,
+            "time_signature" : 4
+          }, {
+            "danceability" : 0.611,
+            "energy" : 0.470,
+            "key" : 4,
+            "loudness" : -9.135,
+            "mode" : 1,
+            "speechiness" : 0.0356,
+            "acousticness" : 0.579,
+            "instrumentalness" : 0,
+            "liveness" : 0.581,
+            "valence" : 0.970,
+            "tempo" : 85.527,
+            "type" : "audio_features",
+            "id" : "6UkMcAA19lTdjs22jtB7o2",
+            "uri" : "spotify:track:6UkMcAA19lTdjs22jtB7o2",
+            "track_href" : "https://api.spotify.com/v1/tracks/6UkMcAA19lTdjs22jtB7o2",
+            "analysis_url" : "https://api.spotify.com/v1/audio-analysis/6UkMcAA19lTdjs22jtB7o2",
+            "duration_ms" : 134800,
+            "time_signature" : 4
+          }, {
+            "danceability" : 0.693,
+            "energy" : 0.201,
+            "key" : 1,
+            "loudness" : -9.903,
+            "mode" : 1,
+            "speechiness" : 0.0288,
+            "acousticness" : 0.900,
+            "instrumentalness" : 0,
+            "liveness" : 0.112,
+            "valence" : 0.679,
+            "tempo" : 100.836,
+            "type" : "audio_features",
+            "id" : "7shVwhUdVbHpykOfbzvDc1",
+            "uri" : "spotify:track:7shVwhUdVbHpykOfbzvDc1",
+            "track_href" : "https://api.spotify.com/v1/tracks/7shVwhUdVbHpykOfbzvDc1",
+            "analysis_url" : "https://api.spotify.com/v1/audio-analysis/7shVwhUdVbHpykOfbzvDc1",
+            "duration_ms" : 263480,
+            "time_signature" : 4
+          }, {
+            "danceability" : 0.669,
+            "energy" : 0.673,
+            "key" : 7,
+            "loudness" : -9.754,
+            "mode" : 1,
+            "speechiness" : 0.0248,
+            "acousticness" : 0.203,
+            "instrumentalness" : 0.0271,
+            "liveness" : 0.164,
+            "valence" : 0.867,
+            "tempo" : 132.680,
+            "type" : "audio_features",
+            "id" : "5lQKRR3MdJLtAwNBiT8Cq0",
+            "uri" : "spotify:track:5lQKRR3MdJLtAwNBiT8Cq0",
+            "track_href" : "https://api.spotify.com/v1/tracks/5lQKRR3MdJLtAwNBiT8Cq0",
+            "analysis_url" : "https://api.spotify.com/v1/audio-analysis/5lQKRR3MdJLtAwNBiT8Cq0",
+            "duration_ms" : 381999,
+            "time_signature" : 4
+          } ]
+        }
+    http_version: 
+  recorded_at: Mon, 18 Feb 2019 21:19:51 GMT
 recorded_with: VCR 4.0.0

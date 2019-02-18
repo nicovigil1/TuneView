@@ -50,13 +50,12 @@ class SpotifyService
     JSON.parse(response.body)["access_token"]
   end
 
-
   def self.conn(current_user)
     Faraday.new(url: "https://api.spotify.com") do |faraday|
       faraday.request :url_encoded
-      faraday.adapter Faraday.default_adapter
       faraday.headers["Authorization"] = "Bearer #{current_user.spotify_token}"
       faraday.response :json, :parser_options => { :symbolize_names => true }
+      faraday.adapter Faraday.default_adapter
     end
   end
 
