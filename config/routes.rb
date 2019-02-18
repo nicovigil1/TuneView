@@ -6,7 +6,10 @@ Rails.application.routes.draw do
 
   get '/dashboard', to: "users#show", as: "dashboard"
 
-  
+
   resources :playlists, only: [:index]
   get '/playlists/:playlist(?id=:id)', to: "playlists#show", as: "playlist"
+
+  mount ActionCable.server, at: '/cable'
+  post "message", to: "messages#create"
 end

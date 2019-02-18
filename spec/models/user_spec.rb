@@ -1,4 +1,4 @@
-require "rails_helper" 
+require "rails_helper"
 
 describe User do
   context "validations & attributes" do
@@ -6,6 +6,7 @@ describe User do
     it { should validate_uniqueness_of(:username) }
     it { should validate_presence_of(:spotify_token) }
     it { should validate_presence_of(:profile_url) }
+    it { should have_many :messages }
 
     it "has attributes" do
       data = {
