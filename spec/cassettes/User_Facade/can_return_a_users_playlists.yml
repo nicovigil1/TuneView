@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 18 Feb 2019 21:19:46 GMT
+      - Mon, 18 Feb 2019 22:17:26 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -42,10 +42,10 @@ http_interactions:
       - max-age=31536000
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQC5kW1TIP9AQFQKWTtlWzLOiico7XDXhZ3ELyfluNsCVdibMkycyt_mHqj9jsUpLo_TRt_zRGQTrymI1RYAHdScBSexyjvg55qpvTCSPxyzRpGG30y3bFl3L4UdSlLDAcq3L2hEobrSpEv3GnUtSWO8k7Ul3TrWwr-IJlkdorc3N4HhsGQYY-Wz","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+      string: '{"access_token":"BQDKhBJ0wQ6cIPoewslANKvmE0exuunQbh3cNcpWwpy2FzKcb7WBX4R4p36hG7vazBKiMdt6kfA06J_GpAZZWafdpbcNf8GYbARFlgzdEJlMGUJ7TLDhBJZpxISn-LIYk2ohasJyVnFedjtTVDsuJEZ-eqINMjd89u6Q0jGCLxbM1U1X7-XxABRt","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
         user-read-email user-read-recently-played user-read-private user-top-read"}'
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:46 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:26 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/playlists
@@ -54,7 +54,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQC5kW1TIP9AQFQKWTtlWzLOiico7XDXhZ3ELyfluNsCVdibMkycyt_mHqj9jsUpLo_TRt_zRGQTrymI1RYAHdScBSexyjvg55qpvTCSPxyzRpGG30y3bFl3L4UdSlLDAcq3L2hEobrSpEv3GnUtSWO8k7Ul3TrWwr-IJlkdorc3N4HhsGQYY-Wz
+      - Bearer BQDKhBJ0wQ6cIPoewslANKvmE0exuunQbh3cNcpWwpy2FzKcb7WBX4R4p36hG7vazBKiMdt6kfA06J_GpAZZWafdpbcNf8GYbARFlgzdEJlMGUJ7TLDhBJZpxISn-LIYk2ohasJyVnFedjtTVDsuJEZ-eqINMjd89u6Q0jGCLxbM1U1X7-XxABRt
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -85,7 +85,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:19:48 GMT
+      - Mon, 18 Feb 2019 22:17:27 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -829,5 +829,5 @@ http_interactions:
           "total" : 273
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:48 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:27 GMT
 recorded_with: VCR 4.0.0

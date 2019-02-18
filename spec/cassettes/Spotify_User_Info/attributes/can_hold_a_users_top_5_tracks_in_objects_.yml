@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 18 Feb 2019 21:19:55 GMT
+      - Mon, 18 Feb 2019 22:17:36 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -42,10 +42,10 @@ http_interactions:
       - max-age=31536000
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQDJqyqgSO_JXM2lkK-f4QSHFES8zUZqQUI3wA6TuldA1-aFgQpUZcW-CzzJSPJU81t7f5I8w21IrWevAO8nsA_RU7VIuwtk_qP23SkE4exKxnjLiJ1qD9pQJXi_oROlMyMxgPfEmvv7fiZKBkPhHTb3_2cIxWwjMGYqpUsXlox6G6qw5TaQNaFm","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+      string: '{"access_token":"BQCw6BZtWdCdI4yIaxUXbMPHSYNwbgZV04WYHD_DqWd9_b1uRfCBTdGfn39b9hBsXfDOLZrEdaAcD5LA-KJEmVxqGbYTRd3V_5VeTaKEj2y90NK74YWUb56Bzx2RynCOhBDO5Dn4gKuB7gkR5Q4_9FZIIDDe4K4xEu93E6xG_l8jKiQLtZvxidmP","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
         user-read-email user-read-recently-played user-read-private user-top-read"}'
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:55 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:36 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term
@@ -54,7 +54,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQDJqyqgSO_JXM2lkK-f4QSHFES8zUZqQUI3wA6TuldA1-aFgQpUZcW-CzzJSPJU81t7f5I8w21IrWevAO8nsA_RU7VIuwtk_qP23SkE4exKxnjLiJ1qD9pQJXi_oROlMyMxgPfEmvv7fiZKBkPhHTb3_2cIxWwjMGYqpUsXlox6G6qw5TaQNaFm
+      - Bearer BQCw6BZtWdCdI4yIaxUXbMPHSYNwbgZV04WYHD_DqWd9_b1uRfCBTdGfn39b9hBsXfDOLZrEdaAcD5LA-KJEmVxqGbYTRd3V_5VeTaKEj2y90NK74YWUb56Bzx2RynCOhBDO5Dn4gKuB7gkR5Q4_9FZIIDDe4K4xEu93E6xG_l8jKiQLtZvxidmP
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -81,7 +81,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:19:56 GMT
+      - Mon, 18 Feb 2019 22:17:36 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -98,7 +98,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 11847696
+              "total" : 11847962
             },
             "genres" : [ "conscious hip hop", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
@@ -126,7 +126,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 1481063
+              "total" : 1481104
             },
             "genres" : [ "conscious hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "pop rap", "rap" ],
             "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
@@ -158,7 +158,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 110642
+              "total" : 110647
             },
             "genres" : [ "alternative hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "jazz rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/3fJ60AcIgLzQkVitEvA7uq",
@@ -186,7 +186,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 5608792
+              "total" : 5609086
             },
             "genres" : [ "g funk", "gangster rap", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
@@ -218,7 +218,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 257494
+              "total" : 257504
             },
             "genres" : [ "alternative hip hop", "bboy", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "hip house", "old school hip hop", "pop rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/6jHG1YQkqgojdEzerwvrVv",
@@ -253,7 +253,7 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:56 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:36 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=short_term
@@ -262,7 +262,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQDJqyqgSO_JXM2lkK-f4QSHFES8zUZqQUI3wA6TuldA1-aFgQpUZcW-CzzJSPJU81t7f5I8w21IrWevAO8nsA_RU7VIuwtk_qP23SkE4exKxnjLiJ1qD9pQJXi_oROlMyMxgPfEmvv7fiZKBkPhHTb3_2cIxWwjMGYqpUsXlox6G6qw5TaQNaFm
+      - Bearer BQCw6BZtWdCdI4yIaxUXbMPHSYNwbgZV04WYHD_DqWd9_b1uRfCBTdGfn39b9hBsXfDOLZrEdaAcD5LA-KJEmVxqGbYTRd3V_5VeTaKEj2y90NK74YWUb56Bzx2RynCOhBDO5Dn4gKuB7gkR5Q4_9FZIIDDe4K4xEu93E6xG_l8jKiQLtZvxidmP
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -289,7 +289,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:19:56 GMT
+      - Mon, 18 Feb 2019 22:17:36 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -685,7 +685,7 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:56 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:36 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track
@@ -694,7 +694,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQDJqyqgSO_JXM2lkK-f4QSHFES8zUZqQUI3wA6TuldA1-aFgQpUZcW-CzzJSPJU81t7f5I8w21IrWevAO8nsA_RU7VIuwtk_qP23SkE4exKxnjLiJ1qD9pQJXi_oROlMyMxgPfEmvv7fiZKBkPhHTb3_2cIxWwjMGYqpUsXlox6G6qw5TaQNaFm
+      - Bearer BQCw6BZtWdCdI4yIaxUXbMPHSYNwbgZV04WYHD_DqWd9_b1uRfCBTdGfn39b9hBsXfDOLZrEdaAcD5LA-KJEmVxqGbYTRd3V_5VeTaKEj2y90NK74YWUb56Bzx2RynCOhBDO5Dn4gKuB7gkR5Q4_9FZIIDDe4K4xEu93E6xG_l8jKiQLtZvxidmP
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -721,7 +721,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:19:57 GMT
+      - Mon, 18 Feb 2019 22:17:36 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -774,35 +774,35 @@ http_interactions:
               },
               "artists" : [ {
                 "external_urls" : {
-                  "spotify" : "https://open.spotify.com/artist/2yrbLiuBmc9j81lTX3XUuI"
+                  "spotify" : "https://open.spotify.com/artist/32vWCbZh0xZ4o9gkz4PsEU"
                 },
-                "href" : "https://api.spotify.com/v1/artists/2yrbLiuBmc9j81lTX3XUuI",
-                "id" : "2yrbLiuBmc9j81lTX3XUuI",
-                "name" : "The Jacksons",
+                "href" : "https://api.spotify.com/v1/artists/32vWCbZh0xZ4o9gkz4PsEU",
+                "id" : "32vWCbZh0xZ4o9gkz4PsEU",
+                "name" : "Dolly Parton",
                 "type" : "artist",
-                "uri" : "spotify:artist:2yrbLiuBmc9j81lTX3XUuI"
+                "uri" : "spotify:artist:32vWCbZh0xZ4o9gkz4PsEU"
               } ],
               "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
               "disc_number" : 1,
-              "duration_ms" : 214200,
+              "duration_ms" : 161400,
               "explicit" : false,
               "external_ids" : {
-                "isrc" : "USSM17801252"
+                "isrc" : "USRN19600096"
               },
               "external_urls" : {
-                "spotify" : "https://open.spotify.com/track/0bfmfUQQ291rU0BUxc33u0"
+                "spotify" : "https://open.spotify.com/track/6fz5BHXCOxGgE6GtDhHQ1E"
               },
-              "href" : "https://api.spotify.com/v1/tracks/0bfmfUQQ291rU0BUxc33u0",
-              "id" : "0bfmfUQQ291rU0BUxc33u0",
+              "href" : "https://api.spotify.com/v1/tracks/6fz5BHXCOxGgE6GtDhHQ1E",
+              "id" : "6fz5BHXCOxGgE6GtDhHQ1E",
               "is_local" : false,
-              "name" : "Blame It on the Boogie",
-              "popularity" : 42,
-              "preview_url" : "https://p.scdn.co/mp3-preview/6800be39a47aa34ccacca76ae8bbd25258bf5cc5?cid=<SPOTIFY_CLIENT_ID>",
-              "track_number" : 1,
+              "name" : "Jolene",
+              "popularity" : 33,
+              "preview_url" : "https://p.scdn.co/mp3-preview/006384bc64ae34b2b0c52951e1a73092f0038c85?cid=<SPOTIFY_CLIENT_ID>",
+              "track_number" : 45,
               "type" : "track",
-              "uri" : "spotify:track:0bfmfUQQ291rU0BUxc33u0"
+              "uri" : "spotify:track:6fz5BHXCOxGgE6GtDhHQ1E"
             },
-            "played_at" : "2019-02-18T21:18:41.654Z",
+            "played_at" : "2019-02-18T22:16:14.809Z",
             "context" : {
               "uri" : "spotify:album:1k7WkNHGPNPnri2tsowvtg",
               "external_urls" : {
@@ -812,25 +812,25 @@ http_interactions:
               "type" : "album"
             }
           } ],
-          "next" : "https://api.spotify.com/v1/me/player/recently-played?before=1550524721654&limit=1&type=track",
+          "next" : "https://api.spotify.com/v1/me/player/recently-played?before=1550528174809&limit=1&type=track",
           "cursors" : {
-            "after" : "1550524721654",
-            "before" : "1550524721654"
+            "after" : "1550528174809",
+            "before" : "1550528174809"
           },
           "limit" : 1,
           "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:57 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:36 GMT
 - request:
     method: get
-    uri: https://api.spotify.com/v1/tracks/0bfmfUQQ291rU0BUxc33u0
+    uri: https://api.spotify.com/v1/tracks/6fz5BHXCOxGgE6GtDhHQ1E
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Authorization:
-      - Bearer BQDJqyqgSO_JXM2lkK-f4QSHFES8zUZqQUI3wA6TuldA1-aFgQpUZcW-CzzJSPJU81t7f5I8w21IrWevAO8nsA_RU7VIuwtk_qP23SkE4exKxnjLiJ1qD9pQJXi_oROlMyMxgPfEmvv7fiZKBkPhHTb3_2cIxWwjMGYqpUsXlox6G6qw5TaQNaFm
+      - Bearer BQCw6BZtWdCdI4yIaxUXbMPHSYNwbgZV04WYHD_DqWd9_b1uRfCBTdGfn39b9hBsXfDOLZrEdaAcD5LA-KJEmVxqGbYTRd3V_5VeTaKEj2y90NK74YWUb56Bzx2RynCOhBDO5Dn4gKuB7gkR5Q4_9FZIIDDe4K4xEu93E6xG_l8jKiQLtZvxidmP
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -857,7 +857,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:19:57 GMT
+      - Mon, 18 Feb 2019 22:17:37 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -908,36 +908,36 @@ http_interactions:
           },
           "artists" : [ {
             "external_urls" : {
-              "spotify" : "https://open.spotify.com/artist/2yrbLiuBmc9j81lTX3XUuI"
+              "spotify" : "https://open.spotify.com/artist/32vWCbZh0xZ4o9gkz4PsEU"
             },
-            "href" : "https://api.spotify.com/v1/artists/2yrbLiuBmc9j81lTX3XUuI",
-            "id" : "2yrbLiuBmc9j81lTX3XUuI",
-            "name" : "The Jacksons",
+            "href" : "https://api.spotify.com/v1/artists/32vWCbZh0xZ4o9gkz4PsEU",
+            "id" : "32vWCbZh0xZ4o9gkz4PsEU",
+            "name" : "Dolly Parton",
             "type" : "artist",
-            "uri" : "spotify:artist:2yrbLiuBmc9j81lTX3XUuI"
+            "uri" : "spotify:artist:32vWCbZh0xZ4o9gkz4PsEU"
           } ],
           "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
           "disc_number" : 1,
-          "duration_ms" : 214200,
+          "duration_ms" : 161400,
           "explicit" : false,
           "external_ids" : {
-            "isrc" : "USSM17801252"
+            "isrc" : "USRN19600096"
           },
           "external_urls" : {
-            "spotify" : "https://open.spotify.com/track/0bfmfUQQ291rU0BUxc33u0"
+            "spotify" : "https://open.spotify.com/track/6fz5BHXCOxGgE6GtDhHQ1E"
           },
-          "href" : "https://api.spotify.com/v1/tracks/0bfmfUQQ291rU0BUxc33u0",
-          "id" : "0bfmfUQQ291rU0BUxc33u0",
+          "href" : "https://api.spotify.com/v1/tracks/6fz5BHXCOxGgE6GtDhHQ1E",
+          "id" : "6fz5BHXCOxGgE6GtDhHQ1E",
           "is_local" : false,
-          "name" : "Blame It on the Boogie",
-          "popularity" : 42,
-          "preview_url" : "https://p.scdn.co/mp3-preview/6800be39a47aa34ccacca76ae8bbd25258bf5cc5?cid=<SPOTIFY_CLIENT_ID>",
-          "track_number" : 1,
+          "name" : "Jolene",
+          "popularity" : 33,
+          "preview_url" : "https://p.scdn.co/mp3-preview/006384bc64ae34b2b0c52951e1a73092f0038c85?cid=<SPOTIFY_CLIENT_ID>",
+          "track_number" : 45,
           "type" : "track",
-          "uri" : "spotify:track:0bfmfUQQ291rU0BUxc33u0"
+          "uri" : "spotify:track:6fz5BHXCOxGgE6GtDhHQ1E"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:57 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:37 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/playlists
@@ -946,7 +946,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQDJqyqgSO_JXM2lkK-f4QSHFES8zUZqQUI3wA6TuldA1-aFgQpUZcW-CzzJSPJU81t7f5I8w21IrWevAO8nsA_RU7VIuwtk_qP23SkE4exKxnjLiJ1qD9pQJXi_oROlMyMxgPfEmvv7fiZKBkPhHTb3_2cIxWwjMGYqpUsXlox6G6qw5TaQNaFm
+      - Bearer BQCw6BZtWdCdI4yIaxUXbMPHSYNwbgZV04WYHD_DqWd9_b1uRfCBTdGfn39b9hBsXfDOLZrEdaAcD5LA-KJEmVxqGbYTRd3V_5VeTaKEj2y90NK74YWUb56Bzx2RynCOhBDO5Dn4gKuB7gkR5Q4_9FZIIDDe4K4xEu93E6xG_l8jKiQLtZvxidmP
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -977,7 +977,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:19:57 GMT
+      - Mon, 18 Feb 2019 22:17:37 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -1721,5 +1721,5 @@ http_interactions:
           "total" : 273
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:57 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:37 GMT
 recorded_with: VCR 4.0.0

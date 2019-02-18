@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 18 Feb 2019 21:20:02 GMT
+      - Mon, 18 Feb 2019 22:17:35 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -42,8 +42,8 @@ http_interactions:
       - max-age=31536000
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQBGPqJquyxv61YS8Rff2irDRCuL6nCvJzmLId7Ohwwo_21WyLCNou-wmBLNNhManvsFwMGu5fxqLZe90cDO93tNe10H-66SdwGZQLg8OCcmd1hsTVI817ys72JUMSZlgMJEj_y2goRWiCmJA3FqUvhZttDgAODpbSsR-LNpOpqxMDm-C-VLazkD","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+      string: '{"access_token":"BQBnh4rS71P_FYqZ7kZ2ttVr0RNQg5zvoira3Y2kPv6nxK4MwabUjsM8pAAflcvnSHuDQtrP6JSVx4QHrWRV3LySvXzC0JDO75Sn3stJIhtQtaDVFCFgvRqBjmraT7e70Wei8J1b-mRDzkW9F4NwNxxDTk9Md7xCBMBpcBXNvozqNBF_Qp9KDNiY","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
         user-read-email user-read-recently-played user-read-private user-top-read"}'
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:02 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:35 GMT
 recorded_with: VCR 4.0.0
