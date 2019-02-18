@@ -50,7 +50,6 @@ class SpotifyService
     JSON.parse(response.body)["access_token"]
   end
 
-
   def self.conn(current_user)
     Faraday.new(url: "https://api.spotify.com") do |faraday|
       faraday.request :url_encoded

@@ -1,4 +1,4 @@
-.ui.grid
+.ui.stackable.grid
   .row
     .five.wide.left.aligned.column
       .ui.teal.inverted.segment
@@ -14,7 +14,7 @@
                   = image_tag playlist.images[0][:url]
                 - else
                   = image_tag "https://bit.ly/2tlLmZc"
-              .playlist.content
+              .playlist.content#playlist
                 .playlist.header
                   =playlist.name
                 .description

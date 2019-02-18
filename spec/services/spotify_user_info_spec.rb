@@ -52,8 +52,12 @@ describe "Spotify User Info" do
       expect(expected.first).to be_a(Track)
     end
 
-    xit 'can get a playlists stats', :vcr do 
-      
+    it 'can get a users playlist stats', :vcr do 
+      user_info = SpotifyUserInfo.new(@current_user)
+      user_info.generate_playlist_stats("3CewmVIvc2e1svDfY7FupH")
+      expected = user_info.playlist_stats("3CewmVIvc2e1svDfY7FupH")
+
+      expect(expected[:length]).to be_truthy
     end 
   end
 end
