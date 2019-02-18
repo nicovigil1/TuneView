@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 18 Feb 2019 21:19:44 GMT
+      - Mon, 18 Feb 2019 22:17:29 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -42,10 +42,10 @@ http_interactions:
       - max-age=31536000
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQCHLkobRpFH512ChcEcO9ylFlJeoXlp4lKzC2-u6Zgd7LwJvFfo07wDTNBkiwGa_Fy7UypoLowp6nrV7ynJUFtAsXURyyVh7vaoh8DjNNjhSuqgNuAD3IXuJPGpu8dMrqlZshcNVAUI-u2R8pNPl1W6vhEYX1yjhLkjoGSwd6hI-ZxxWWdU0bwQ","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+      string: '{"access_token":"BQDM94BLOveun12F5-SGRNrCe98To1BkUzFxMe6uQBYSzWOfkKyVKYPSp-cD0LAaK_8digSZDXPU32aMYB4dRmYTqaLdLHL1dqBqacolo4ndGVWUSNxuCNPFV9gz1lV5-DkuJ-GuI7LWdvKNx5n7tRvWRA_xQyQgKbLj6BFLWM8tRd1ZEnX-IDcy","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
         user-read-email user-read-recently-played user-read-private user-top-read"}'
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:44 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:29 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term
@@ -54,7 +54,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQCHLkobRpFH512ChcEcO9ylFlJeoXlp4lKzC2-u6Zgd7LwJvFfo07wDTNBkiwGa_Fy7UypoLowp6nrV7ynJUFtAsXURyyVh7vaoh8DjNNjhSuqgNuAD3IXuJPGpu8dMrqlZshcNVAUI-u2R8pNPl1W6vhEYX1yjhLkjoGSwd6hI-ZxxWWdU0bwQ
+      - Bearer BQDM94BLOveun12F5-SGRNrCe98To1BkUzFxMe6uQBYSzWOfkKyVKYPSp-cD0LAaK_8digSZDXPU32aMYB4dRmYTqaLdLHL1dqBqacolo4ndGVWUSNxuCNPFV9gz1lV5-DkuJ-GuI7LWdvKNx5n7tRvWRA_xQyQgKbLj6BFLWM8tRd1ZEnX-IDcy
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -81,7 +81,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:19:44 GMT
+      - Mon, 18 Feb 2019 22:17:29 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -98,7 +98,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 11847696
+              "total" : 11847961
             },
             "genres" : [ "conscious hip hop", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
@@ -126,7 +126,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 1481063
+              "total" : 1481104
             },
             "genres" : [ "conscious hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "pop rap", "rap" ],
             "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
@@ -158,7 +158,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 110642
+              "total" : 110647
             },
             "genres" : [ "alternative hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "jazz rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/3fJ60AcIgLzQkVitEvA7uq",
@@ -186,7 +186,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 5608792
+              "total" : 5609086
             },
             "genres" : [ "g funk", "gangster rap", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
@@ -218,7 +218,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 257494
+              "total" : 257504
             },
             "genres" : [ "alternative hip hop", "bboy", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "hip house", "old school hip hop", "pop rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/6jHG1YQkqgojdEzerwvrVv",
@@ -253,5 +253,5 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:44 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:29 GMT
 recorded_with: VCR 4.0.0

@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 18 Feb 2019 21:19:45 GMT
+      - Mon, 18 Feb 2019 22:17:28 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -42,10 +42,10 @@ http_interactions:
       - max-age=31536000
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQATQwlb-NCadY-gMi7-OXNhte7WkWznpw5iUg9U2L7fGfzNVjyISESDyvvOrlGlVNjf2tFlp_eTm7HDS1qP_SltlemoIQx449R0dEux_RYrRRnZhaHF3eFqT-GN6ptc7mlMRzwwiUq3PhmY7MMTxMcMz6P35-HOE4_73b0hgP6264hqYWKoJw0M","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
+      string: '{"access_token":"BQC3C3tEHTQXgi__Jywn8T3CQJV4WJU6lUD5EU9eKtruVrPPjBhIuMD3VHYoN4Ato9JqWgRzPFG4O0VYRjV5Atc37_xNBHOXxV4ihF8neiiL0sDKXGklk_aF1DUVF_3vQQJgwIDMZv8oeXqPDOpD3JQ8p-s5awdKA-130F0756a-Wn49ULd-Xt--","token_type":"Bearer","expires_in":3600,"scope":"playlist-read-private
         user-read-email user-read-recently-played user-read-private user-top-read"}'
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:45 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:28 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=short_term
@@ -54,7 +54,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer BQATQwlb-NCadY-gMi7-OXNhte7WkWznpw5iUg9U2L7fGfzNVjyISESDyvvOrlGlVNjf2tFlp_eTm7HDS1qP_SltlemoIQx449R0dEux_RYrRRnZhaHF3eFqT-GN6ptc7mlMRzwwiUq3PhmY7MMTxMcMz6P35-HOE4_73b0hgP6264hqYWKoJw0M
+      - Bearer BQC3C3tEHTQXgi__Jywn8T3CQJV4WJU6lUD5EU9eKtruVrPPjBhIuMD3VHYoN4Ato9JqWgRzPFG4O0VYRjV5Atc37_xNBHOXxV4ihF8neiiL0sDKXGklk_aF1DUVF_3vQQJgwIDMZv8oeXqPDOpD3JQ8p-s5awdKA-130F0756a-Wn49ULd-Xt--
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -81,7 +81,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:19:45 GMT
+      - Mon, 18 Feb 2019 22:17:28 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -477,5 +477,5 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:45 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:28 GMT
 recorded_with: VCR 4.0.0

@@ -35,7 +35,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 21:20:02 GMT
+      - Mon, 18 Feb 2019 22:17:35 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -431,5 +431,5 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:20:02 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:35 GMT
 recorded_with: VCR 4.0.0

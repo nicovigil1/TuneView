@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 18 Feb 2019 21:19:44 GMT
+      - Mon, 18 Feb 2019 22:17:26 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -51,14 +51,14 @@ http_interactions:
       X-Discogs-Ratelimit:
       - '60'
       X-Discogs-Ratelimit-Used:
-      - '2'
+      - '1'
       X-Discogs-Ratelimit-Remaining:
-      - '58'
+      - '59'
     body:
       encoding: ASCII-8BIT
       string: '{"documentation_url": "http://www.discogs.com/developers/", "statistics":
         {"labels": 1329910, "releases": 10849835, "artists": 6114645}, "hello": "Welcome
         to the Discogs API.", "api_version": "v2"}'
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 21:19:44 GMT
+  recorded_at: Mon, 18 Feb 2019 22:17:26 GMT
 recorded_with: VCR 4.0.0
