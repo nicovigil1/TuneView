@@ -9,8 +9,9 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     %body
     #flashes
-      - flash.each do |type, message|
-        = content_tag :div, message, class: type
+      -# - flash.each do |type, message|
+      -#   = content_tag :div, message, class: type
+      = semantic_flash
     .ui.fluid.container
       - if current_user
         .ui.inverted.black.top.menu
