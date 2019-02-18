@@ -12,4 +12,9 @@ class Playlist
     @track_count = info[:tracks][:total]
     @type = info[:type]
   end
+
+  def compress_name
+    collapsed_name = name.tr(" ", "-")
+    collapsed_name.tr(".", "")
+  end   
 end 

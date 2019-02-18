@@ -31,6 +31,12 @@
                 = f.button '<i class="bordered inverted teal edit icon"></i>'.html_safe
 
     .four.wide.column
+      .ui.teal.inverted.raised.segment#top-5-tracks
+        %h3 Top 5 Tracks of the past month:
+        %ol
+          - @top_5_tracks.each do |track|
+            %li
+              #{track.title} by #{track.artist}
     .four.wide.column
       .ui.teal.inverted.raised.segment#top-5-artists
         %h3 Top 5 Artists of the past month:

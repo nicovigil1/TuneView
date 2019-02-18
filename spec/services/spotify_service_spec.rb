@@ -30,7 +30,15 @@ describe SpotifyService do
           response = SpotifyService.top_5_artists(user)
           expect(response.length).to eq(5)
         end
+      end
 
+      it 'can find the top 5 tracks per user', :vcr do
+        user = User.create(@info)
+
+        allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
+          response = SpotifyService.top_5_tracks(user)
+          expect(response.length).to eq(5)
       end
 
       # after this is run you have to change your development variables
@@ -54,9 +62,8 @@ describe SpotifyService do
 
         it 'can return the most recent played track', :vcr do
           user = User.create(@info)
-          VCR.use_cassette("spotify-service-most-recent-track") do
-            response = SpotifyService.most_recent_track(user)
-          end
+
+          response = SpotifyService.most_recent_track(user)
           # token has expired error message by the time our test suite gets to here
           # expect(response)
         end
