@@ -20,4 +20,18 @@ describe "Playlists" do
       expect(playlist.track_count).to eq(4)
     end
   end
+
+  context "instance methods" do 
+    it "can collapse a name with several spaces and a string" do 
+      info = {id: 1,
+        name: "my name is inigo montoya.", 
+        collaborative: false,
+        images: ["img1", "img2"], 
+        public: true, 
+        tracks: {href: "google.com", total: 4}}
+      playlist = Playlist.new(info)
+
+      expect(playlist.collapse_name).to eq("my-name-is-inigo-montoya")
+    end 
+  end 
 end
