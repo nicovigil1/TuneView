@@ -54,9 +54,8 @@ describe SpotifyService do
 
         it 'can return the most recent played track', :vcr do
           user = User.create(@info)
-          VCR.use_cassette("spotify-service-most-recent-track") do
-            response = SpotifyService.most_recent_track(user)
-          end
+
+          response = SpotifyService.most_recent_track(user)
           # token has expired error message by the time our test suite gets to here
           # expect(response)
         end

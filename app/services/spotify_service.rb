@@ -7,8 +7,10 @@ class SpotifyService
   end 
 
   def self.most_recent_track(user)
+    #FIXME
     data = conn(user).get("/v1/me/player/recently-played?type=track&limit=1").body
-    Track.new(data[:items].first)
+    response = conn(user).get("/v1/tracks/#{data[:items].first[:track][:id]}").body
+    Track.new(response)
   end
 
   def self.find_playlists(user)
@@ -19,7 +21,7 @@ class SpotifyService
 
   def self.playlist_tracks(user, playlist_id)
     conn(user).get("/v1/playlists/#{playlist_id}/tracks").body[:items].map do |data|
-      Track.new(data)
+      Track.new(data[:track])
     end 
   end 
 

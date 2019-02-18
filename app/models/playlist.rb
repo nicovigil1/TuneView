@@ -13,7 +13,7 @@ class Playlist
     @type = info[:type]
   end
 
-  def collapse_name
+  def compress_name
     collapsed_name = name.tr(" ", "-")
     collapsed_name.tr(".", "")
   end   

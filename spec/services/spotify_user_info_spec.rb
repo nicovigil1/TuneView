@@ -42,6 +42,10 @@ describe "Spotify User Info" do
       expected = user_info.get_playlist_tracks("3CewmVIvc2e1svDfY7FupH")
 
       expect(expected.first).to be_a(Track)
+    end
+
+    xit 'can get a playlists stats', :vcr do 
+      
     end 
   end
 end

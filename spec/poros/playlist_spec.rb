@@ -31,7 +31,7 @@ describe "Playlists" do
         tracks: {href: "google.com", total: 4}}
       playlist = Playlist.new(info)
 
-      expect(playlist.collapse_name).to eq("my-name-is-inigo-montoya")
-    end 
+      expect(playlist.compress_name).to eq("my-name-is-inigo-montoya")
+    end
   end 
 end
