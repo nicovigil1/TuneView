@@ -34,12 +34,13 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'omniauth'
 gem 'omniauth-spotify'
 
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'jquery-rails'
 gem 'semantic-ui-sass'
 
 gem 'faraday_middleware'
 
 gem 'newrelic_rpm'
-gem 'jquery-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
