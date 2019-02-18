@@ -14,6 +14,20 @@
  *= require_self
  */
 @import "semantic-ui";
+.chatbox {
+  height: 240px;
+}
+
+#msgs {
+  height: 15em;
+  overflow: auto;
+}
+
+.input {
+  button {
+    display: none;
+  }
+}
 
 body {
   height: 100%;
@@ -71,4 +85,3 @@ h3 {
 .ui.cards>.card>.content>.description {
   color: white;
 }
-
