@@ -35,7 +35,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 19:00:17 GMT
+      - Mon, 18 Feb 2019 19:28:57 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -144,7 +144,7 @@ http_interactions:
           "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:00:17 GMT
+  recorded_at: Mon, 18 Feb 2019 19:28:57 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/tracks/5PQmSHzWnlgG4EBuIqjac2
@@ -180,7 +180,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 19:00:17 GMT
+      - Mon, 18 Feb 2019 19:28:57 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -269,5 +269,5 @@ http_interactions:
           "uri" : "spotify:track:5PQmSHzWnlgG4EBuIqjac2"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:00:17 GMT
+  recorded_at: Mon, 18 Feb 2019 19:28:57 GMT
 recorded_with: VCR 4.0.0

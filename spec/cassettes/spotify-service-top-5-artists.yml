@@ -35,7 +35,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Mon, 18 Feb 2019 19:08:10 GMT
+      - Mon, 18 Feb 2019 19:28:58 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -52,7 +52,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 11847061
+              "total" : 11847151
             },
             "genres" : [ "conscious hip hop", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
@@ -80,7 +80,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 1480973
+              "total" : 1480982
             },
             "genres" : [ "conscious hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "pop rap", "rap" ],
             "href" : "https://api.spotify.com/v1/artists/20qISvAhX20dpIbOOzGK3q",
@@ -112,7 +112,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 110631
+              "total" : 110635
             },
             "genres" : [ "alternative hip hop", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "jazz rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/3fJ60AcIgLzQkVitEvA7uq",
@@ -140,7 +140,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 5608139
+              "total" : 5608242
             },
             "genres" : [ "g funk", "gangster rap", "hip hop", "pop rap", "rap", "west coast rap" ],
             "href" : "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
@@ -172,7 +172,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 257476
+              "total" : 257477
             },
             "genres" : [ "alternative hip hop", "bboy", "east coast hip hop", "gangster rap", "hardcore hip hop", "hip hop", "hip house", "old school hip hop", "pop rap", "rap", "turntablism" ],
             "href" : "https://api.spotify.com/v1/artists/6jHG1YQkqgojdEzerwvrVv",
@@ -207,5 +207,5 @@ http_interactions:
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Mon, 18 Feb 2019 19:08:10 GMT
+  recorded_at: Mon, 18 Feb 2019 19:28:58 GMT
 recorded_with: VCR 4.0.0

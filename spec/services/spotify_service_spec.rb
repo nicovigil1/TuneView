@@ -30,7 +30,15 @@ describe SpotifyService do
           response = SpotifyService.top_5_artists(user)
           expect(response.length).to eq(5)
         end
+      end
 
+      it 'can find the top 5 tracks per user', :vcr do
+        user = User.create(@info)
+
+        allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
+          response = SpotifyService.top_5_tracks(user)
+          expect(response.length).to eq(5)
       end
 
       # after this is run you have to change your development variables

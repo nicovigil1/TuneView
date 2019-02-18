@@ -6,6 +6,12 @@ class SpotifyService
     response[:items]
   end 
 
+  def self.top_5_tracks(user)
+    params = "time_range=short_term&limit=5"
+    response = conn(user).get("/v1/me/top/tracks?#{params}").body
+    response[:items]
+  end 
+
   def self.most_recent_track(user)
     #FIXME
     data = conn(user).get("/v1/me/player/recently-played?type=track&limit=1").body
