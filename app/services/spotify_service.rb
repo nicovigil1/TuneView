@@ -1,16 +1,16 @@
 class SpotifyService
-  
+
   def self.top_5_artists(user)
     params = "time_range=short_term&limit=5"
     response = conn(user).get("/v1/me/top/artists?#{params}").body
     response[:items]
-  end 
+  end
 
   def self.top_5_tracks(user)
     params = "time_range=short_term&limit=5"
     response = conn(user).get("/v1/me/top/tracks?#{params}").body
     response[:items]
-  end 
+  end
 
   def self.most_recent_track(user)
     #FIXME
@@ -23,22 +23,22 @@ class SpotifyService
     data = conn(user).get do |c|
       c.url '/v1/me/playlists'
     end.body[:items]
-  end 
+  end
 
   def self.playlist_tracks(user, playlist_id)
     conn(user).get("/v1/playlists/#{playlist_id}/tracks").body[:items].map do |data|
       Track.new(data[:track])
-    end 
-  end 
+    end
+  end
 
   def self.playlist_stats(user, playlist_id)
     ids = conn(user).get("/v1/playlists/#{playlist_id}/tracks").body[:items].map do |data|
       data[:track][:id]
     end
     conn(user).get("/v1/audio-features/?ids=#{ids.join(",")}").body
-  end 
+  end
 
-  private 
+  private
 
   def self.refresh_token(user)
     response = Faraday.post("https://accounts.spotify.com/api/token") do |req|

@@ -17,3 +17,27 @@
 //= require turbolinks
 //= require_tree .
 //= require semantic-ui
+
+scroll_bottom = function() {
+  if ($('#msgs').length > 0) {
+    $('#msgs').scrollTop($('#msgs')[0].scrollHeight);
+  }
+}
+
+submit_message = function() {
+  $('#message_body').on('keydown', function(e) {
+    if (e.keyCode == 13) {
+      $('button').click();
+      e.target.value = ""
+    };
+  });
+};
+
+$(document).on('turbolinks:load', function() {
+  submit_message();
+  scroll_bottom();
+})
+
+$('.ui.rating')
+  .rating("disable")
+  ;
