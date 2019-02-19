@@ -14,9 +14,15 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require semantic-ui
 //= require_tree .
 //= require_self
-//= require semantic-ui
+// $(document).ready(function(){
+//   $('.ui.rating')
+//     .rating("disable")
+//     ;
+// }
+// )
 
 scroll_bottom = function() {
   if ($('#msgs').length > 0) {
@@ -32,12 +38,13 @@ submit_message = function() {
     };
   });
 };
+lock_ratings = function() {
+  $('.ui.rating')
+    .rating("disable");
+}
 
 $(document).on('turbolinks:load', function() {
   submit_message();
   scroll_bottom();
+  lock_ratings();
 })
-
-$('.ui.rating')
-  .rating("disable")
-  ;
