@@ -1,3 +1,0 @@
-$('.ui.rating')
-  .rating("disable")
-  ;
