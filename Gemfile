@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-
+gem 'redis'
 gem 'haml'
 
 # Reduces boot times through caching; required in config/boot.rb
