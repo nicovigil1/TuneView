@@ -17,6 +17,8 @@
 //= require turbolinks
 //= require_tree .
 //= require semantic-ui
+//= require ratings
+//= require_self
 
 $('.ui.rating')
   .rating("disable")
