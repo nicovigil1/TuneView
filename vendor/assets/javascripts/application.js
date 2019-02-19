@@ -15,8 +15,9 @@
 //= require activestorage
 //= require turbolinks
 //= require semantic-ui
+//= require ratings
+//= require_self
 //= require_tree .
-
 
 $('.ui.rating')
   .rating("disable")
