@@ -30,29 +30,17 @@
                 .ui.fluid.icon.input
                   = f.text_field :body
                   = f.button '<i class="bordered inverted teal edit icon"></i>'.html_safe
-    .four.wide.column
-      .ui.fluid.raised.card.chatbox
-        .content#msgs
-          .ui.small.feed#message-container
-            = render @messages
-        .extra.content
-          = form_for :message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true do |f|
-            .field
-              .ui.fluid.icon.input
-                = f.text_field :body
-                = f.button '<i class="bordered inverted teal edit icon"></i>'.html_safe
-
-    .four.wide.column
-      .ui.teal.inverted.raised.segment#top-5-tracks
-        %h3 Top 5 Tracks of the past month:
-        %ol
-          - @top_5_tracks.each do |track|
-            %li
-              #{track.title} by #{track.artist}
-    .four.wide.column
-      .ui.teal.inverted.raised.segment#top-5-artists
-        %h3 Top 5 Artists of the past month:
-        %ol
-          - @top_5_artists.each do |artist|
-            %li
-              = artist.name
+      .four.wide.column
+        .ui.teal.inverted.raised.segment#top-5-tracks
+          %h3 Top 5 Tracks of the past month:
+          %ol
+            - @top_5_tracks.each do |track|
+              %li
+                #{track.title} by #{track.artist}
+      .four.wide.column
+        .ui.teal.inverted.raised.segment#top-5-artists
+          %h3 Top 5 Artists of the past month:
+          %ol
+            - @top_5_artists.each do |artist|
+              %li
+                = artist.name

@@ -33,7 +33,7 @@ class UserFacade
     if @@cache.has_key?(user.id)
       @@cache[user.id]
     else
-      @@cache.put(user.id, new(user), 30)
+      @@cache.put(user.id, new(user), (ENV["SPOTIFY_API_CACHE_TIME"] || 60))
     end
   end
 end
