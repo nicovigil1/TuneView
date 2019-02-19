@@ -12,6 +12,12 @@ class SessionsController < ApplicationController
     redirect_to dashboard_path
   end
 
+  def destroy
+    session.clear
+    flash[:notice] = "You are now logged out!"
+    redirect_to '/'
+  end
+
   private
 
   def spotify_params(credentials, profile)

@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get '/', to: "welcome#index", as: 'home'
+  get '/', to: "welcome#index", as: 'root'
 
   get '/auth/:spotify/callback', to: 'sessions#create'
+  get '/logout', to: 'sessions#destroy', as: 'logout'
 
   get '/dashboard', to: "users#show", as: "dashboard"
 

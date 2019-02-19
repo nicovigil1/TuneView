@@ -1,21 +1,20 @@
 class ApplicationController < ActionController::Base
   before_action :expired_filter
-  helper_method :current_user, :playlists
+  helper_method :current_user
 
   def current_user
-    User.find(session[:user_id]) if session[:user_id]
+    begin
+      @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    rescue ActiveRecord::RecordNotFound
+      redirect_to logout_path
+    end
   end
 
   def expired_filter
     if current_user && SpotifyService.user_data(current_user)[:error]
       SpotifyService.refresh_token(current_user)
-    else 
+    else
       nil
-    end 
-  end 
-  
-  def user_info    
-    user_info = SpotifyUserInfo.new(current_user)
-    user_info
-  end 
+    end
+  end
 end
