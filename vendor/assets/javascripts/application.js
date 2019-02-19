@@ -11,16 +11,16 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
 //= require semantic-ui
 //= require ratings
 //= require_self
+//= require_tree .
 
 $('.ui.rating')
   .rating("disable")
   ;
+$(document).ready('.ui.rating')
 

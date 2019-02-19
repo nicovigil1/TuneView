@@ -40,6 +40,10 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
+def stub_login(user)
+  allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+end
+
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
