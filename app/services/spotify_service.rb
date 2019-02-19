@@ -14,8 +14,12 @@ class SpotifyService
 
   def self.most_recent_track(user)
     #FIXME
-    data = conn(user).get("/v1/me/player/recently-played?type=track&limit=1").body
-    response = conn(user).get("/v1/tracks/#{data[:items].first[:track][:id]}").body
+    user.reload
+    con = conn(user)
+    req = con.get("/v1/me/player/recently-played?type=track&limit=1")
+    data = req.body
+    # require 'pry'; binding.pry
+    response = conn(user.reload).get("/v1/tracks/#{data[:items].first[:track][:id]}").body
     Track.new(response)
   end
 

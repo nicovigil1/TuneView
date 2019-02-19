@@ -4,6 +4,7 @@
     .five.wide.left.aligned.column
       .ui.teal.inverted.segment
         %h1 Welcome, #{current_user.username}
+        %img{src: current_user.image_url}
   .row
     .four.wide.column
       .ui.teal.inverted.raised.segment#most-recent
