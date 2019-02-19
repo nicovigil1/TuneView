@@ -1,28 +1,39 @@
 class UserFacade
-  def self.top_5_artists(user)
-    artist_data = SpotifyService.top_5_artists(user)
-    return nil unless artist_data
-    artist_data.map do |data|
+  attr_reader :user
+
+  def initialize(user)
+    @user = user
+  end
+
+  def top_5_artists
+    @top_5_artists ||= SpotifyService.top_5_artists(user).map do |data|
       Artist.new(data)
     end
   end
 
-  def self.top_5_tracks(user)
-    track_data = SpotifyService.top_5_tracks(user)
-    return nil unless track_data
-    track_data.map do |data|
+  def top_5_tracks
+    @top_5_tracks ||= SpotifyService.top_5_tracks(user).map do |data|
       Track.new(data)
     end
   end
 
-  def self.most_recent_track(user)
-    SpotifyService.most_recent_track(user)
+  def most_recent_track
+    @most_recent_track ||= SpotifyService.most_recent_track(user)
   end
 
-  def self.playlists(user)
-    playlist_data = SpotifyService.find_playlists(user)
-    playlist_data.map do |data|
+  def playlists
+    @playlist_data ||= SpotifyService.find_playlists(user).map do |data|
       Playlist.new(data)
+    end
+  end
+
+  def self.for_user(user)
+    @@cache ||= TimeHash.new
+
+    if @@cache.has_key?(user.id)
+      @@cache[user.id]
+    else
+      @@cache.put(user.id, new(user), 30)
     end
   end
 end

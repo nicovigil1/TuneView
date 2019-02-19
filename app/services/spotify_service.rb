@@ -1,5 +1,4 @@
 class SpotifyService
-
   def self.top_5_artists(user)
     params = "time_range=short_term&limit=5"
     response = conn(user).get("/v1/me/top/artists?#{params}").body
@@ -15,16 +14,13 @@ class SpotifyService
   def self.most_recent_track(user)
     #FIXME
     user.reload
-    con = conn(user)
-    req = con.get("/v1/me/player/recently-played?type=track&limit=1")
-    data = req.body
+    data = conn(user).get("/v1/me/player/recently-played?type=track&limit=1").body
     # require 'pry'; binding.pry
-    response = conn(user.reload).get("/v1/tracks/#{data[:items].first[:track][:id]}").body
-    Track.new(response)
+    conn(user.reload).get(data[:items].first[:track][:href]).body
   end
 
   def self.find_playlists(user)
-    data = conn(user).get do |c|
+    conn(user).get do |c|
       c.url '/v1/me/playlists'
     end.body[:items]
   end

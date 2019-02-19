@@ -4,20 +4,21 @@
       .five.wide.left.aligned.column
         .ui.teal.inverted.segment
           %h1 Welcome, #{current_user.username}
+          %img{src: current_user.image_url, height: 250, width: 250}
     .row
       .four.wide.column
         .ui.teal.inverted.raised.segment#most-recent
           .ui.items
             %h3 Your most recently played song:
-            - cache [@most_recent.artist, @most_recent.title].join('-') do
+            - cache [@most_recent_song.artist, @most_recent_song.title].join('-') do
               .item
                 .image
-                  =image_tag "#{@most_recent.cover_url}"
+                  =image_tag "#{@most_recent_song.cover_url}"
                 .content.card-text
-                  .header.card-text= @most_recent.title
+                  .header.card-text= @most_recent_song.title
                   .meta.card-text
-                    %span by: #{@most_recent.artist}
-                  .extra.card-text= @most_recent.album
+                    %span by: #{@most_recent_song.artist}
+                  .extra.card-text= @most_recent_song.album
       .four.wide.column
       .four.wide.column
       .four.wide.column
