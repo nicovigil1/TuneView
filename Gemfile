@@ -57,6 +57,7 @@ group :development, :test do
   gem 'vcr'
   gem 'launchy'
   gem 'webmock'
+  gem 'rack-mini-profiler'
 end
 
 group :development do
