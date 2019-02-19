@@ -42,6 +42,8 @@ gem 'faraday_middleware'
 
 gem 'newrelic_rpm'
 
+gem 'time-hash'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -57,6 +59,7 @@ group :development, :test do
   gem 'vcr'
   gem 'launchy'
   gem 'webmock'
+  gem 'rack-mini-profiler'
 end
 
 group :development do

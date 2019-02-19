@@ -1,24 +1,35 @@
+- cache current_user.username do
+  .ui.grid
+    .row
+      .five.wide.left.aligned.column
+        .ui.teal.inverted.segment
+          %h1 Welcome, #{current_user.username}
+          %img{src: current_user.image_url}
+    .row
+      .four.wide.column
+        .ui.teal.inverted.raised.segment#most-recent
+          .ui.items
+            %h3 Your most recently played song:
+            .item
+              .image
+                =image_tag "#{@most_recent_song.cover_url}"
+              .content.card-text
+                .header.card-text= @most_recent_song.title
+                .meta.card-text
+                  %span by: #{@most_recent_song.artist}
+                .extra.card-text= @most_recent_song.album
 
-.ui.grid
-  .row
-    .five.wide.left.aligned.column
-      .ui.teal.inverted.segment
-        %h1 Welcome, #{current_user.username}
-        %img{src: current_user.image_url}
-  .row
-    .four.wide.column
-      .ui.teal.inverted.raised.segment#most-recent
-        .ui.items
-          %h3 Your most recently played song:
-          .item
-            .image
-              =image_tag "#{@most_recent.cover_url}"
-            .content.card-text
-              .header.card-text= @most_recent.title
-              .meta.card-text
-                %span by: #{@most_recent.artist}
-              .extra.card-text= @most_recent.album
-
+      .four.wide.column
+        .ui.fluid.raised.card.chatbox
+          .content#msgs
+            .ui.small.feed#message-container
+              = render @messages
+          .extra.content
+            = form_for :message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true do |f|
+              .field
+                .ui.fluid.icon.input
+                  = f.text_field :body
+                  = f.button '<i class="bordered inverted teal edit icon"></i>'.html_safe
     .four.wide.column
       .ui.fluid.raised.card.chatbox
         .content#msgs
@@ -45,4 +56,3 @@
           - @top_5_artists.each do |artist|
             %li
               = artist.name
-

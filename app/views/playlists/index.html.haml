@@ -1,25 +1,24 @@
-.ui.stackable.grid
-  .row
-    .five.wide.left.aligned.column
-      .ui.teal.inverted.segment
-        %h1 Click a playlist for its stats!
-  .row
-    .playlists.four.teal.centered.link.cards
-      .sixteen.wide.column
-        .ui.centered.link.cards
-          - @playlists.each do |playlist|
-            %a.teal.card{:href => playlist_path(playlist.compress_name, playlist.id)}
-              .image
-                - unless playlist.track_count == 0
-                  = image_tag playlist.images[0][:url]
-                - else
-                  = image_tag "https://bit.ly/2tlLmZc"
-              .playlist.content#playlist
-                .playlist.header
-                  =playlist.name
-                .description
-                  .meta
-                    Track Count: #{playlist.track_count}
-                
-
-  
+- cache "playlists-#{@playlists.count}-#{current_user.username}" do
+  .ui.grid
+    .row
+      .five.wide.left.aligned.column
+        .ui.teal.inverted.segment
+          %h1 Click a playlist for its stats!
+    .row
+      .playlists.four.teal.centered.link.cards
+        .sixteen.wide.column
+          .ui.centered.link.cards
+            - @playlists.each do |playlist|
+              - cache playlist.id do
+                %a.teal.card{:href => playlist_path(playlist.name, playlist.id)}
+                  .image
+                    - unless playlist.track_count == 0
+                      = image_tag playlist.images[0][:url]
+                    - else
+                      = image_tag "https://bit.ly/2tlLmZc"
+                  .playlist.content
+                    .playlist.header
+                      =playlist.name
+                    .description
+                      .meta
+                        Track Count: #{playlist.track_count}

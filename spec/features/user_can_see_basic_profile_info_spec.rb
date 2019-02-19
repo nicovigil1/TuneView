@@ -15,6 +15,8 @@ describe "As a user" do
       it "I should see my spotify username and profile image", :vcr do
         visit dashboard_path
 
+        save_and_open_page
+
         expect(page).to have_content("Welcome, #{@user.username}")
         expect(page).to have_css("img[src='#{@user.image_url}']")
       end

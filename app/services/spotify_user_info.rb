@@ -2,17 +2,17 @@ class SpotifyUserInfo
   attr_reader :user, :top_5_artists, :top_5_tracks, :most_recent_song, :playlists, :hash
   def initialize(user)
     @user = user
-    @top_5_artists = UserFacade.top_5_artists(@user)
-    @top_5_tracks = UserFacade.top_5_tracks(@user)
-    @most_recent_song = UserFacade.most_recent_track(@user)
-    @playlists = UserFacade.playlists(@user)
+    @top_5_artists = UserFacade.for_user(@user).top_5_artists
+    @top_5_tracks = UserFacade.for_user(@user).top_5_tracks
+    @most_recent_song = Track.new(UserFacade.for_user(@user).most_recent_track)
+    @playlists = UserFacade.for_user(@user).playlists
     @hash = nil
-  end 
+  end
 
   def get_playlist_tracks(playlist_id)
     SpotifyService.playlist_tracks(@user, playlist_id)
   end
-  
+
   def generate_playlist_stats(playlist_id)
     playlists = SpotifyService.playlist_stats(@user, playlist_id)
     @hash = Hash.new(0)
@@ -33,5 +33,5 @@ class SpotifyUserInfo
       stats[feature] = (metric / length).round(1)
     end
     stats
-  end 
-end 
+  end
+end
