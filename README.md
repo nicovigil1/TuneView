@@ -12,6 +12,8 @@ Availability of lyrics is limited to select tracks.
 
 Tuneview simplifies the process of viewing interesting stats about your music preferences.
 
+<img width="1440" alt="tuneviewplaylist" src="https://user-images.githubusercontent.com/40776966/53116163-36ae1e00-3505-11e9-9db3-7a5025f71771.png">
+
 ### Target Audience
 
 Any users of Spotify who want to explore music in a simple view and be able to view the lyrics.
