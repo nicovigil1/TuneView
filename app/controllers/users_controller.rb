@@ -9,13 +9,4 @@ class UsersController < ApplicationController
     @messages = Message.custom_display
     @message = Message.new
   end
-
-  private
-
-  def require_login
-    unless current_user
-      flash[:notice] = "You must be signed in to visit this page."
-      redirect_to '/'
-    end
-  end
 end
