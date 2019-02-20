@@ -68,7 +68,7 @@ $ bundle exec figaro install
 
 * S_TEST_USERNAME:       `spotify username`
 * S_TEST_IMAGE_URL:      `https://bit.ly/2tlLmZc`
-* S_TEST_PROFILE_URL:    `https://open.spotify.com/user/``your spotify username`
+* S_TEST_PROFILE_URL:    `https://open.spotify.com/user/(your spotify username)`
 
 ## Contributors
 
