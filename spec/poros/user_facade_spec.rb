@@ -8,13 +8,12 @@ describe "User Facade" do
         refresh_token: ENV["REQUEST_TOKEN"],
         profile_url: "https://open.spotify.com/user/12184696969"}
 
-      @current_user = User.create(@info)
-      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@current_user)
-      SpotifyService.refresh_token(@current_user)
+      @user = User.create(@info)
+      stub_login(@user)
     end
 
     it "can generate top 5 artists for a user", :vcr do
-      expected = UserFacade.for_user(@current_user).top_5_artists
+      expected = UserFacade.new(@user).top_5_artists
 
       expect(expected.class).to eq(Array)
       expect(expected.count).to eq(5)
@@ -23,7 +22,7 @@ describe "User Facade" do
     end
 
     it "can generate top 5 tracks for a user", :vcr do
-      expected = UserFacade.for_user(@current_user).top_5_tracks
+      expected = UserFacade.new(@user).top_5_tracks
 
       expect(expected.class).to eq(Array)
       expect(expected.count).to eq(5)
@@ -32,13 +31,13 @@ describe "User Facade" do
     end
 
     it 'can return the most recent played track', :vcr do
-      response = UserFacade.for_user(@current_user).most_recent_track
+      response = UserFacade.new(@user).most_recent_track
 
-      expect(response).to be_a(Hash)
+      expect(response).to be_a(Track)
     end
 
     it 'can return a users playlists', :vcr do
-      response = UserFacade.for_user(@current_user).playlists
+      response = UserFacade.new(@user).playlists
 
       expect(response.first).to be_a(Playlist)
       expect(response.last).to be_a(Playlist)

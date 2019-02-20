@@ -3,37 +3,55 @@ class UserFacade
 
   def initialize(user)
     @user = user
+    @service = SpotifyService.new(@user)
   end
 
   def top_5_artists
-    @top_5_artists ||= SpotifyService.top_5_artists(user).map do |data|
+    @top_5_artists ||= @service.top_5_artists.map do |data|
       Artist.new(data)
     end
   end
 
   def top_5_tracks
-    @top_5_tracks ||= SpotifyService.top_5_tracks(user).map do |data|
+    @top_5_tracks ||= @service.top_5_tracks.map do |data|
       Track.new(data)
     end
   end
 
   def most_recent_track
-    @most_recent_track ||= SpotifyService.most_recent_track(user)
+    Track.new(@most_recent_track ||= @service.most_recent_track)
   end
 
   def playlists
-    @playlist_data ||= SpotifyService.find_playlists(user).map do |data|
+    @playlist_data ||= @service.find_playlists.map do |data|
       Playlist.new(data)
     end
   end
 
-  def self.for_user(user)
-    @@cache ||= TimeHash.new
+  def playlist_stats(playlist_id)
+    generate_playlist_stats(playlist_id)
+    length = @hash[:length].to_f
+    @hash.reduce({}) do |hash, (feature, metric)|
+      hash[feature] = (metric / length).round(1)
+      hash
+    end
+  end
 
-    if @@cache.has_key?(user.id)
-      @@cache[user.id]
-    else
-      @@cache.put(user.id, new(user), (ENV["SPOTIFY_API_CACHE_TIME"] || 60))
+  def generate_playlist_stats(playlist_id)
+    playlists = @service.playlist_stats(playlist_id)
+    @hash = Hash.new(0)
+    length = playlists[:audio_features].length
+    @hash[:length] = length
+    results = playlists[:audio_features].flat_map do |metrics|
+       metrics.map do |feature, metric|
+        @hash[feature] += metric if (metric.class == Float || metric.class == Integer)
+      end
+    end
+  end
+
+  def get_playlist_tracks(playlist_id)
+    @service.playlist_tracks(playlist_id).map do |track_data|
+      Track.new(track_data[:track])
     end
   end
 end
