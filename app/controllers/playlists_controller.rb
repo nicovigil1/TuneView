@@ -1,4 +1,6 @@
 class PlaylistsController < ApplicationController
+  before_action :require_login
+  
   def index
     @playlists = UserFacade.new(current_user).playlists
   end
