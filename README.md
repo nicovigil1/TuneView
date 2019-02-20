@@ -10,7 +10,7 @@ Availability of lyrics is limited to select tracks.
 
 ### Solution
 
-Tuneview simplifies the process of viewing interesting stats about your music preferences and provides lyrics for an enhanced listening experience.
+Tuneview simplifies the process of viewing interesting stats about your music preferences.
 
 ### Target Audience
 
