@@ -1,14 +1,10 @@
 class SessionsController < ApplicationController
   def create
-    user_info = spotify_params(request.env['omniauth.auth'].credentials, request.env['omniauth.auth'].info)
+    user_exists_login if (@user = User.find_by(username: user_info[:username]))
 
-    user = User.find_by(username: user_info[:username]) || User.create(user_info)
+    @user = User.new(user_info)
 
-    user.update(user_info)
-    session[:user_id] = user.id
-    flash[:success] = "Successfully signed in." if user.save
-
-    redirect_to dashboard_path
+    successful_login if @user.save
   end
 
   def destroy
@@ -18,6 +14,22 @@ class SessionsController < ApplicationController
   end
 
   private
+
+  def successful_login
+    flash[:success] = "Successfully signed in."
+    session[:user_id] = @user.id
+
+    redirect_to dashboard_path
+  end
+
+  def user_exists_login
+    @user.update(user_info)
+    successful_login
+  end
+
+  def user_info
+    spotify_params(request.env['omniauth.auth'].credentials, request.env['omniauth.auth'].info)
+  end
 
   def spotify_params(credentials, profile)
     profile["image"] ||= "https://bit.ly/2tlLmZc"
