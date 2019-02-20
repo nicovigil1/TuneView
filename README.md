@@ -53,7 +53,7 @@ We need to run Figaro to create a hidden .yml file to store our API keys locally
 $ bundle exec figaro install
 ```
 
-Within config/application.yml, add the following keys:
+## Within config/application.yml, add the following Environment Variable keys:
 
 # Discogs
 * Request_Token_URL:	    https://api.discogs.com/oauth/request_token
