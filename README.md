@@ -61,14 +61,14 @@ Within config/application.yml, add the following keys:
 * Access_Token_URL:	      https://api.discogs.com/oauth/access_token
 
 # Spotify
-SPOTIFY_CLIENT_ID:	    `your id from spotify`
-SPOTIFY_CLIENT_SECRET:	`your client secret from spotify`
-S_TEST_TOKEN:           `token from spotify`
-REQUEST_TOKEN:          `refresh token from spotify`
+* SPOTIFY_CLIENT_ID:	    `your id from spotify`
+* SPOTIFY_CLIENT_SECRET:	`your client secret from spotify`
+* S_TEST_TOKEN:           `token from spotify`
+* REQUEST_TOKEN:          `refresh token from spotify`
 
-S_TEST_USERNAME:       `spotify username`
-S_TEST_IMAGE_URL:      `https://bit.ly/2tlLmZc`
-S_TEST_PROFILE_URL:    `https://open.spotify.com/user/``your spotify username`
+* S_TEST_USERNAME:       `spotify username`
+* S_TEST_IMAGE_URL:      `https://bit.ly/2tlLmZc`
+* S_TEST_PROFILE_URL:    `https://open.spotify.com/user/``your spotify username`
 
 ## Contributors
 
