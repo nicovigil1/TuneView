@@ -6,7 +6,6 @@ TuneView is a unique way to learn more about yourself and the way you listen to 
 ### Problem
 
 Users often sacrifice personalization for prebuilt playlists or complicated features that may never be used.
-Availability of lyrics is limited to select tracks.
 
 ### Solution
 
@@ -16,7 +15,7 @@ Tuneview simplifies the process of viewing interesting stats about your music pr
 
 ### Target Audience
 
-Any users of Spotify who want to explore music in a simple view and be able to view the lyrics.
+Any users of Spotify who want to explore music in a simple view and see interesting statistics about the music they listen.
 
 ### Integrations
 
@@ -38,7 +37,7 @@ $ bundle
 
 Set up the database
 ```
-$ rake db:{create,migrate,seed}
+$ rake db:{create,migrate}
 ```
 
 Run the test suite:
@@ -66,9 +65,11 @@ $ bundle exec figaro install
 * S_TEST_TOKEN:           `token from spotify`
 * REQUEST_TOKEN:          `refresh token from spotify`
 
-* S_TEST_USERNAME:       `spotify username`
-* S_TEST_IMAGE_URL:      `https://bit.ly/2tlLmZc`
-* S_TEST_PROFILE_URL:    `https://open.spotify.com/user/(your spotify username)`
+* S_TEST_USERNAME:        `spotify username`
+* S_TEST_IMAGE_URL:       `https://bit.ly/2tlLmZc`
+* S_TEST_PROFILE_URL:     `https://open.spotify.com/user/(your spotify username)`
+
+* SPOTIFY_API_CACHE_TIME: `time in seconds that API calls to spotify should be cached for.`
 
 ## Contributors
 
@@ -85,6 +86,8 @@ Our app is deployed on heroku at:
 
 ## Technologies
 * [vcr](https://github.com/vcr/vcr)
+* [time-hash](https://github.com/semaj/time-hash)
+* [rails](https://rubyonrails.org/)
 
 ### Versions
 * Ruby 2.5.3
