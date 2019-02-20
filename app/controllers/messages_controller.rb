@@ -1,10 +1,8 @@
 class MessagesController < ApplicationController
-
   def create
     message = current_user.messages.build(message_params)
     broadcast(message) if message.save
   end
-
 
   private
 
@@ -19,5 +17,4 @@ class MessagesController < ApplicationController
   def render_message(msg_source)
     render(partial: 'message', locals: {message: msg_source})
   end
-
 end

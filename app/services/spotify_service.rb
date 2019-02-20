@@ -1,5 +1,6 @@
 class SpotifyService
   attr_reader :user
+  
   def initialize(user)
     @user = user
     @api_cache = TimeHash.new
