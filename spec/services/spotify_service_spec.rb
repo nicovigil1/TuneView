@@ -66,5 +66,15 @@ describe SpotifyService do
           # token has expired error message by the time our test suite gets to here
           # expect(response)
         end
+
+        it 'can return a track', :vcr do
+          user = User.create(@info)
+          id = "6MNVXCCvHKUmGvEhJerySY"
+
+          response = SpotifyService.new(user).get_track(id)
+
+          expect(response).to be_a(Track)
+          expect(response.id).to eq(id)
+        end
       end
     end
