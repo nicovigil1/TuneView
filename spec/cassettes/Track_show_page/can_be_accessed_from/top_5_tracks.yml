@@ -35,7 +35,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Thu, 21 Feb 2019 17:32:05 GMT
+      - Thu, 21 Feb 2019 20:57:17 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -52,7 +52,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 6209
+              "total" : 6210
             },
             "genres" : [ ],
             "href" : "https://api.spotify.com/v1/artists/0GzsRlVbRZ1j4rkTlRNRXW",
@@ -80,7 +80,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 240603
+              "total" : 240620
             },
             "genres" : [ "deep underground hip hop", "hip hop", "rap", "underground hip hop" ],
             "href" : "https://api.spotify.com/v1/artists/51Pn4gGnZuyOMDfIT1Zy3N",
@@ -108,7 +108,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 626078
+              "total" : 626171
             },
             "genres" : [ "hip hop", "pop rap", "rap", "trap music", "underground hip hop" ],
             "href" : "https://api.spotify.com/v1/artists/1dqGS5sT6PE2wEvP1gROZC",
@@ -136,7 +136,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 256672
+              "total" : 256770
             },
             "genres" : [ "hip hop", "pop rap", "rap", "trap music", "underground hip hop" ],
             "href" : "https://api.spotify.com/v1/artists/6U3ybJ9UHNKEdsH7ktGBZ7",
@@ -164,7 +164,7 @@ http_interactions:
             },
             "followers" : {
               "href" : null,
-              "total" : 86907
+              "total" : 86912
             },
             "genres" : [ "indie pop", "indie poptimism", "indietronica", "modern alternative rock", "modern rock" ],
             "href" : "https://api.spotify.com/v1/artists/42crL07E4WPfVovyUtMpvC",
@@ -190,12 +190,12 @@ http_interactions:
           "total" : 29,
           "limit" : 5,
           "offset" : 0,
-          "previous" : null,
           "href" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=0&time_range=short_term",
+          "previous" : null,
           "next" : "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Thu, 21 Feb 2019 17:32:05 GMT
+  recorded_at: Thu, 21 Feb 2019 20:57:17 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=short_term
@@ -231,7 +231,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Thu, 21 Feb 2019 17:32:05 GMT
+      - Thu, 21 Feb 2019 20:57:17 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -595,12 +595,12 @@ http_interactions:
           "total" : 50,
           "limit" : 5,
           "offset" : 0,
-          "previous" : null,
           "href" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=0&time_range=short_term",
+          "previous" : null,
           "next" : "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=5&time_range=short_term"
         }
     http_version: 
-  recorded_at: Thu, 21 Feb 2019 17:32:05 GMT
+  recorded_at: Thu, 21 Feb 2019 20:57:17 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track
@@ -636,7 +636,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Thu, 21 Feb 2019 17:32:05 GMT
+      - Thu, 21 Feb 2019 20:57:17 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -736,7 +736,7 @@ http_interactions:
           "href" : "https://api.spotify.com/v1/me/player/recently-played?limit=1&type=track"
         }
     http_version: 
-  recorded_at: Thu, 21 Feb 2019 17:32:05 GMT
+  recorded_at: Thu, 21 Feb 2019 20:57:17 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/tracks/26w5rYM0t0KWh9v0gY6Moe
@@ -772,7 +772,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Thu, 21 Feb 2019 17:32:05 GMT
+      - Thu, 21 Feb 2019 20:57:17 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -852,7 +852,7 @@ http_interactions:
           "uri" : "spotify:track:26w5rYM0t0KWh9v0gY6Moe"
         }
     http_version: 
-  recorded_at: Thu, 21 Feb 2019 17:32:05 GMT
+  recorded_at: Thu, 21 Feb 2019 20:57:17 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/tracks/6MNVXCCvHKUmGvEhJerySY
@@ -888,7 +888,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Thu, 21 Feb 2019 17:32:06 GMT
+      - Thu, 21 Feb 2019 20:57:17 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -968,5 +968,72 @@ http_interactions:
           "uri" : "spotify:track:6MNVXCCvHKUmGvEhJerySY"
         }
     http_version: 
-  recorded_at: Thu, 21 Feb 2019 17:32:06 GMT
+  recorded_at: Thu, 21 Feb 2019 20:57:17 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/audio-features/6MNVXCCvHKUmGvEhJerySY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_TEST_TOKEN>
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Thu, 21 Feb 2019 20:57:17 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "danceability" : 0.550,
+          "energy" : 0.802,
+          "key" : 1,
+          "loudness" : -5.563,
+          "mode" : 1,
+          "speechiness" : 0.419,
+          "acousticness" : 0.701,
+          "instrumentalness" : 0,
+          "liveness" : 0.298,
+          "valence" : 0.789,
+          "tempo" : 89.853,
+          "type" : "audio_features",
+          "id" : "6MNVXCCvHKUmGvEhJerySY",
+          "uri" : "spotify:track:6MNVXCCvHKUmGvEhJerySY",
+          "track_href" : "https://api.spotify.com/v1/tracks/6MNVXCCvHKUmGvEhJerySY",
+          "analysis_url" : "https://api.spotify.com/v1/audio-analysis/6MNVXCCvHKUmGvEhJerySY",
+          "duration_ms" : 221353,
+          "time_signature" : 4
+        }
+    http_version: 
+  recorded_at: Thu, 21 Feb 2019 20:57:17 GMT
 recorded_with: VCR 4.0.0
