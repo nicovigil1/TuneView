@@ -12,7 +12,7 @@
             %h3 Your most recently played song:
             .item
               .image
-                =image_tag "#{@most_recent_song.cover_url}"
+                = image_tag "#{@most_recent_song.cover_url}"
               .content.card-text
                 .header.card-text= @most_recent_song.title
                 .meta.card-text
@@ -34,9 +34,10 @@
         .ui.teal.inverted.raised.segment#top-5-tracks
           %h3 Top 5 Tracks of the past month:
           %ol
-            - @top_5_tracks.each do |track|
+            - @top_5_tracks.each_with_index do |track, index|
               %li
-                #{track.title} by #{track.artist}
+                = link_to track.title, track_path(track.compress_title, track.id), class: "track-#{index}"
+                %span by #{track.artist}
       .four.wide.column
         .ui.teal.inverted.raised.segment#top-5-artists
           %h3 Top 5 Artists of the past month:

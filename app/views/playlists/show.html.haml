@@ -61,12 +61,12 @@
                 Title
               %th
                 Artist
-          - @tracks.each do |track|
+          - @tracks.each_with_index do |track, index|
             - cache "track-#{track.artist}-#{track.title}" do
               %tbody
                 %tr
                   %td
-                    = track.title
+                    =link_to track.title, track_path(track.compress_title, track.id), class: "track-#{index}"
                   %td
                     = track.artist
 :javascript

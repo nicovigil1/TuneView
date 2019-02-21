@@ -8,7 +8,9 @@ Rails.application.routes.draw do
 
 
   resources :playlists, only: [:index]
-  get '/playlists/:playlist(?id=:id)', to: "playlists#show", as: "playlist"
+  get '/playlists/:playlist(/:id)', to: "playlists#show", as: "playlist"
+
+  get '/tracks/:track(/:id)', to: "tracks#show", as: "track"
 
   mount ActionCable.server, at: '/cable'
   post "message", to: "messages#create"

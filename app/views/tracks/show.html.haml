@@ -1,0 +1,12 @@
+.ui.grid
+  .row
+    .five.wide.left.aligned.column
+      .ui.teal.inverted.segment
+        %h3 Title: #{@track.title}
+        %h3 Artist: #{@track.artist}
+        %h3 Album: #{@track.album}
+        =image_tag @track.cover_url
+    .five.wide.right.aligned.column
+      .ui.teal.inverted.segment
+        - @track.stats.each do |stat, value|
+          .stat{class: stat} #{stat}: #{value}

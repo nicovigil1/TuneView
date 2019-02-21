@@ -3,7 +3,7 @@ class SpotifyService
 
   def initialize(user)
     @user = user
-    @api_cache = TimeHash.new
+    @@api_cache ||= TimeHash.new
   end
 
   def top_5_artists
@@ -104,7 +104,7 @@ class SpotifyService
   end
 
   def through_cache(key, &block)
-    @api_cache[key] || @api_cache.put(key, block.call, ENV["SPOTIFY_API_CACHE_TIME"].to_i)
+    @@api_cache[key] || @@api_cache.put("#{@user.username}-key", block.call, ENV["SPOTIFY_API_CACHE_TIME"].to_i)
   end
 
   def self.encoded_key_id

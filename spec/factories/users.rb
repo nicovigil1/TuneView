@@ -9,10 +9,9 @@ FactoryBot.define do
     end
 
     image_url { "https://bit.ly/2tlLmZc" }
-    spotify_token { Faker::Crypto.sha1 }
 
-    # sequence :uid do |n|
-    #   n
-    # end
+    spotify_token { ENV["S_TEST_TOKEN"] }
+    refresh_token { ENV["REQUEST_TOKEN"] }
+    token_expire { 55.minutes.from_now }
   end
 end
