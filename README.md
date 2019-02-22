@@ -73,7 +73,7 @@ $ bundle exec figaro install
 
 ## Contributors
 
-* Anton   [https://github.com/cebarks](https://github.com/cebarks)
+* Anten   [https://github.com/cebarks](https://github.com/cebarks)
 * Nico    [https://github.com/nicovigil1](https://github.com/nicovigil1)
 * Michael [https://github.com/SyntheticAutomation](https://github.com/SyntheticAutomation)
 * Aaron   [https://github.com/abroberts5](https://github.com/abroberts5)
