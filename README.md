@@ -1,5 +1,5 @@
 # TuneView [![Build Status](https://travis-ci.org/cebarks/TuneView.svg?branch=master)](https://travis-ci.org/cebarks/TuneView)
-### Production Link: * [http://tuneview.herokuapp.com](http://http://tuneview.herokuapp.com/)
+### Production Link: [http://tuneview.herokuapp.com](http://http://tuneview.herokuapp.com/)
 
 ### Pitch
 
